@@ -214,7 +214,7 @@ Confirm control wording against current official versions before publishing.
 
 Known gotchas: Microsoft 365 Developer Program sandboxes are frequently unavailable to new members, and Entra trial activation on Azure free subscriptions is a common forum complaint — budget an hour for tenant setup and use the midPoint fallback rather than losing a week.
 
-**Trial dates:** Governance trial start \_\_\_\_ · end \_\_\_\_ · PDI created 10-14-26
+**Trial dates:** Governance trial start \_\_\_\_ · end \_\_\_\_ · PDI created 10-14-26 (release: Australia)
 
 \---
 

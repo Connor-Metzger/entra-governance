@@ -6,7 +6,7 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 
 ### M0 — Pre-trial prep
 - [x] M0.1 Repo and data foundation (2026-10-14 — verify passed: 1641 assignments, answer key ignored, no leaks)
-- [ ] M0.2 Lab email alias, ServiceNow PDI request, lab environment plan (tenant creation moved to M1.1 to protect the trial clock)
+- [x] M0.2 Lab email alias, ServiceNow PDI request, lab environment plan (tenant creation moved to M1.1 to protect the trial clock)
 
 ### M2 Part A — Role mining (pre-trial)
 - [ ] M2.1 Build the user × entitlement matrix

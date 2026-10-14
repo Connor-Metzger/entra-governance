@@ -1,0 +1,36 @@
+entitlement,application,privileged,pci_scope,owner_department
+APP-ERP-Read,APP,false,false,Finance
+APP-Email,APP,false,false,Store Operations
+APP-LearningPortal,APP,false,false,Store Operations
+APP-Timeclock,APP,false,false,Store Operations
+Chargeback-Approve,Chargeback,false,true,Payments / PCI
+Chargeback-Edit,Chargeback,false,true,Payments / PCI
+Directory-Admin,Directory,true,false,Information Technology
+Directory-PasswordReset,Directory,false,false,Information Technology
+Directory-Read,Directory,false,false,Information Technology
+ERP-GL-Post,ERP,true,false,Finance
+ERP-PO-Approve,ERP,false,false,Procurement
+ERP-PO-Create,ERP,false,false,Procurement
+ERP-Receivables-Edit,ERP,false,false,Finance
+ERP-Vendor-Create,ERP,false,false,Procurement
+ERP-VendorPayment-Approve,ERP,false,false,Finance
+ERP-VendorPayment-Create,ERP,false,false,Finance
+FuelPricing-Edit,FuelPricing,false,false,Fuel Operations
+FuelPricing-View,FuelPricing,false,false,Fuel Operations
+HRIS-Employee-Edit,HRIS,false,false,Human Resources
+HRIS-Payroll-Approve,HRIS,false,false,Human Resources
+HRIS-Read,HRIS,false,false,Human Resources
+IGA-Reviewer-Admin,IGA,true,false,Information Technology
+ITSM-Agent,ITSM,false,false,Information Technology
+Inventory-Approver,Inventory,false,false,Store Operations
+PCI-CDE-Jumpbox,PCI,false,true,Payments / PCI
+POS-Cashier,POS,false,false,Store Operations
+POS-Manager,POS,false,true,Store Operations
+POS-Refunds,POS,false,false,Store Operations
+Payments-Gateway-Admin,Payments,true,true,Payments / PCI
+Payments-Gateway-Read,Payments,false,true,Payments / PCI
+SafeCount-Operator,SafeCount,false,false,Store Operations
+Scheduling-Admin,Scheduling,false,false,Store Operations
+Server-Admin,Server,true,false,Information Technology
+TankMonitor-Admin,TankMonitor,true,false,Fuel Operations
+TankMonitor-Operator,TankMonitor,false,false,Fuel Operations

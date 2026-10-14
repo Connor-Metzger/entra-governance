@@ -1,0 +1,7 @@
+entitlement_a,entitlement_b,description
+ERP-VendorPayment-Create,ERP-VendorPayment-Approve,Create and approve vendor payments
+ERP-Vendor-Create,ERP-VendorPayment-Approve,Create vendor and approve payment to it
+ERP-PO-Create,ERP-PO-Approve,Create and approve purchase orders
+HRIS-Employee-Edit,HRIS-Payroll-Approve,Edit employee records and approve payroll
+POS-Refunds,SafeCount-Operator,Issue refunds and count the safe
+Directory-Admin,IGA-Reviewer-Admin,Administer directory and control access reviews

@@ -1,0 +1,12 @@
+   # secrets
+   .env
+   *.pfx
+   *.pem
+   # answer key: keep hidden until analysis is done
+   **/ground_truth.json
+   # python
+   .venv/
+   __pycache__/
+   .ipynb_checkpoints/
+   # raw tenant exports (sanitize before committing to evidence/)
+   exports/

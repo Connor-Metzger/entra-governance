@@ -1,12 +1,12 @@
 # Lessons — Keystone Entra Governance Program
 
-Pacing: check in before each lesson. Resume from the first unchecked item.
+Pacing: check in before each lesson, extra-detailed steps. Resume from the first unchecked item.
 
 ## Progress
 
 ### M0 — Pre-trial prep
-- [ ] M0.1 Repo and data foundation
-- [ ] M0.2 Lab tenant, break-glass account, ServiceNow PDI request
+- [x] M0.1 Repo and data foundation (2026-10-14 — verify passed: 1641 assignments, answer key ignored, no leaks)
+- [ ] M0.2 Lab email alias, ServiceNow PDI request, lab environment plan (tenant creation moved to M1.1 to protect the trial clock)
 
 ### M2 Part A — Role mining (pre-trial)
 - [ ] M2.1 Build the user × entitlement matrix
@@ -47,3 +47,8 @@ Pacing: check in before each lesson. Resume from the first unchecked item.
 
 | Date | Lesson | What broke | Root cause | Fix | Interview story? |
 |---|---|---|---|---|---|
+| 2026-10-14 | M0.1 | Generator run failed: "No such file or directory" | Script was still in Downloads, not in `scripts\`; Python resolves paths relative to the current folder | Moved file with `Move-Item`, confirmed with `Get-ChildItem -Recurse`, reran | Minor — shows checking the working directory before debugging the tool |
+
+## Concept notes (from check questions)
+
+- **M0.1:** A leaver with an enabled account is a *true positive* ("terminated user with active access"), not a false positive. Deleting a committed secret does not remove it from Git history: rotate the secret first, then purge history. Seeds make the T0→T1 comparison reproducible.

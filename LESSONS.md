@@ -9,9 +9,10 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 - [x] M0.2 Lab email alias, ServiceNow PDI request, lab environment plan (tenant creation moved to M1.1 to protect the trial clock)
 
 ### M2 Part A — Role mining (pre-trial)
-- [ ] M2.1 Build the user × entitlement matrix
-- [ ] M2.2 Similarity clustering and candidate roles
-- [ ] M2.3 Birthright vs requested; coverage metrics
+- [x] M2.1 Build the user × entitlement matrix
+- [x] M2.2 Similarity clustering and candidate roles
+- [ ] M2.3a Test role catalog design against T0 access (coverage, SoD, answer key)
+- [ ] M2.3b Write docs/role-catalog.md for role owners
 
 ### M1 — Identity foundation & lifecycle management
 - [ ] M1.1 Activate Governance trial; load HR feed with Graph PowerShell
@@ -56,3 +57,5 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 - **M0.1:** A leaver with an enabled account is a *true positive* ("terminated user with active access"), not a false positive. Deleting a committed secret does not remove it from Git history: rotate the secret first, then purge history. Seeds make the T0→T1 comparison reproducible.
 
 - **M2.1:** Roles are templates copied to every future holder — mining from orphan/leaver access bakes errors in. High prevalence ≠ appropriate (sensitive/PCI access stays a requested, approved, reviewed role). Sparse matrix ≠ least privilege, but it means a few roles can cover many people. Department is too coarse: Store Ops = 3 jobs with different POS access.
+
+- **M2.2:** Jaccard = shared ÷ total access. Threshold 0.4 = bend in the coverage curve; looser merges creator/approver jobs and hides outliers. Mined roles copy today's mistakes → SoD-check every role (CR-03 HR had edit+approve). Fix variation with layering (base role + add-on), not more roles. IAM recommends, business role owner decides. Rank risk by attacker impact: Server-Admin on a store manager > POS-Cashier.

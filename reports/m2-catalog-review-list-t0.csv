@@ -1,0 +1,65 @@
+upn,not_explained,department,job_title
+cameron.romano@kqm-lab.example,"ERP-PO-Approve, ERP-PO-Create",Store Operations,Shift Lead
+cameron.tanaka@kqm-lab.example,"ERP-VendorPayment-Create, Payments-Gateway-Read, TankMonitor-Admin",Store Operations,Shift Lead
+casey.byrne@kqm-lab.example,"APP-LearningPortal, APP-Timeclock, POS-Cashier, POS-Refunds",Finance,Accounting Manager
+casey.castillo@kqm-lab.example,"Payments-Gateway-Admin, Scheduling-Admin",Store Operations,Store Associate
+casey.mensah@kqm-lab.example,"APP-LearningPortal, APP-Timeclock, POS-Cashier",Procurement,Procurement Manager
+casey.miller@kqm-lab.example,"ERP-PO-Approve, IGA-Reviewer-Admin",Store Operations,Store Manager
+casey.patel@kqm-lab.example,"APP-ERP-Read, ERP-VendorPayment-Create, HRIS-Employee-Edit",Human Resources,HR Manager
+casey.tanaka@kqm-lab.example,HRIS-Employee-Edit,Human Resources,HR Manager
+dakota.kaur@kqm-lab.example,"APP-LearningPortal, APP-Timeclock, POS-Cashier",Payments / PCI,Payments Manager
+dakota.moreau@kqm-lab.example,"HRIS-Employee-Edit, HRIS-Payroll-Approve",Finance,Accounting Manager
+dakota.nguyen@kqm-lab.example,"APP-LearningPortal, Inventory-Approver, POS-Manager, SafeCount-Operator, Scheduling-Admin",Fuel Operations,Fuel Operations Manager
+drew.fischer@kqm-lab.example,"APP-LearningPortal, Inventory-Approver, POS-Manager, SafeCount-Operator, Scheduling-Admin",Fuel Operations,Fuel Operations Manager
+drew.moreau@kqm-lab.example,"APP-LearningPortal, APP-Timeclock, HRIS-Employee-Edit, Inventory-Approver, POS-Manager, SafeCount-Operator, Scheduling-Admin",Human Resources,HR Manager
+drew.stone@kqm-lab.example,"HRIS-Read, Payments-Gateway-Admin",Store Operations,Store Associate
+elliot.abara@kqm-lab.example,"FuelPricing-View, HRIS-Read, TankMonitor-Admin",Finance,AP Specialist
+elliot.kaur@kqm-lab.example,"APP-LearningPortal, APP-Timeclock, Inventory-Approver, POS-Manager, SafeCount-Operator, Scheduling-Admin",Finance,AR Specialist
+elliot.reyes@kqm-lab.example,HRIS-Employee-Edit,Human Resources,HR Manager
+emerson.whitaker@kqm-lab.example,"APP-LearningPortal, Server-Admin",Information Technology,IAM Analyst
+finley.kowalski@kqm-lab.example,"APP-ERP-Read, ERP-PO-Create, ERP-Vendor-Create",Store Operations,Store Associate
+finley.larsen18@kqm-lab.example,"ERP-GL-Post, Payments-Gateway-Admin",Store Operations,Shift Lead
+finley.reyes@kqm-lab.example,"APP-LearningPortal, APP-Timeclock, HRIS-Employee-Edit, POS-Cashier",Human Resources,HR Manager
+finley.yilmaz@kqm-lab.example,"IGA-Reviewer-Admin, POS-Cashier, SafeCount-Operator",Information Technology,Systems Administrator
+harper.nguyen@kqm-lab.example,"Directory-Admin, TankMonitor-Admin",Finance,AR Specialist
+harper.tanaka@kqm-lab.example,"APP-LearningPortal, APP-Timeclock, Inventory-Approver, POS-Manager, SafeCount-Operator, Scheduling-Admin",Payments / PCI,Payments Manager
+hayden.abara@kqm-lab.example,"Directory-Read, TankMonitor-Admin",Fuel Operations,Fuel Technician
+hayden.kowalski56@kqm-lab.example,"APP-LearningPortal, APP-Timeclock, POS-Cashier",Procurement,Procurement Manager
+hayden.moreau87@kqm-lab.example,HRIS-Employee-Edit,Human Resources,HR Manager
+hayden.stone@kqm-lab.example,HRIS-Employee-Edit,Human Resources,HR Manager
+hayden.whitaker@kqm-lab.example,"APP-ERP-Read, ERP-GL-Post, ERP-VendorPayment-Approve",Payments / PCI,Payments Manager
+jamie.abara@kqm-lab.example,"APP-LearningPortal, APP-Timeclock, Inventory-Approver, POS-Manager, SafeCount-Operator, Scheduling-Admin",Finance,AP Specialist
+jordan.kaur81@kqm-lab.example,HRIS-Employee-Edit,Human Resources,HR Manager
+jordan.lindqvist@kqm-lab.example,"POS-Cashier, Server-Admin",Store Operations,Store Manager
+kai.achebe60@kqm-lab.example,HRIS-Employee-Edit,Human Resources,HR Manager
+kai.kaur@kqm-lab.example,ERP-Receivables-Edit,Procurement,Buyer
+kai.kowalski@kqm-lab.example,"HRIS-Employee-Edit, HRIS-Payroll-Approve",Information Technology,Service Desk Analyst
+kai.okafor41@kqm-lab.example,"HRIS-Employee-Edit, HRIS-Payroll-Approve",Store Operations,Shift Lead
+kai.whitaker@kqm-lab.example,"APP-Timeclock, ERP-GL-Post, POS-Refunds, SafeCount-Operator",Procurement,Procurement Manager
+kai.yilmaz@kqm-lab.example,"ERP-GL-Post, ERP-Receivables-Edit, TankMonitor-Operator",Store Operations,Shift Lead
+kendall.lindqvist@kqm-lab.example,"APP-LearningPortal, APP-Timeclock, POS-Cashier, POS-Refunds",Human Resources,HR Generalist
+kendall.mensah@kqm-lab.example,"Directory-Admin, ERP-Receivables-Edit",Store Operations,Shift Lead
+kendall.nguyen@kqm-lab.example,"Chargeback-Edit, FuelPricing-View, Server-Admin",Store Operations,Shift Lead
+logan.mensah@kqm-lab.example,HRIS-Employee-Edit,Human Resources,HR Manager
+logan.schultz@kqm-lab.example,"ERP-GL-Post, ERP-PO-Approve",Procurement,Buyer
+logan.tanaka@kqm-lab.example,"APP-ERP-Read, ERP-VendorPayment-Create",Information Technology,Systems Administrator
+marley.byrne68@kqm-lab.example,ERP-GL-Post,Information Technology,IAM Analyst
+marley.duarte39@kqm-lab.example,"APP-LearningPortal, APP-Timeclock, Inventory-Approver, POS-Manager, SafeCount-Operator, Scheduling-Admin",Human Resources,HR Generalist
+marley.kaur@kqm-lab.example,"APP-LearningPortal, APP-Timeclock, POS-Cashier, POS-Refunds",Information Technology,Systems Administrator
+marley.novak@kqm-lab.example,"ERP-VendorPayment-Approve, ERP-VendorPayment-Create",Store Operations,Shift Lead
+morgan.kowalski@kqm-lab.example,"APP-LearningPortal, APP-Timeclock, Inventory-Approver, POS-Manager, SafeCount-Operator, Scheduling-Admin",Procurement,Buyer
+morgan.yilmaz@kqm-lab.example,HRIS-Employee-Edit,Human Resources,HR Manager
+parker.reyes@kqm-lab.example,"Directory-Read, IGA-Reviewer-Admin, ITSM-Agent",Procurement,Buyer
+parker.romano@kqm-lab.example,"APP-LearningPortal, APP-Timeclock, POS-Cashier, POS-Refunds",Payments / PCI,Payments Manager
+peyton.abara@kqm-lab.example,"Chargeback-Edit, Directory-Admin, TankMonitor-Admin",Store Operations,Store Associate
+reese.nguyen@kqm-lab.example,"HRIS-Employee-Edit, HRIS-Payroll-Approve",Finance,Accounting Manager
+rowan.kowalski@kqm-lab.example,"FuelPricing-View, TankMonitor-Admin",Store Operations,Store Associate
+rowan.miller@kqm-lab.example,HRIS-Employee-Edit,Human Resources,HR Manager
+sam.abara@kqm-lab.example,"APP-LearningPortal, APP-Timeclock, ERP-VendorPayment-Approve, Inventory-Approver, POS-Manager, SafeCount-Operator, Scheduling-Admin, Server-Admin",Human Resources,HR Generalist
+sam.castillo@kqm-lab.example,"APP-LearningPortal, APP-Timeclock, Inventory-Approver, POS-Manager, SafeCount-Operator, Scheduling-Admin",Finance,AR Specialist
+sam.miller@kqm-lab.example,"APP-LearningPortal, APP-Timeclock, POS-Cashier",Procurement,Buyer
+sam.sullivan25@kqm-lab.example,"APP-LearningPortal, APP-Timeclock, Inventory-Approver, POS-Manager, SafeCount-Operator, Scheduling-Admin",Payments / PCI,Payments Manager
+sawyer.patel@kqm-lab.example,"APP-LearningPortal, APP-Timeclock, Inventory-Approver, POS-Manager, SafeCount-Operator, Scheduling-Admin",Information Technology,Service Desk Analyst
+shawn.miller@kqm-lab.example,"ERP-PO-Approve, ERP-PO-Create",Store Operations,Shift Lead
+shawn.okafor@kqm-lab.example,"ERP-GL-Post, ERP-PO-Approve, Payments-Gateway-Admin",Information Technology,IAM Analyst
+skyler.reyes@kqm-lab.example,"ERP-GL-Post, TankMonitor-Admin",Store Operations,Store Manager

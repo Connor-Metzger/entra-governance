@@ -1,0 +1,1473 @@
+upn,entitlement,explained_by,layer,assignment
+alex.castillo@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+alex.castillo@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+alex.castillo@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+alex.castillo@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+alex.castillo@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+alex.kowalski@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+alex.kowalski@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+alex.kowalski@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+alex.kowalski@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+alex.larsen@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+alex.larsen@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+alex.larsen@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+alex.larsen@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+alex.mensah@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+alex.mensah@kqm-lab.example,Directory-Admin,ADD-04,Add-on,Requested
+alex.mensah@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+alex.mensah@kqm-lab.example,Server-Admin,ADD-04,Add-on,Requested
+alex.miller@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+alex.miller@kqm-lab.example,Chargeback-Edit,BUS-14,Business,Automatic
+alex.miller@kqm-lab.example,PCI-CDE-Jumpbox,ADD-02,Add-on,Requested
+alex.miller@kqm-lab.example,Payments-Gateway-Read,BUS-14,Business,Automatic
+alex.okafor@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+alex.okafor@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+alex.okafor@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+alex.okafor@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+alex.patel@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+alex.patel@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+alex.patel@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+alex.patel@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+alex.reyes@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+alex.reyes@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+alex.reyes@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+alex.reyes@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+avery.castillo@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+avery.castillo@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+avery.castillo@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+avery.castillo@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+avery.miller@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+avery.miller@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+avery.miller@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+avery.miller@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+avery.miller@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+avery.miller@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+avery.miller@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+avery.nguyen@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+avery.nguyen@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+avery.nguyen@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+avery.nguyen@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+avery.novak@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+avery.novak@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+avery.novak@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+avery.novak@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+avery.patel@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+avery.patel@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+avery.patel@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+avery.patel@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+avery.patel@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+avery.patel@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+avery.patel@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+avery.tanaka@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+avery.tanaka@kqm-lab.example,APP-Timeclock,BR-03,Birthright,Automatic
+avery.tanaka@kqm-lab.example,FuelPricing-Edit,BUS-04,Business,Automatic
+avery.tanaka@kqm-lab.example,TankMonitor-Admin,BUS-04,Business,Automatic
+avery.yilmaz97@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+avery.yilmaz97@kqm-lab.example,Chargeback-Approve,BUS-15,Business,Automatic
+avery.yilmaz97@kqm-lab.example,PCI-CDE-Jumpbox,ADD-02,Add-on,Requested
+avery.yilmaz97@kqm-lab.example,Payments-Gateway-Admin,ADD-03,Add-on,Requested
+avery.yilmaz@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+avery.yilmaz@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+avery.yilmaz@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+avery.yilmaz@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+avery.yilmaz@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+blake.patel@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+blake.patel@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+blake.patel@kqm-lab.example,ERP-GL-Post,BUS-07,Business,Automatic
+blake.patel@kqm-lab.example,ERP-VendorPayment-Approve,BUS-07,Business,Automatic
+blake.tanaka@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+blake.tanaka@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+blake.tanaka@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+blake.tanaka@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+blake.tanaka@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+blake.tanaka@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+blake.tanaka@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+blake.yilmaz@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+blake.yilmaz@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+blake.yilmaz@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+blake.yilmaz@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+blake.yilmaz@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+cameron.haddad@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+cameron.haddad@kqm-lab.example,APP-Timeclock,BR-03,Birthright,Automatic
+cameron.haddad@kqm-lab.example,FuelPricing-Edit,BUS-04,Business,Automatic
+cameron.haddad@kqm-lab.example,TankMonitor-Admin,BUS-04,Business,Automatic
+cameron.kaur@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+cameron.kaur@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+cameron.kaur@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+cameron.kaur@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+cameron.kaur@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+cameron.kowalski44@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+cameron.kowalski44@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+cameron.kowalski44@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+cameron.kowalski44@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+cameron.kowalski44@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+cameron.kowalski@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+cameron.kowalski@kqm-lab.example,Directory-Read,BUS-13,Business,Automatic
+cameron.kowalski@kqm-lab.example,IGA-Reviewer-Admin,ADD-05,Add-on,Requested
+cameron.kowalski@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+cameron.mensah@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+cameron.mensah@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+cameron.mensah@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+cameron.mensah@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+cameron.mensah@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+cameron.miller@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+cameron.miller@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+cameron.miller@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+cameron.miller@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+cameron.nguyen@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+cameron.nguyen@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+cameron.nguyen@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+cameron.nguyen@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+cameron.nguyen@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+cameron.nguyen@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+cameron.nguyen@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+cameron.okafor@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+cameron.okafor@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+cameron.okafor@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+cameron.okafor@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+cameron.okafor@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+cameron.reyes@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+cameron.reyes@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+cameron.reyes@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+cameron.reyes@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+cameron.romano@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+cameron.romano@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+cameron.romano@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+cameron.romano@kqm-lab.example,ERP-PO-Approve,,Not explained — review,
+cameron.romano@kqm-lab.example,ERP-PO-Create,,Not explained — review,
+cameron.romano@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+cameron.romano@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+cameron.sullivan@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+cameron.sullivan@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+cameron.sullivan@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+cameron.sullivan@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+cameron.sullivan@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+cameron.tanaka@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+cameron.tanaka@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+cameron.tanaka@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+cameron.tanaka@kqm-lab.example,ERP-VendorPayment-Create,,Not explained — review,
+cameron.tanaka@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+cameron.tanaka@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+cameron.tanaka@kqm-lab.example,Payments-Gateway-Read,,Not explained — review,
+cameron.tanaka@kqm-lab.example,TankMonitor-Admin,,Not explained — review,
+casey.byrne@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+casey.byrne@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+casey.byrne@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+casey.byrne@kqm-lab.example,APP-Timeclock,,Not explained — review,
+casey.byrne@kqm-lab.example,ERP-GL-Post,BUS-07,Business,Automatic
+casey.byrne@kqm-lab.example,ERP-VendorPayment-Approve,BUS-07,Business,Automatic
+casey.byrne@kqm-lab.example,POS-Cashier,,Not explained — review,
+casey.byrne@kqm-lab.example,POS-Refunds,,Not explained — review,
+casey.castillo@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+casey.castillo@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+casey.castillo@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+casey.castillo@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+casey.castillo@kqm-lab.example,Payments-Gateway-Admin,,Not explained — review,
+casey.castillo@kqm-lab.example,Scheduling-Admin,,Not explained — review,
+casey.haddad@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+casey.haddad@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+casey.haddad@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+casey.haddad@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+casey.kaur20@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+casey.kaur20@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+casey.kaur20@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+casey.kaur20@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+casey.kaur20@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+casey.kaur20@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+casey.kaur20@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+casey.larsen@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+casey.larsen@kqm-lab.example,Directory-PasswordReset,BUS-12,Business,Automatic
+casey.larsen@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+casey.mensah@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+casey.mensah@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+casey.mensah@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+casey.mensah@kqm-lab.example,APP-Timeclock,,Not explained — review,
+casey.mensah@kqm-lab.example,ERP-PO-Approve,BUS-09,Business,Automatic
+casey.mensah@kqm-lab.example,ERP-Vendor-Create,BUS-09,Business,Automatic
+casey.mensah@kqm-lab.example,POS-Cashier,,Not explained — review,
+casey.miller97@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+casey.miller97@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+casey.miller97@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+casey.miller97@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+casey.miller97@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+casey.miller@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+casey.miller@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+casey.miller@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+casey.miller@kqm-lab.example,ERP-PO-Approve,,Not explained — review,
+casey.miller@kqm-lab.example,IGA-Reviewer-Admin,,Not explained — review,
+casey.miller@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+casey.miller@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+casey.miller@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+casey.miller@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+casey.nguyen17@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+casey.nguyen17@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+casey.nguyen17@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+casey.nguyen17@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+casey.nguyen17@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+casey.nguyen17@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+casey.nguyen17@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+casey.nguyen@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+casey.nguyen@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+casey.nguyen@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+casey.nguyen@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+casey.nguyen@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+casey.nguyen@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+casey.nguyen@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+casey.patel5@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+casey.patel5@kqm-lab.example,Directory-Read,BUS-13,Business,Automatic
+casey.patel5@kqm-lab.example,IGA-Reviewer-Admin,ADD-05,Add-on,Requested
+casey.patel5@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+casey.patel@kqm-lab.example,APP-ERP-Read,,Not explained — review,
+casey.patel@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+casey.patel@kqm-lab.example,ERP-VendorPayment-Create,,Not explained — review,
+casey.patel@kqm-lab.example,HRIS-Employee-Edit,,Not explained — review,
+casey.patel@kqm-lab.example,HRIS-Payroll-Approve,BUS-11,Business,Automatic
+casey.patel@kqm-lab.example,HRIS-Read,BR-05,Birthright,Automatic
+casey.tanaka@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+casey.tanaka@kqm-lab.example,HRIS-Employee-Edit,,Not explained — review,
+casey.tanaka@kqm-lab.example,HRIS-Payroll-Approve,BUS-11,Business,Automatic
+casey.tanaka@kqm-lab.example,HRIS-Read,BR-05,Birthright,Automatic
+dakota.achebe15@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+dakota.achebe15@kqm-lab.example,Directory-Admin,ADD-04,Add-on,Requested
+dakota.achebe15@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+dakota.achebe15@kqm-lab.example,Server-Admin,ADD-04,Add-on,Requested
+dakota.achebe@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+dakota.achebe@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+dakota.achebe@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+dakota.achebe@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+dakota.achebe@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+dakota.kaur@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+dakota.kaur@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+dakota.kaur@kqm-lab.example,APP-Timeclock,,Not explained — review,
+dakota.kaur@kqm-lab.example,Chargeback-Approve,BUS-15,Business,Automatic
+dakota.kaur@kqm-lab.example,PCI-CDE-Jumpbox,ADD-02,Add-on,Requested
+dakota.kaur@kqm-lab.example,POS-Cashier,,Not explained — review,
+dakota.kaur@kqm-lab.example,Payments-Gateway-Admin,ADD-03,Add-on,Requested
+dakota.moreau@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+dakota.moreau@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+dakota.moreau@kqm-lab.example,ERP-GL-Post,BUS-07,Business,Automatic
+dakota.moreau@kqm-lab.example,ERP-VendorPayment-Approve,BUS-07,Business,Automatic
+dakota.moreau@kqm-lab.example,HRIS-Employee-Edit,,Not explained — review,
+dakota.moreau@kqm-lab.example,HRIS-Payroll-Approve,,Not explained — review,
+dakota.nguyen96@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+dakota.nguyen96@kqm-lab.example,APP-Timeclock,BR-03,Birthright,Automatic
+dakota.nguyen96@kqm-lab.example,FuelPricing-Edit,BUS-04,Business,Automatic
+dakota.nguyen96@kqm-lab.example,TankMonitor-Admin,BUS-04,Business,Automatic
+dakota.nguyen@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+dakota.nguyen@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+dakota.nguyen@kqm-lab.example,APP-Timeclock,BR-03,Birthright,Automatic
+dakota.nguyen@kqm-lab.example,FuelPricing-Edit,BUS-04,Business,Automatic
+dakota.nguyen@kqm-lab.example,Inventory-Approver,,Not explained — review,
+dakota.nguyen@kqm-lab.example,POS-Manager,,Not explained — review,
+dakota.nguyen@kqm-lab.example,SafeCount-Operator,,Not explained — review,
+dakota.nguyen@kqm-lab.example,Scheduling-Admin,,Not explained — review,
+dakota.nguyen@kqm-lab.example,TankMonitor-Admin,BUS-04,Business,Automatic
+dakota.patel@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+dakota.patel@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+dakota.patel@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+dakota.patel@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+dakota.romano@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+dakota.romano@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+dakota.romano@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+dakota.romano@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+dakota.romano@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+dakota.romano@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+dakota.romano@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+dakota.sullivan@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+dakota.sullivan@kqm-lab.example,Directory-PasswordReset,BUS-12,Business,Automatic
+dakota.sullivan@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+dakota.tanaka@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+dakota.tanaka@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+dakota.tanaka@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+dakota.tanaka@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+dakota.tanaka@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+drew.duarte@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+drew.duarte@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+drew.duarte@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+drew.duarte@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+drew.duarte@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+drew.duarte@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+drew.duarte@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+drew.fischer@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+drew.fischer@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+drew.fischer@kqm-lab.example,APP-Timeclock,BR-03,Birthright,Automatic
+drew.fischer@kqm-lab.example,FuelPricing-Edit,BUS-04,Business,Automatic
+drew.fischer@kqm-lab.example,Inventory-Approver,,Not explained — review,
+drew.fischer@kqm-lab.example,POS-Manager,,Not explained — review,
+drew.fischer@kqm-lab.example,SafeCount-Operator,,Not explained — review,
+drew.fischer@kqm-lab.example,Scheduling-Admin,,Not explained — review,
+drew.fischer@kqm-lab.example,TankMonitor-Admin,BUS-04,Business,Automatic
+drew.kowalski@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+drew.kowalski@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+drew.kowalski@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+drew.kowalski@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+drew.kowalski@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+drew.kowalski@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+drew.kowalski@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+drew.moreau@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+drew.moreau@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+drew.moreau@kqm-lab.example,APP-Timeclock,,Not explained — review,
+drew.moreau@kqm-lab.example,HRIS-Employee-Edit,,Not explained — review,
+drew.moreau@kqm-lab.example,HRIS-Payroll-Approve,BUS-11,Business,Automatic
+drew.moreau@kqm-lab.example,HRIS-Read,BR-05,Birthright,Automatic
+drew.moreau@kqm-lab.example,Inventory-Approver,,Not explained — review,
+drew.moreau@kqm-lab.example,POS-Manager,,Not explained — review,
+drew.moreau@kqm-lab.example,SafeCount-Operator,,Not explained — review,
+drew.moreau@kqm-lab.example,Scheduling-Admin,,Not explained — review,
+drew.nguyen@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+drew.nguyen@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+drew.nguyen@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+drew.nguyen@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+drew.nguyen@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+drew.nguyen@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+drew.nguyen@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+drew.patel@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+drew.patel@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+drew.patel@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+drew.patel@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+drew.patel@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+drew.romano96@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+drew.romano96@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+drew.romano96@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+drew.romano96@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+drew.romano96@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+drew.romano96@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+drew.romano96@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+drew.romano@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+drew.romano@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+drew.romano@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+drew.romano@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+drew.romano@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+drew.stone@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+drew.stone@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+drew.stone@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+drew.stone@kqm-lab.example,HRIS-Read,,Not explained — review,
+drew.stone@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+drew.stone@kqm-lab.example,Payments-Gateway-Admin,,Not explained — review,
+drew.sullivan@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+drew.sullivan@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+drew.sullivan@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+drew.sullivan@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+drew.sullivan@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+drew.whitaker@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+drew.whitaker@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+drew.whitaker@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+drew.whitaker@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+drew.yilmaz@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+drew.yilmaz@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+drew.yilmaz@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+drew.yilmaz@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+drew.yilmaz@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+drew.yilmaz@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+drew.yilmaz@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+elliot.abara@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+elliot.abara@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+elliot.abara@kqm-lab.example,ERP-VendorPayment-Create,BUS-05,Business,Automatic
+elliot.abara@kqm-lab.example,FuelPricing-View,,Not explained — review,
+elliot.abara@kqm-lab.example,HRIS-Read,,Not explained — review,
+elliot.abara@kqm-lab.example,TankMonitor-Admin,,Not explained — review,
+elliot.ivanova@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+elliot.ivanova@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+elliot.ivanova@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+elliot.ivanova@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+elliot.kaur@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+elliot.kaur@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+elliot.kaur@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+elliot.kaur@kqm-lab.example,APP-Timeclock,,Not explained — review,
+elliot.kaur@kqm-lab.example,ERP-Receivables-Edit,BUS-06,Business,Automatic
+elliot.kaur@kqm-lab.example,Inventory-Approver,,Not explained — review,
+elliot.kaur@kqm-lab.example,POS-Manager,,Not explained — review,
+elliot.kaur@kqm-lab.example,SafeCount-Operator,,Not explained — review,
+elliot.kaur@kqm-lab.example,Scheduling-Admin,,Not explained — review,
+elliot.lindqvist@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+elliot.lindqvist@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+elliot.lindqvist@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+elliot.lindqvist@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+elliot.lindqvist@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+elliot.lindqvist@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+elliot.lindqvist@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+elliot.nguyen23@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+elliot.nguyen23@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+elliot.nguyen23@kqm-lab.example,ERP-VendorPayment-Create,BUS-05,Business,Automatic
+elliot.reyes@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+elliot.reyes@kqm-lab.example,HRIS-Employee-Edit,,Not explained — review,
+elliot.reyes@kqm-lab.example,HRIS-Payroll-Approve,BUS-11,Business,Automatic
+elliot.reyes@kqm-lab.example,HRIS-Read,BR-05,Birthright,Automatic
+emerson.byrne@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+emerson.byrne@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+emerson.byrne@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+emerson.byrne@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+emerson.ivanova@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+emerson.ivanova@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+emerson.ivanova@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+emerson.ivanova@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+emerson.ivanova@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+emerson.ivanova@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+emerson.ivanova@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+emerson.kowalski@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+emerson.kowalski@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+emerson.kowalski@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+emerson.kowalski@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+emerson.kowalski@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+emerson.miller@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+emerson.miller@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+emerson.miller@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+emerson.miller@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+emerson.miller@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+emerson.okafor@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+emerson.okafor@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+emerson.okafor@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+emerson.okafor@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+emerson.sullivan@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+emerson.sullivan@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+emerson.sullivan@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+emerson.sullivan@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+emerson.tanaka@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+emerson.tanaka@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+emerson.tanaka@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+emerson.tanaka@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+emerson.tanaka@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+emerson.tanaka@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+emerson.tanaka@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+emerson.whitaker@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+emerson.whitaker@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+emerson.whitaker@kqm-lab.example,Directory-Read,BUS-13,Business,Automatic
+emerson.whitaker@kqm-lab.example,IGA-Reviewer-Admin,ADD-05,Add-on,Requested
+emerson.whitaker@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+emerson.whitaker@kqm-lab.example,Server-Admin,,Not explained — review,
+emerson.yilmaz@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+emerson.yilmaz@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+emerson.yilmaz@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+emerson.yilmaz@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+emerson.yilmaz@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+finley.castillo@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+finley.castillo@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+finley.castillo@kqm-lab.example,ERP-GL-Post,BUS-07,Business,Automatic
+finley.castillo@kqm-lab.example,ERP-VendorPayment-Approve,BUS-07,Business,Automatic
+finley.kowalski@kqm-lab.example,APP-ERP-Read,,Not explained — review,
+finley.kowalski@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+finley.kowalski@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+finley.kowalski@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+finley.kowalski@kqm-lab.example,ERP-PO-Create,,Not explained — review,
+finley.kowalski@kqm-lab.example,ERP-Vendor-Create,,Not explained — review,
+finley.kowalski@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+finley.larsen18@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+finley.larsen18@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+finley.larsen18@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+finley.larsen18@kqm-lab.example,ERP-GL-Post,,Not explained — review,
+finley.larsen18@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+finley.larsen18@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+finley.larsen18@kqm-lab.example,Payments-Gateway-Admin,,Not explained — review,
+finley.larsen24@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+finley.larsen24@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+finley.larsen24@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+finley.larsen24@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+finley.larsen24@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+finley.larsen24@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+finley.larsen24@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+finley.larsen@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+finley.larsen@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+finley.larsen@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+finley.larsen@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+finley.larsen@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+finley.lindqvist@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+finley.lindqvist@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+finley.lindqvist@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+finley.lindqvist@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+finley.lindqvist@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+finley.lindqvist@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+finley.lindqvist@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+finley.moreau59@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+finley.moreau59@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+finley.moreau59@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+finley.moreau59@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+finley.moreau@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+finley.moreau@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+finley.moreau@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+finley.moreau@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+finley.moreau@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+finley.moreau@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+finley.moreau@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+finley.reyes@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+finley.reyes@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+finley.reyes@kqm-lab.example,APP-Timeclock,,Not explained — review,
+finley.reyes@kqm-lab.example,HRIS-Employee-Edit,,Not explained — review,
+finley.reyes@kqm-lab.example,HRIS-Payroll-Approve,BUS-11,Business,Automatic
+finley.reyes@kqm-lab.example,HRIS-Read,BR-05,Birthright,Automatic
+finley.reyes@kqm-lab.example,POS-Cashier,,Not explained — review,
+finley.yilmaz@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+finley.yilmaz@kqm-lab.example,Directory-Admin,ADD-04,Add-on,Requested
+finley.yilmaz@kqm-lab.example,IGA-Reviewer-Admin,,Not explained — review,
+finley.yilmaz@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+finley.yilmaz@kqm-lab.example,POS-Cashier,,Not explained — review,
+finley.yilmaz@kqm-lab.example,SafeCount-Operator,,Not explained — review,
+finley.yilmaz@kqm-lab.example,Server-Admin,ADD-04,Add-on,Requested
+harper.kowalski@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+harper.kowalski@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+harper.kowalski@kqm-lab.example,ERP-GL-Post,BUS-07,Business,Automatic
+harper.kowalski@kqm-lab.example,ERP-VendorPayment-Approve,BUS-07,Business,Automatic
+harper.nguyen@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+harper.nguyen@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+harper.nguyen@kqm-lab.example,Directory-Admin,,Not explained — review,
+harper.nguyen@kqm-lab.example,ERP-Receivables-Edit,BUS-06,Business,Automatic
+harper.nguyen@kqm-lab.example,TankMonitor-Admin,,Not explained — review,
+harper.reyes@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+harper.reyes@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+harper.reyes@kqm-lab.example,ERP-PO-Approve,BUS-09,Business,Automatic
+harper.reyes@kqm-lab.example,ERP-Vendor-Create,BUS-09,Business,Automatic
+harper.schultz@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+harper.schultz@kqm-lab.example,APP-Timeclock,BR-03,Birthright,Automatic
+harper.schultz@kqm-lab.example,FuelPricing-View,BUS-03,Business,Automatic
+harper.schultz@kqm-lab.example,TankMonitor-Operator,BUS-03,Business,Automatic
+harper.tanaka@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+harper.tanaka@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+harper.tanaka@kqm-lab.example,APP-Timeclock,,Not explained — review,
+harper.tanaka@kqm-lab.example,Chargeback-Approve,BUS-15,Business,Automatic
+harper.tanaka@kqm-lab.example,Inventory-Approver,,Not explained — review,
+harper.tanaka@kqm-lab.example,PCI-CDE-Jumpbox,ADD-02,Add-on,Requested
+harper.tanaka@kqm-lab.example,POS-Manager,,Not explained — review,
+harper.tanaka@kqm-lab.example,Payments-Gateway-Admin,ADD-03,Add-on,Requested
+harper.tanaka@kqm-lab.example,SafeCount-Operator,,Not explained — review,
+harper.tanaka@kqm-lab.example,Scheduling-Admin,,Not explained — review,
+harper.whitaker@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+harper.whitaker@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+harper.whitaker@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+harper.whitaker@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+harper.whitaker@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+hayden.abara@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+hayden.abara@kqm-lab.example,APP-Timeclock,BR-03,Birthright,Automatic
+hayden.abara@kqm-lab.example,Directory-Read,,Not explained — review,
+hayden.abara@kqm-lab.example,FuelPricing-View,BUS-03,Business,Automatic
+hayden.abara@kqm-lab.example,TankMonitor-Admin,,Not explained — review,
+hayden.abara@kqm-lab.example,TankMonitor-Operator,BUS-03,Business,Automatic
+hayden.brennan@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+hayden.brennan@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+hayden.brennan@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+hayden.brennan@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+hayden.brennan@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+hayden.brennan@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+hayden.brennan@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+hayden.castillo46@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+hayden.castillo46@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+hayden.castillo46@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+hayden.castillo46@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+hayden.castillo46@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+hayden.castillo46@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+hayden.castillo46@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+hayden.castillo@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+hayden.castillo@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+hayden.castillo@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+hayden.castillo@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+hayden.castillo@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+hayden.castillo@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+hayden.castillo@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+hayden.kowalski56@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+hayden.kowalski56@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+hayden.kowalski56@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+hayden.kowalski56@kqm-lab.example,APP-Timeclock,,Not explained — review,
+hayden.kowalski56@kqm-lab.example,ERP-PO-Approve,BUS-09,Business,Automatic
+hayden.kowalski56@kqm-lab.example,ERP-Vendor-Create,BUS-09,Business,Automatic
+hayden.kowalski56@kqm-lab.example,POS-Cashier,,Not explained — review,
+hayden.kowalski@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+hayden.kowalski@kqm-lab.example,Chargeback-Approve,BUS-15,Business,Automatic
+hayden.kowalski@kqm-lab.example,PCI-CDE-Jumpbox,ADD-02,Add-on,Requested
+hayden.kowalski@kqm-lab.example,Payments-Gateway-Admin,ADD-03,Add-on,Requested
+hayden.moreau35@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+hayden.moreau35@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+hayden.moreau35@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+hayden.moreau35@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+hayden.moreau35@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+hayden.moreau35@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+hayden.moreau35@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+hayden.moreau87@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+hayden.moreau87@kqm-lab.example,HRIS-Employee-Edit,,Not explained — review,
+hayden.moreau87@kqm-lab.example,HRIS-Payroll-Approve,BUS-11,Business,Automatic
+hayden.moreau87@kqm-lab.example,HRIS-Read,BR-05,Birthright,Automatic
+hayden.moreau@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+hayden.moreau@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+hayden.moreau@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+hayden.moreau@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+hayden.moreau@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+hayden.moreau@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+hayden.moreau@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+hayden.okafor74@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+hayden.okafor74@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+hayden.okafor74@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+hayden.okafor74@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+hayden.okafor@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+hayden.okafor@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+hayden.okafor@kqm-lab.example,ERP-Receivables-Edit,BUS-06,Business,Automatic
+hayden.romano@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+hayden.romano@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+hayden.romano@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+hayden.romano@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+hayden.romano@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+hayden.schultz70@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+hayden.schultz70@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+hayden.schultz70@kqm-lab.example,ERP-PO-Approve,BUS-09,Business,Automatic
+hayden.schultz70@kqm-lab.example,ERP-Vendor-Create,BUS-09,Business,Automatic
+hayden.schultz@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+hayden.schultz@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+hayden.schultz@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+hayden.schultz@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+hayden.schultz@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+hayden.schultz@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+hayden.schultz@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+hayden.stone18@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+hayden.stone18@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+hayden.stone18@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+hayden.stone18@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+hayden.stone18@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+hayden.stone@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+hayden.stone@kqm-lab.example,HRIS-Employee-Edit,,Not explained — review,
+hayden.stone@kqm-lab.example,HRIS-Payroll-Approve,BUS-11,Business,Automatic
+hayden.stone@kqm-lab.example,HRIS-Read,BR-05,Birthright,Automatic
+hayden.whitaker@kqm-lab.example,APP-ERP-Read,,Not explained — review,
+hayden.whitaker@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+hayden.whitaker@kqm-lab.example,Chargeback-Approve,BUS-15,Business,Automatic
+hayden.whitaker@kqm-lab.example,ERP-GL-Post,,Not explained — review,
+hayden.whitaker@kqm-lab.example,ERP-VendorPayment-Approve,,Not explained — review,
+hayden.whitaker@kqm-lab.example,PCI-CDE-Jumpbox,ADD-02,Add-on,Requested
+hayden.whitaker@kqm-lab.example,Payments-Gateway-Admin,ADD-03,Add-on,Requested
+hayden.yilmaz@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+hayden.yilmaz@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+hayden.yilmaz@kqm-lab.example,ERP-Receivables-Edit,BUS-06,Business,Automatic
+jamie.abara@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+jamie.abara@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+jamie.abara@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+jamie.abara@kqm-lab.example,APP-Timeclock,,Not explained — review,
+jamie.abara@kqm-lab.example,ERP-VendorPayment-Create,BUS-05,Business,Automatic
+jamie.abara@kqm-lab.example,Inventory-Approver,,Not explained — review,
+jamie.abara@kqm-lab.example,POS-Manager,,Not explained — review,
+jamie.abara@kqm-lab.example,SafeCount-Operator,,Not explained — review,
+jamie.abara@kqm-lab.example,Scheduling-Admin,,Not explained — review,
+jamie.brennan64@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+jamie.brennan64@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+jamie.brennan64@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+jamie.brennan64@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+jamie.brennan@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+jamie.brennan@kqm-lab.example,Chargeback-Approve,BUS-15,Business,Automatic
+jamie.brennan@kqm-lab.example,PCI-CDE-Jumpbox,ADD-02,Add-on,Requested
+jamie.brennan@kqm-lab.example,Payments-Gateway-Admin,ADD-03,Add-on,Requested
+jamie.ivanova@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+jamie.ivanova@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+jamie.ivanova@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+jamie.ivanova@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+jamie.miller2@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+jamie.miller2@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+jamie.miller2@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+jamie.miller2@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+jamie.miller2@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+jamie.miller@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+jamie.miller@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+jamie.miller@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+jamie.miller@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+jamie.novak41@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+jamie.novak41@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+jamie.novak41@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+jamie.novak41@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+jamie.novak41@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+jamie.novak41@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+jamie.novak41@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+jamie.novak@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+jamie.novak@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+jamie.novak@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+jamie.novak@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+jamie.romano@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+jamie.romano@kqm-lab.example,Directory-PasswordReset,BUS-12,Business,Automatic
+jamie.romano@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+jordan.kaur81@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+jordan.kaur81@kqm-lab.example,HRIS-Employee-Edit,,Not explained — review,
+jordan.kaur81@kqm-lab.example,HRIS-Payroll-Approve,BUS-11,Business,Automatic
+jordan.kaur81@kqm-lab.example,HRIS-Read,BR-05,Birthright,Automatic
+jordan.kaur@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+jordan.kaur@kqm-lab.example,Chargeback-Edit,BUS-14,Business,Automatic
+jordan.kaur@kqm-lab.example,PCI-CDE-Jumpbox,ADD-02,Add-on,Requested
+jordan.kaur@kqm-lab.example,Payments-Gateway-Read,BUS-14,Business,Automatic
+jordan.lindqvist@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+jordan.lindqvist@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+jordan.lindqvist@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+jordan.lindqvist@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+jordan.lindqvist@kqm-lab.example,POS-Cashier,,Not explained — review,
+jordan.lindqvist@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+jordan.lindqvist@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+jordan.lindqvist@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+jordan.lindqvist@kqm-lab.example,Server-Admin,,Not explained — review,
+jordan.mensah@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+jordan.mensah@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+jordan.mensah@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+jordan.mensah@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+jordan.mensah@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+jordan.mensah@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+jordan.mensah@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+jordan.moreau@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+jordan.moreau@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+jordan.moreau@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+jordan.moreau@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+jordan.moreau@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+jordan.okafor@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+jordan.okafor@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+jordan.okafor@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+jordan.okafor@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+jordan.okafor@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+jordan.romano@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+jordan.romano@kqm-lab.example,APP-Timeclock,BR-03,Birthright,Automatic
+jordan.romano@kqm-lab.example,FuelPricing-Edit,BUS-04,Business,Automatic
+jordan.romano@kqm-lab.example,TankMonitor-Admin,BUS-04,Business,Automatic
+kai.abara@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kai.abara@kqm-lab.example,Directory-Read,BUS-13,Business,Automatic
+kai.abara@kqm-lab.example,IGA-Reviewer-Admin,ADD-05,Add-on,Requested
+kai.abara@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+kai.achebe60@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kai.achebe60@kqm-lab.example,HRIS-Employee-Edit,,Not explained — review,
+kai.achebe60@kqm-lab.example,HRIS-Payroll-Approve,BUS-11,Business,Automatic
+kai.achebe60@kqm-lab.example,HRIS-Read,BR-05,Birthright,Automatic
+kai.achebe@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kai.achebe@kqm-lab.example,APP-Timeclock,BR-03,Birthright,Automatic
+kai.achebe@kqm-lab.example,FuelPricing-Edit,BUS-04,Business,Automatic
+kai.achebe@kqm-lab.example,TankMonitor-Admin,BUS-04,Business,Automatic
+kai.brennan@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+kai.brennan@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kai.brennan@kqm-lab.example,ERP-VendorPayment-Create,BUS-05,Business,Automatic
+kai.castillo@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kai.castillo@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+kai.castillo@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+kai.castillo@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+kai.duarte@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kai.duarte@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+kai.duarte@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+kai.duarte@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+kai.duarte@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+kai.duarte@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+kai.duarte@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+kai.fischer@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kai.fischer@kqm-lab.example,APP-Timeclock,BR-03,Birthright,Automatic
+kai.fischer@kqm-lab.example,FuelPricing-Edit,BUS-04,Business,Automatic
+kai.fischer@kqm-lab.example,TankMonitor-Admin,BUS-04,Business,Automatic
+kai.kaur@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+kai.kaur@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kai.kaur@kqm-lab.example,ERP-PO-Create,BUS-08,Business,Automatic
+kai.kaur@kqm-lab.example,ERP-Receivables-Edit,,Not explained — review,
+kai.kaur@kqm-lab.example,ERP-Vendor-Create,BUS-08,Business,Automatic
+kai.kowalski@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kai.kowalski@kqm-lab.example,Directory-PasswordReset,BUS-12,Business,Automatic
+kai.kowalski@kqm-lab.example,HRIS-Employee-Edit,,Not explained — review,
+kai.kowalski@kqm-lab.example,HRIS-Payroll-Approve,,Not explained — review,
+kai.kowalski@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+kai.mensah@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kai.mensah@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+kai.mensah@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+kai.mensah@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+kai.mensah@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+kai.miller@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kai.miller@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+kai.miller@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+kai.miller@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+kai.miller@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+kai.miller@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+kai.miller@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+kai.okafor41@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kai.okafor41@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+kai.okafor41@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+kai.okafor41@kqm-lab.example,HRIS-Employee-Edit,,Not explained — review,
+kai.okafor41@kqm-lab.example,HRIS-Payroll-Approve,,Not explained — review,
+kai.okafor41@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+kai.okafor41@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+kai.okafor@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+kai.okafor@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kai.okafor@kqm-lab.example,ERP-GL-Post,BUS-07,Business,Automatic
+kai.okafor@kqm-lab.example,ERP-VendorPayment-Approve,BUS-07,Business,Automatic
+kai.romano@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kai.romano@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+kai.romano@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+kai.romano@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+kai.romano@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+kai.romano@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+kai.romano@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+kai.stone@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kai.stone@kqm-lab.example,Chargeback-Approve,BUS-15,Business,Automatic
+kai.stone@kqm-lab.example,PCI-CDE-Jumpbox,ADD-02,Add-on,Requested
+kai.stone@kqm-lab.example,Payments-Gateway-Admin,ADD-03,Add-on,Requested
+kai.whitaker@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+kai.whitaker@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kai.whitaker@kqm-lab.example,APP-Timeclock,,Not explained — review,
+kai.whitaker@kqm-lab.example,ERP-GL-Post,,Not explained — review,
+kai.whitaker@kqm-lab.example,ERP-PO-Approve,BUS-09,Business,Automatic
+kai.whitaker@kqm-lab.example,ERP-Vendor-Create,BUS-09,Business,Automatic
+kai.whitaker@kqm-lab.example,POS-Refunds,,Not explained — review,
+kai.whitaker@kqm-lab.example,SafeCount-Operator,,Not explained — review,
+kai.yilmaz@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kai.yilmaz@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+kai.yilmaz@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+kai.yilmaz@kqm-lab.example,ERP-GL-Post,,Not explained — review,
+kai.yilmaz@kqm-lab.example,ERP-Receivables-Edit,,Not explained — review,
+kai.yilmaz@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+kai.yilmaz@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+kai.yilmaz@kqm-lab.example,TankMonitor-Operator,,Not explained — review,
+kendall.abara93@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kendall.abara93@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+kendall.abara93@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+kendall.abara93@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+kendall.abara93@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+kendall.abara@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kendall.abara@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+kendall.abara@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+kendall.abara@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+kendall.abara@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+kendall.achebe@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kendall.achebe@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+kendall.achebe@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+kendall.achebe@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+kendall.achebe@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+kendall.byrne@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kendall.byrne@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+kendall.byrne@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+kendall.byrne@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+kendall.castillo@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kendall.castillo@kqm-lab.example,Directory-Admin,ADD-04,Add-on,Requested
+kendall.castillo@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+kendall.castillo@kqm-lab.example,Server-Admin,ADD-04,Add-on,Requested
+kendall.haddad@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kendall.haddad@kqm-lab.example,Directory-PasswordReset,BUS-12,Business,Automatic
+kendall.haddad@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+kendall.lindqvist@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kendall.lindqvist@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+kendall.lindqvist@kqm-lab.example,APP-Timeclock,,Not explained — review,
+kendall.lindqvist@kqm-lab.example,HRIS-Employee-Edit,BUS-10,Business,Automatic
+kendall.lindqvist@kqm-lab.example,HRIS-Read,BR-05,Birthright,Automatic
+kendall.lindqvist@kqm-lab.example,POS-Cashier,,Not explained — review,
+kendall.lindqvist@kqm-lab.example,POS-Refunds,,Not explained — review,
+kendall.mensah@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kendall.mensah@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+kendall.mensah@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+kendall.mensah@kqm-lab.example,Directory-Admin,,Not explained — review,
+kendall.mensah@kqm-lab.example,ERP-Receivables-Edit,,Not explained — review,
+kendall.mensah@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+kendall.mensah@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+kendall.miller@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kendall.miller@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+kendall.miller@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+kendall.miller@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+kendall.nguyen@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kendall.nguyen@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+kendall.nguyen@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+kendall.nguyen@kqm-lab.example,Chargeback-Edit,,Not explained — review,
+kendall.nguyen@kqm-lab.example,FuelPricing-View,,Not explained — review,
+kendall.nguyen@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+kendall.nguyen@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+kendall.nguyen@kqm-lab.example,Server-Admin,,Not explained — review,
+kendall.novak@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kendall.novak@kqm-lab.example,Directory-PasswordReset,BUS-12,Business,Automatic
+kendall.novak@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+kendall.patel@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+kendall.patel@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+kendall.patel@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+kendall.patel@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+logan.duarte@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+logan.duarte@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+logan.duarte@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+logan.duarte@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+logan.duarte@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+logan.duarte@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+logan.duarte@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+logan.lindqvist@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+logan.lindqvist@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+logan.lindqvist@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+logan.lindqvist@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+logan.lindqvist@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+logan.mensah@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+logan.mensah@kqm-lab.example,HRIS-Employee-Edit,,Not explained — review,
+logan.mensah@kqm-lab.example,HRIS-Payroll-Approve,BUS-11,Business,Automatic
+logan.mensah@kqm-lab.example,HRIS-Read,BR-05,Birthright,Automatic
+logan.nguyen@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+logan.nguyen@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+logan.nguyen@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+logan.nguyen@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+logan.novak@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+logan.novak@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+logan.novak@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+logan.novak@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+logan.novak@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+logan.romano@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+logan.romano@kqm-lab.example,APP-Timeclock,BR-03,Birthright,Automatic
+logan.romano@kqm-lab.example,FuelPricing-Edit,BUS-04,Business,Automatic
+logan.romano@kqm-lab.example,TankMonitor-Admin,BUS-04,Business,Automatic
+logan.schultz@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+logan.schultz@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+logan.schultz@kqm-lab.example,ERP-GL-Post,,Not explained — review,
+logan.schultz@kqm-lab.example,ERP-PO-Approve,,Not explained — review,
+logan.schultz@kqm-lab.example,ERP-PO-Create,BUS-08,Business,Automatic
+logan.schultz@kqm-lab.example,ERP-Vendor-Create,BUS-08,Business,Automatic
+logan.stone@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+logan.stone@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+logan.stone@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+logan.stone@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+logan.stone@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+logan.tanaka@kqm-lab.example,APP-ERP-Read,,Not explained — review,
+logan.tanaka@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+logan.tanaka@kqm-lab.example,Directory-Admin,ADD-04,Add-on,Requested
+logan.tanaka@kqm-lab.example,ERP-VendorPayment-Create,,Not explained — review,
+logan.tanaka@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+logan.tanaka@kqm-lab.example,Server-Admin,ADD-04,Add-on,Requested
+marley.achebe@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+marley.achebe@kqm-lab.example,Directory-Admin,ADD-04,Add-on,Requested
+marley.achebe@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+marley.achebe@kqm-lab.example,Server-Admin,ADD-04,Add-on,Requested
+marley.byrne68@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+marley.byrne68@kqm-lab.example,Directory-Read,BUS-13,Business,Automatic
+marley.byrne68@kqm-lab.example,ERP-GL-Post,,Not explained — review,
+marley.byrne68@kqm-lab.example,IGA-Reviewer-Admin,ADD-05,Add-on,Requested
+marley.byrne68@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+marley.byrne@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+marley.byrne@kqm-lab.example,Chargeback-Approve,BUS-15,Business,Automatic
+marley.byrne@kqm-lab.example,PCI-CDE-Jumpbox,ADD-02,Add-on,Requested
+marley.byrne@kqm-lab.example,Payments-Gateway-Admin,ADD-03,Add-on,Requested
+marley.duarte21@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+marley.duarte21@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+marley.duarte21@kqm-lab.example,ERP-Receivables-Edit,BUS-06,Business,Automatic
+marley.duarte39@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+marley.duarte39@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+marley.duarte39@kqm-lab.example,APP-Timeclock,,Not explained — review,
+marley.duarte39@kqm-lab.example,HRIS-Employee-Edit,BUS-10,Business,Automatic
+marley.duarte39@kqm-lab.example,HRIS-Read,BR-05,Birthright,Automatic
+marley.duarte39@kqm-lab.example,Inventory-Approver,,Not explained — review,
+marley.duarte39@kqm-lab.example,POS-Manager,,Not explained — review,
+marley.duarte39@kqm-lab.example,SafeCount-Operator,,Not explained — review,
+marley.duarte39@kqm-lab.example,Scheduling-Admin,,Not explained — review,
+marley.duarte@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+marley.duarte@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+marley.duarte@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+marley.duarte@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+marley.duarte@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+marley.kaur@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+marley.kaur@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+marley.kaur@kqm-lab.example,APP-Timeclock,,Not explained — review,
+marley.kaur@kqm-lab.example,Directory-Admin,ADD-04,Add-on,Requested
+marley.kaur@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+marley.kaur@kqm-lab.example,POS-Cashier,,Not explained — review,
+marley.kaur@kqm-lab.example,POS-Refunds,,Not explained — review,
+marley.kaur@kqm-lab.example,Server-Admin,ADD-04,Add-on,Requested
+marley.novak@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+marley.novak@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+marley.novak@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+marley.novak@kqm-lab.example,ERP-VendorPayment-Approve,,Not explained — review,
+marley.novak@kqm-lab.example,ERP-VendorPayment-Create,,Not explained — review,
+marley.novak@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+marley.novak@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+marley.stone91@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+marley.stone91@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+marley.stone91@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+marley.stone91@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+marley.stone91@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+marley.stone91@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+marley.stone91@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+marley.stone@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+marley.stone@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+marley.stone@kqm-lab.example,ERP-VendorPayment-Create,BUS-05,Business,Automatic
+marley.tanaka@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+marley.tanaka@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+marley.tanaka@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+marley.tanaka@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+morgan.fischer@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+morgan.fischer@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+morgan.fischer@kqm-lab.example,ERP-PO-Create,BUS-08,Business,Automatic
+morgan.fischer@kqm-lab.example,ERP-Vendor-Create,BUS-08,Business,Automatic
+morgan.haddad@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+morgan.haddad@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+morgan.haddad@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+morgan.haddad@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+morgan.haddad@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+morgan.haddad@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+morgan.haddad@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+morgan.kowalski@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+morgan.kowalski@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+morgan.kowalski@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+morgan.kowalski@kqm-lab.example,APP-Timeclock,,Not explained — review,
+morgan.kowalski@kqm-lab.example,ERP-PO-Create,BUS-08,Business,Automatic
+morgan.kowalski@kqm-lab.example,ERP-Vendor-Create,BUS-08,Business,Automatic
+morgan.kowalski@kqm-lab.example,Inventory-Approver,,Not explained — review,
+morgan.kowalski@kqm-lab.example,POS-Manager,,Not explained — review,
+morgan.kowalski@kqm-lab.example,SafeCount-Operator,,Not explained — review,
+morgan.kowalski@kqm-lab.example,Scheduling-Admin,,Not explained — review,
+morgan.lindqvist@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+morgan.lindqvist@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+morgan.lindqvist@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+morgan.lindqvist@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+morgan.lindqvist@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+morgan.mensah@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+morgan.mensah@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+morgan.mensah@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+morgan.mensah@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+morgan.mensah@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+morgan.mensah@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+morgan.mensah@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+morgan.reyes@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+morgan.reyes@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+morgan.reyes@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+morgan.reyes@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+morgan.sullivan@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+morgan.sullivan@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+morgan.sullivan@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+morgan.sullivan@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+morgan.yilmaz@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+morgan.yilmaz@kqm-lab.example,HRIS-Employee-Edit,,Not explained — review,
+morgan.yilmaz@kqm-lab.example,HRIS-Payroll-Approve,BUS-11,Business,Automatic
+morgan.yilmaz@kqm-lab.example,HRIS-Read,BR-05,Birthright,Automatic
+parker.byrne@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+parker.byrne@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+parker.byrne@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+parker.byrne@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+parker.byrne@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+parker.duarte47@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+parker.duarte47@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+parker.duarte47@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+parker.duarte47@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+parker.duarte@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+parker.duarte@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+parker.duarte@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+parker.duarte@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+parker.duarte@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+parker.kaur@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+parker.kaur@kqm-lab.example,APP-Timeclock,BR-03,Birthright,Automatic
+parker.kaur@kqm-lab.example,FuelPricing-View,BUS-03,Business,Automatic
+parker.kaur@kqm-lab.example,TankMonitor-Operator,BUS-03,Business,Automatic
+parker.lindqvist@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+parker.lindqvist@kqm-lab.example,APP-Timeclock,BR-03,Birthright,Automatic
+parker.lindqvist@kqm-lab.example,FuelPricing-View,BUS-03,Business,Automatic
+parker.lindqvist@kqm-lab.example,TankMonitor-Operator,BUS-03,Business,Automatic
+parker.mensah27@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+parker.mensah27@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+parker.mensah27@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+parker.mensah27@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+parker.mensah27@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+parker.mensah@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+parker.mensah@kqm-lab.example,Directory-Admin,ADD-04,Add-on,Requested
+parker.mensah@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+parker.mensah@kqm-lab.example,Server-Admin,ADD-04,Add-on,Requested
+parker.novak@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+parker.novak@kqm-lab.example,APP-Timeclock,BR-03,Birthright,Automatic
+parker.novak@kqm-lab.example,FuelPricing-Edit,BUS-04,Business,Automatic
+parker.novak@kqm-lab.example,TankMonitor-Admin,BUS-04,Business,Automatic
+parker.reyes@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+parker.reyes@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+parker.reyes@kqm-lab.example,Directory-Read,,Not explained — review,
+parker.reyes@kqm-lab.example,ERP-PO-Create,BUS-08,Business,Automatic
+parker.reyes@kqm-lab.example,ERP-Vendor-Create,BUS-08,Business,Automatic
+parker.reyes@kqm-lab.example,IGA-Reviewer-Admin,,Not explained — review,
+parker.reyes@kqm-lab.example,ITSM-Agent,,Not explained — review,
+parker.romano@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+parker.romano@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+parker.romano@kqm-lab.example,APP-Timeclock,,Not explained — review,
+parker.romano@kqm-lab.example,Chargeback-Approve,BUS-15,Business,Automatic
+parker.romano@kqm-lab.example,PCI-CDE-Jumpbox,ADD-02,Add-on,Requested
+parker.romano@kqm-lab.example,POS-Cashier,,Not explained — review,
+parker.romano@kqm-lab.example,POS-Refunds,,Not explained — review,
+parker.romano@kqm-lab.example,Payments-Gateway-Admin,ADD-03,Add-on,Requested
+parker.schultz@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+parker.schultz@kqm-lab.example,Directory-Admin,ADD-04,Add-on,Requested
+parker.schultz@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+parker.schultz@kqm-lab.example,Server-Admin,ADD-04,Add-on,Requested
+parker.stone@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+parker.stone@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+parker.stone@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+parker.stone@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+parker.stone@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+parker.tanaka@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+parker.tanaka@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+parker.tanaka@kqm-lab.example,ERP-Receivables-Edit,BUS-06,Business,Automatic
+peyton.abara@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+peyton.abara@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+peyton.abara@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+peyton.abara@kqm-lab.example,Chargeback-Edit,,Not explained — review,
+peyton.abara@kqm-lab.example,Directory-Admin,,Not explained — review,
+peyton.abara@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+peyton.abara@kqm-lab.example,TankMonitor-Admin,,Not explained — review,
+peyton.achebe@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+peyton.achebe@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+peyton.achebe@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+peyton.achebe@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+peyton.achebe@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+peyton.achebe@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+peyton.achebe@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+peyton.fischer@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+peyton.fischer@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+peyton.fischer@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+peyton.fischer@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+peyton.fischer@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+peyton.kaur@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+peyton.kaur@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+peyton.kaur@kqm-lab.example,ERP-PO-Approve,BUS-09,Business,Automatic
+peyton.kaur@kqm-lab.example,ERP-Vendor-Create,BUS-09,Business,Automatic
+peyton.mensah@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+peyton.mensah@kqm-lab.example,Directory-Read,BUS-13,Business,Automatic
+peyton.mensah@kqm-lab.example,IGA-Reviewer-Admin,ADD-05,Add-on,Requested
+peyton.mensah@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+peyton.novak@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+peyton.novak@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+peyton.novak@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+peyton.novak@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+peyton.novak@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+peyton.novak@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+peyton.novak@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+peyton.okafor@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+peyton.okafor@kqm-lab.example,HRIS-Employee-Edit,BUS-10,Business,Automatic
+peyton.okafor@kqm-lab.example,HRIS-Read,BR-05,Birthright,Automatic
+peyton.patel@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+peyton.patel@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+peyton.patel@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+peyton.patel@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+peyton.patel@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+peyton.patel@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+peyton.patel@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+peyton.tanaka@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+peyton.tanaka@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+peyton.tanaka@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+peyton.tanaka@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+peyton.tanaka@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+quinn.duarte@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+quinn.duarte@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+quinn.duarte@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+quinn.duarte@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+quinn.duarte@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+quinn.duarte@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+quinn.duarte@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+quinn.haddad56@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+quinn.haddad56@kqm-lab.example,Directory-Read,BUS-13,Business,Automatic
+quinn.haddad56@kqm-lab.example,IGA-Reviewer-Admin,ADD-05,Add-on,Requested
+quinn.haddad56@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+quinn.haddad@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+quinn.haddad@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+quinn.haddad@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+quinn.haddad@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+quinn.kaur@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+quinn.kaur@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+quinn.kaur@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+quinn.kaur@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+quinn.kaur@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+quinn.kaur@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+quinn.kaur@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+quinn.kowalski@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+quinn.kowalski@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+quinn.kowalski@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+quinn.kowalski@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+quinn.okafor@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+quinn.okafor@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+quinn.okafor@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+quinn.okafor@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+quinn.schultz@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+quinn.schultz@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+quinn.schultz@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+quinn.schultz@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+quinn.schultz@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+reese.abara@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+reese.abara@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+reese.abara@kqm-lab.example,ERP-PO-Create,BUS-08,Business,Automatic
+reese.abara@kqm-lab.example,ERP-Vendor-Create,BUS-08,Business,Automatic
+reese.nguyen@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+reese.nguyen@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+reese.nguyen@kqm-lab.example,ERP-GL-Post,BUS-07,Business,Automatic
+reese.nguyen@kqm-lab.example,ERP-VendorPayment-Approve,BUS-07,Business,Automatic
+reese.nguyen@kqm-lab.example,HRIS-Employee-Edit,,Not explained — review,
+reese.nguyen@kqm-lab.example,HRIS-Payroll-Approve,,Not explained — review,
+reese.stone57@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+reese.stone57@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+reese.stone57@kqm-lab.example,ERP-PO-Approve,BUS-09,Business,Automatic
+reese.stone57@kqm-lab.example,ERP-Vendor-Create,BUS-09,Business,Automatic
+reese.stone97@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+reese.stone97@kqm-lab.example,Directory-PasswordReset,BUS-12,Business,Automatic
+reese.stone97@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+reese.stone@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+reese.stone@kqm-lab.example,Directory-PasswordReset,BUS-12,Business,Automatic
+reese.stone@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+reese.whitaker@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+reese.whitaker@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+reese.whitaker@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+reese.whitaker@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+reese.whitaker@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+reese.whitaker@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+reese.whitaker@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+riley.brennan@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+riley.brennan@kqm-lab.example,APP-Timeclock,BR-03,Birthright,Automatic
+riley.brennan@kqm-lab.example,FuelPricing-View,BUS-03,Business,Automatic
+riley.brennan@kqm-lab.example,TankMonitor-Operator,BUS-03,Business,Automatic
+riley.miller@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+riley.miller@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+riley.miller@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+riley.miller@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+riley.miller@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+riley.miller@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+riley.miller@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+riley.nguyen@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+riley.nguyen@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+riley.nguyen@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+riley.nguyen@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+riley.nguyen@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+riley.romano10@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+riley.romano10@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+riley.romano10@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+riley.romano10@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+riley.romano@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+riley.romano@kqm-lab.example,APP-Timeclock,BR-03,Birthright,Automatic
+riley.romano@kqm-lab.example,FuelPricing-Edit,BUS-04,Business,Automatic
+riley.romano@kqm-lab.example,TankMonitor-Admin,BUS-04,Business,Automatic
+riley.tanaka@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+riley.tanaka@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+riley.tanaka@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+riley.tanaka@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+riley.tanaka@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+rowan.abara@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+rowan.abara@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+rowan.abara@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+rowan.abara@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+rowan.abara@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+rowan.achebe@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+rowan.achebe@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+rowan.achebe@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+rowan.achebe@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+rowan.achebe@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+rowan.achebe@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+rowan.achebe@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+rowan.duarte@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+rowan.duarte@kqm-lab.example,Chargeback-Approve,BUS-15,Business,Automatic
+rowan.duarte@kqm-lab.example,PCI-CDE-Jumpbox,ADD-02,Add-on,Requested
+rowan.duarte@kqm-lab.example,Payments-Gateway-Admin,ADD-03,Add-on,Requested
+rowan.ivanova@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+rowan.ivanova@kqm-lab.example,HRIS-Employee-Edit,BUS-10,Business,Automatic
+rowan.ivanova@kqm-lab.example,HRIS-Read,BR-05,Birthright,Automatic
+rowan.kowalski@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+rowan.kowalski@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+rowan.kowalski@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+rowan.kowalski@kqm-lab.example,FuelPricing-View,,Not explained — review,
+rowan.kowalski@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+rowan.kowalski@kqm-lab.example,TankMonitor-Admin,,Not explained — review,
+rowan.miller@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+rowan.miller@kqm-lab.example,HRIS-Employee-Edit,,Not explained — review,
+rowan.miller@kqm-lab.example,HRIS-Payroll-Approve,BUS-11,Business,Automatic
+rowan.miller@kqm-lab.example,HRIS-Read,BR-05,Birthright,Automatic
+rowan.patel@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+rowan.patel@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+rowan.patel@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+rowan.patel@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+rowan.romano@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+rowan.romano@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+rowan.romano@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+rowan.romano@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+rowan.romano@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+rowan.tanaka@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+rowan.tanaka@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+rowan.tanaka@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+rowan.tanaka@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+rowan.tanaka@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+rowan.tanaka@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+rowan.tanaka@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+sam.abara@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+sam.abara@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+sam.abara@kqm-lab.example,APP-Timeclock,,Not explained — review,
+sam.abara@kqm-lab.example,ERP-VendorPayment-Approve,,Not explained — review,
+sam.abara@kqm-lab.example,HRIS-Employee-Edit,BUS-10,Business,Automatic
+sam.abara@kqm-lab.example,HRIS-Read,BR-05,Birthright,Automatic
+sam.abara@kqm-lab.example,Inventory-Approver,,Not explained — review,
+sam.abara@kqm-lab.example,POS-Manager,,Not explained — review,
+sam.abara@kqm-lab.example,SafeCount-Operator,,Not explained — review,
+sam.abara@kqm-lab.example,Scheduling-Admin,,Not explained — review,
+sam.abara@kqm-lab.example,Server-Admin,,Not explained — review,
+sam.castillo@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+sam.castillo@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+sam.castillo@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+sam.castillo@kqm-lab.example,APP-Timeclock,,Not explained — review,
+sam.castillo@kqm-lab.example,ERP-Receivables-Edit,BUS-06,Business,Automatic
+sam.castillo@kqm-lab.example,Inventory-Approver,,Not explained — review,
+sam.castillo@kqm-lab.example,POS-Manager,,Not explained — review,
+sam.castillo@kqm-lab.example,SafeCount-Operator,,Not explained — review,
+sam.castillo@kqm-lab.example,Scheduling-Admin,,Not explained — review,
+sam.lindqvist@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+sam.lindqvist@kqm-lab.example,Directory-Read,BUS-13,Business,Automatic
+sam.lindqvist@kqm-lab.example,IGA-Reviewer-Admin,ADD-05,Add-on,Requested
+sam.lindqvist@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+sam.mensah@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+sam.mensah@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+sam.mensah@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+sam.mensah@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+sam.mensah@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+sam.miller@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+sam.miller@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+sam.miller@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+sam.miller@kqm-lab.example,APP-Timeclock,,Not explained — review,
+sam.miller@kqm-lab.example,ERP-PO-Create,BUS-08,Business,Automatic
+sam.miller@kqm-lab.example,ERP-Vendor-Create,BUS-08,Business,Automatic
+sam.miller@kqm-lab.example,POS-Cashier,,Not explained — review,
+sam.okafor@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+sam.okafor@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+sam.okafor@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+sam.okafor@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+sam.okafor@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+sam.okafor@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+sam.okafor@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+sam.sullivan25@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+sam.sullivan25@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+sam.sullivan25@kqm-lab.example,APP-Timeclock,,Not explained — review,
+sam.sullivan25@kqm-lab.example,Chargeback-Approve,BUS-15,Business,Automatic
+sam.sullivan25@kqm-lab.example,Inventory-Approver,,Not explained — review,
+sam.sullivan25@kqm-lab.example,PCI-CDE-Jumpbox,ADD-02,Add-on,Requested
+sam.sullivan25@kqm-lab.example,POS-Manager,,Not explained — review,
+sam.sullivan25@kqm-lab.example,Payments-Gateway-Admin,ADD-03,Add-on,Requested
+sam.sullivan25@kqm-lab.example,SafeCount-Operator,,Not explained — review,
+sam.sullivan25@kqm-lab.example,Scheduling-Admin,,Not explained — review,
+sam.sullivan@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+sam.sullivan@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+sam.sullivan@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+sam.sullivan@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+sam.sullivan@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+sawyer.kowalski@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+sawyer.kowalski@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+sawyer.kowalski@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+sawyer.kowalski@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+sawyer.kowalski@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+sawyer.larsen@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+sawyer.larsen@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+sawyer.larsen@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+sawyer.larsen@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+sawyer.lindqvist@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+sawyer.lindqvist@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+sawyer.lindqvist@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+sawyer.lindqvist@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+sawyer.lindqvist@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+sawyer.lindqvist@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+sawyer.lindqvist@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+sawyer.moreau@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+sawyer.moreau@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+sawyer.moreau@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+sawyer.moreau@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+sawyer.moreau@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+sawyer.novak@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+sawyer.novak@kqm-lab.example,APP-Timeclock,BR-03,Birthright,Automatic
+sawyer.novak@kqm-lab.example,FuelPricing-View,BUS-03,Business,Automatic
+sawyer.novak@kqm-lab.example,TankMonitor-Operator,BUS-03,Business,Automatic
+sawyer.okafor@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+sawyer.okafor@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+sawyer.okafor@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+sawyer.okafor@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+sawyer.okafor@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+sawyer.okafor@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+sawyer.okafor@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+sawyer.patel75@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+sawyer.patel75@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+sawyer.patel75@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+sawyer.patel75@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+sawyer.patel75@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+sawyer.patel75@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+sawyer.patel75@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+sawyer.patel@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+sawyer.patel@kqm-lab.example,APP-LearningPortal,,Not explained — review,
+sawyer.patel@kqm-lab.example,APP-Timeclock,,Not explained — review,
+sawyer.patel@kqm-lab.example,Directory-PasswordReset,BUS-12,Business,Automatic
+sawyer.patel@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+sawyer.patel@kqm-lab.example,Inventory-Approver,,Not explained — review,
+sawyer.patel@kqm-lab.example,POS-Manager,,Not explained — review,
+sawyer.patel@kqm-lab.example,SafeCount-Operator,,Not explained — review,
+sawyer.patel@kqm-lab.example,Scheduling-Admin,,Not explained — review,
+shawn.castillo@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+shawn.castillo@kqm-lab.example,Directory-Read,BUS-13,Business,Automatic
+shawn.castillo@kqm-lab.example,IGA-Reviewer-Admin,ADD-05,Add-on,Requested
+shawn.castillo@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+shawn.kaur@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+shawn.kaur@kqm-lab.example,Directory-Admin,ADD-04,Add-on,Requested
+shawn.kaur@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+shawn.kaur@kqm-lab.example,Server-Admin,ADD-04,Add-on,Requested
+shawn.larsen@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+shawn.larsen@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+shawn.larsen@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+shawn.larsen@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+shawn.larsen@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+shawn.miller@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+shawn.miller@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+shawn.miller@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+shawn.miller@kqm-lab.example,ERP-PO-Approve,,Not explained — review,
+shawn.miller@kqm-lab.example,ERP-PO-Create,,Not explained — review,
+shawn.miller@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+shawn.miller@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+shawn.okafor@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+shawn.okafor@kqm-lab.example,Directory-Read,BUS-13,Business,Automatic
+shawn.okafor@kqm-lab.example,ERP-GL-Post,,Not explained — review,
+shawn.okafor@kqm-lab.example,ERP-PO-Approve,,Not explained — review,
+shawn.okafor@kqm-lab.example,IGA-Reviewer-Admin,ADD-05,Add-on,Requested
+shawn.okafor@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+shawn.okafor@kqm-lab.example,Payments-Gateway-Admin,,Not explained — review,
+shawn.patel74@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+shawn.patel74@kqm-lab.example,Directory-Admin,ADD-04,Add-on,Requested
+shawn.patel74@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+shawn.patel74@kqm-lab.example,Server-Admin,ADD-04,Add-on,Requested
+shawn.patel@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+shawn.patel@kqm-lab.example,Chargeback-Approve,BUS-15,Business,Automatic
+shawn.patel@kqm-lab.example,PCI-CDE-Jumpbox,ADD-02,Add-on,Requested
+shawn.patel@kqm-lab.example,Payments-Gateway-Admin,ADD-03,Add-on,Requested
+shawn.sullivan@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+shawn.sullivan@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+shawn.sullivan@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+shawn.sullivan@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+shawn.whitaker@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+shawn.whitaker@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+shawn.whitaker@kqm-lab.example,ERP-Receivables-Edit,BUS-06,Business,Automatic
+skyler.haddad@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+skyler.haddad@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+skyler.haddad@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+skyler.haddad@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+skyler.larsen@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+skyler.larsen@kqm-lab.example,Directory-Admin,ADD-04,Add-on,Requested
+skyler.larsen@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+skyler.larsen@kqm-lab.example,Server-Admin,ADD-04,Add-on,Requested
+skyler.lindqvist@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+skyler.lindqvist@kqm-lab.example,Directory-PasswordReset,BUS-12,Business,Automatic
+skyler.lindqvist@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+skyler.reyes@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+skyler.reyes@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+skyler.reyes@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+skyler.reyes@kqm-lab.example,ERP-GL-Post,,Not explained — review,
+skyler.reyes@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+skyler.reyes@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+skyler.reyes@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+skyler.reyes@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+skyler.reyes@kqm-lab.example,TankMonitor-Admin,,Not explained — review,
+skyler.tanaka@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+skyler.tanaka@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+skyler.tanaka@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+skyler.tanaka@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+skyler.tanaka@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+skyler.tanaka@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+skyler.tanaka@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+taylor.achebe49@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+taylor.achebe49@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+taylor.achebe49@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+taylor.achebe49@kqm-lab.example,Inventory-Approver,BUS-02,Business,Automatic
+taylor.achebe49@kqm-lab.example,POS-Manager,BUS-02,Business,Automatic
+taylor.achebe49@kqm-lab.example,SafeCount-Operator,BUS-02,Business,Automatic
+taylor.achebe49@kqm-lab.example,Scheduling-Admin,BUS-02,Business,Automatic
+taylor.achebe@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+taylor.achebe@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+taylor.achebe@kqm-lab.example,ERP-PO-Create,BUS-08,Business,Automatic
+taylor.achebe@kqm-lab.example,ERP-Vendor-Create,BUS-08,Business,Automatic
+taylor.fischer@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+taylor.fischer@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+taylor.fischer@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+taylor.fischer@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+taylor.fischer@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+taylor.lindqvist@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+taylor.lindqvist@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+taylor.lindqvist@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+taylor.lindqvist@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic
+taylor.lindqvist@kqm-lab.example,POS-Refunds,ADD-01,Add-on,Automatic
+taylor.moreau@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+taylor.moreau@kqm-lab.example,Directory-PasswordReset,BUS-12,Business,Automatic
+taylor.moreau@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+taylor.okafor@kqm-lab.example,APP-ERP-Read,BR-04,Birthright,Automatic
+taylor.okafor@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+taylor.okafor@kqm-lab.example,ERP-PO-Create,BUS-08,Business,Automatic
+taylor.okafor@kqm-lab.example,ERP-Vendor-Create,BUS-08,Business,Automatic
+taylor.whitaker51@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+taylor.whitaker51@kqm-lab.example,Directory-Read,BUS-13,Business,Automatic
+taylor.whitaker51@kqm-lab.example,IGA-Reviewer-Admin,ADD-05,Add-on,Requested
+taylor.whitaker51@kqm-lab.example,ITSM-Agent,BR-06,Birthright,Automatic
+taylor.whitaker@kqm-lab.example,APP-Email,BR-01,Birthright,Automatic
+taylor.whitaker@kqm-lab.example,APP-LearningPortal,BR-02,Birthright,Automatic
+taylor.whitaker@kqm-lab.example,APP-Timeclock,BR-02,Birthright,Automatic
+taylor.whitaker@kqm-lab.example,POS-Cashier,BUS-01,Business,Automatic

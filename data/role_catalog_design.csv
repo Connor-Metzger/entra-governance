@@ -1,0 +1,27 @@
+role_id,role_name,layer,assign_by,assign_values,assignment,approval,review_cycle,owner,entitlements,pci_scope,privileged
+BR-01,All Employees Baseline,Birthright,department,*,Automatic,None,Annual,IAM Team,APP-Email,No,No
+BR-02,Store Operations Baseline,Birthright,department,Store Operations,Automatic,None,Annual,Director of Store Operations,APP-Timeclock;APP-LearningPortal,No,No
+BR-03,Fuel Operations Baseline,Birthright,department,Fuel Operations,Automatic,None,Annual,Fuel Operations Director,APP-Timeclock,No,No
+BR-04,Corporate ERP Read,Birthright,department,Finance;Procurement,Automatic,None,Annual,Controller,APP-ERP-Read,No,No
+BR-05,HR Baseline,Birthright,department,Human Resources,Automatic,None,Annual,HR Director,HRIS-Read,No,No
+BR-06,IT Baseline,Birthright,department,Information Technology,Automatic,None,Annual,IT Director,ITSM-Agent,No,No
+BUS-01,Store Frontline,Business,job_title,Store Associate;Shift Lead,Automatic,None,Semiannual,Director of Store Operations,POS-Cashier,No,No
+BUS-02,Store Manager,Business,job_title,Store Manager,Automatic,None,Semiannual,Director of Store Operations,POS-Manager;Inventory-Approver;Scheduling-Admin;SafeCount-Operator,Yes,No
+BUS-03,Fuel Technician,Business,job_title,Fuel Technician,Automatic,None,Semiannual,Fuel Operations Director,FuelPricing-View;TankMonitor-Operator,No,No
+BUS-04,Fuel Operations Manager,Business,job_title,Fuel Operations Manager,Automatic,None,Quarterly,Fuel Operations Director,FuelPricing-Edit;TankMonitor-Admin,No,Yes
+BUS-05,Accounts Payable,Business,job_title,AP Specialist,Automatic,None,Semiannual,Controller,ERP-VendorPayment-Create,No,No
+BUS-06,Accounts Receivable,Business,job_title,AR Specialist,Automatic,None,Semiannual,Controller,ERP-Receivables-Edit,No,No
+BUS-07,Accounting Manager,Business,job_title,Accounting Manager,Automatic,None,Quarterly,Controller,ERP-VendorPayment-Approve;ERP-GL-Post,No,Yes
+BUS-08,Buyer,Business,job_title,Buyer,Automatic,None,Semiannual,Procurement Director,ERP-PO-Create;ERP-Vendor-Create,No,No
+BUS-09,Procurement Manager,Business,job_title,Procurement Manager,Automatic,None,Semiannual,Procurement Director,ERP-PO-Approve;ERP-Vendor-Create,No,No
+BUS-10,HR Records,Business,job_title,HR Generalist,Automatic,None,Semiannual,HR Director,HRIS-Employee-Edit,No,No
+BUS-11,Payroll Approver,Business,job_title,HR Manager,Automatic,None,Quarterly,HR Director,HRIS-Payroll-Approve,No,No
+BUS-12,Service Desk,Business,job_title,Service Desk Analyst,Automatic,None,Semiannual,IT Director,Directory-PasswordReset,No,No
+BUS-13,IAM Analyst,Business,job_title,IAM Analyst,Automatic,None,Semiannual,IAM Manager,Directory-Read,No,No
+BUS-14,Payments Analyst,Business,job_title,Payments Analyst,Automatic,None,Quarterly,Payments Director,Payments-Gateway-Read;Chargeback-Edit,Yes,No
+BUS-15,Payments Manager,Business,job_title,Payments Manager,Automatic,None,Quarterly,Payments Director,Chargeback-Approve,Yes,No
+ADD-01,POS Refunds,Add-on,job_title,Shift Lead,Automatic,None,Quarterly,Director of Store Operations,POS-Refunds,No,No
+ADD-02,PCI Environment Access,Add-on,job_title,Payments Analyst;Payments Manager,Requested,Manager + PCI Owner,Quarterly,Payments Director,PCI-CDE-Jumpbox,Yes,No
+ADD-03,Payments Gateway Admin,Add-on,job_title,Payments Manager,Requested,Manager + PCI Owner,Quarterly,Payments Director,Payments-Gateway-Admin,Yes,Yes
+ADD-04,Server & Directory Admin,Add-on,job_title,Systems Administrator,Requested,Manager + IT Director,Quarterly,IT Director,Directory-Admin;Server-Admin,No,Yes
+ADD-05,Access Review Administrator,Add-on,job_title,IAM Analyst,Requested,IAM Manager,Quarterly,IAM Manager,IGA-Reviewer-Admin,No,Yes

@@ -1,0 +1,112 @@
+upn,type,role_id,extra,department,job_title
+alex.castillo@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+alex.miller@kqm-lab.example,No role fit,,"APP-Email, Chargeback-Edit, PCI-CDE-Jumpbox, Payments-Gateway-Read",Payments / PCI,Payments Analyst
+avery.yilmaz@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+blake.yilmaz@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+cameron.kaur@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+cameron.kowalski44@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+cameron.mensah@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+cameron.okafor@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+cameron.romano@kqm-lab.example,Extra access beyond role,CR-01,"ERP-PO-Approve, ERP-PO-Create, POS-Refunds",Store Operations,Shift Lead
+cameron.sullivan@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+cameron.tanaka@kqm-lab.example,No role fit,,"APP-Email, APP-LearningPortal, APP-Timeclock, ERP-VendorPayment-Create, POS-Cashier, POS-Refunds, Payments-Gateway-Read, TankMonitor-Admin",Store Operations,Shift Lead
+casey.byrne@kqm-lab.example,Extra access beyond role,CR-01,"APP-ERP-Read, ERP-GL-Post, ERP-VendorPayment-Approve, POS-Refunds",Finance,Accounting Manager
+casey.castillo@kqm-lab.example,Extra access beyond role,CR-01,"Payments-Gateway-Admin, Scheduling-Admin",Store Operations,Store Associate
+casey.mensah@kqm-lab.example,No role fit,,"APP-ERP-Read, APP-Email, APP-LearningPortal, APP-Timeclock, ERP-PO-Approve, ERP-Vendor-Create, POS-Cashier",Procurement,Procurement Manager
+casey.miller97@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+casey.miller@kqm-lab.example,Extra access beyond role,CR-02,"ERP-PO-Approve, IGA-Reviewer-Admin",Store Operations,Store Manager
+casey.patel@kqm-lab.example,Extra access beyond role,CR-03,"APP-ERP-Read, ERP-VendorPayment-Create",Human Resources,HR Manager
+dakota.achebe@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+dakota.kaur@kqm-lab.example,No role fit,,"APP-Email, APP-LearningPortal, APP-Timeclock, Chargeback-Approve, PCI-CDE-Jumpbox, POS-Cashier, Payments-Gateway-Admin",Payments / PCI,Payments Manager
+dakota.moreau@kqm-lab.example,Extra access beyond role,CR-10,"HRIS-Employee-Edit, HRIS-Payroll-Approve",Finance,Accounting Manager
+dakota.nguyen@kqm-lab.example,Extra access beyond role,CR-02,"FuelPricing-Edit, TankMonitor-Admin",Fuel Operations,Fuel Operations Manager
+dakota.tanaka@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+drew.fischer@kqm-lab.example,Extra access beyond role,CR-02,"FuelPricing-Edit, TankMonitor-Admin",Fuel Operations,Fuel Operations Manager
+drew.moreau@kqm-lab.example,Extra access beyond role,CR-02,"HRIS-Employee-Edit, HRIS-Payroll-Approve, HRIS-Read",Human Resources,HR Manager
+drew.patel@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+drew.romano@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+drew.stone@kqm-lab.example,Extra access beyond role,CR-01,"HRIS-Read, Payments-Gateway-Admin",Store Operations,Store Associate
+drew.sullivan@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+elliot.abara@kqm-lab.example,No role fit,,"APP-ERP-Read, APP-Email, ERP-VendorPayment-Create, FuelPricing-View, HRIS-Read, TankMonitor-Admin",Finance,AP Specialist
+elliot.kaur@kqm-lab.example,Extra access beyond role,CR-02,"APP-ERP-Read, ERP-Receivables-Edit",Finance,AR Specialist
+elliot.nguyen23@kqm-lab.example,No role fit,,"APP-ERP-Read, APP-Email, ERP-VendorPayment-Create",Finance,AP Specialist
+emerson.kowalski@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+emerson.miller@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+emerson.whitaker@kqm-lab.example,Extra access beyond role,CR-04,"APP-LearningPortal, Server-Admin",Information Technology,IAM Analyst
+emerson.yilmaz@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+finley.kowalski@kqm-lab.example,No role fit,,"APP-ERP-Read, APP-Email, APP-LearningPortal, APP-Timeclock, ERP-PO-Create, ERP-Vendor-Create, POS-Cashier",Store Operations,Store Associate
+finley.larsen18@kqm-lab.example,Extra access beyond role,CR-01,"ERP-GL-Post, POS-Refunds, Payments-Gateway-Admin",Store Operations,Shift Lead
+finley.larsen@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+finley.reyes@kqm-lab.example,Extra access beyond role,CR-01,"HRIS-Employee-Edit, HRIS-Payroll-Approve, HRIS-Read",Human Resources,HR Manager
+finley.yilmaz@kqm-lab.example,No role fit,,"APP-Email, Directory-Admin, IGA-Reviewer-Admin, ITSM-Agent, POS-Cashier, SafeCount-Operator, Server-Admin",Information Technology,Systems Administrator
+harper.nguyen@kqm-lab.example,Extra access beyond role,CR-09,"Directory-Admin, TankMonitor-Admin",Finance,AR Specialist
+harper.tanaka@kqm-lab.example,Extra access beyond role,CR-02,"Chargeback-Approve, PCI-CDE-Jumpbox, Payments-Gateway-Admin",Payments / PCI,Payments Manager
+harper.whitaker@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+hayden.abara@kqm-lab.example,Extra access beyond role,CR-11,"Directory-Read, TankMonitor-Admin",Fuel Operations,Fuel Technician
+hayden.kowalski56@kqm-lab.example,No role fit,,"APP-ERP-Read, APP-Email, APP-LearningPortal, APP-Timeclock, ERP-PO-Approve, ERP-Vendor-Create, POS-Cashier",Procurement,Procurement Manager
+hayden.romano@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+hayden.stone18@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+hayden.whitaker@kqm-lab.example,No role fit,,"APP-ERP-Read, APP-Email, Chargeback-Approve, ERP-GL-Post, ERP-VendorPayment-Approve, PCI-CDE-Jumpbox, Payments-Gateway-Admin",Payments / PCI,Payments Manager
+jamie.abara@kqm-lab.example,Extra access beyond role,CR-02,"APP-ERP-Read, ERP-VendorPayment-Create",Finance,AP Specialist
+jamie.miller2@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+jordan.kaur@kqm-lab.example,No role fit,,"APP-Email, Chargeback-Edit, PCI-CDE-Jumpbox, Payments-Gateway-Read",Payments / PCI,Payments Analyst
+jordan.lindqvist@kqm-lab.example,Extra access beyond role,CR-02,"POS-Cashier, Server-Admin",Store Operations,Store Manager
+jordan.moreau@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+jordan.okafor@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+kai.brennan@kqm-lab.example,No role fit,,"APP-ERP-Read, APP-Email, ERP-VendorPayment-Create",Finance,AP Specialist
+kai.kaur@kqm-lab.example,Extra access beyond role,CR-12,ERP-Receivables-Edit,Procurement,Buyer
+kai.kowalski@kqm-lab.example,Extra access beyond role,CR-05,"HRIS-Employee-Edit, HRIS-Payroll-Approve",Information Technology,Service Desk Analyst
+kai.mensah@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+kai.okafor41@kqm-lab.example,Extra access beyond role,CR-01,"HRIS-Employee-Edit, HRIS-Payroll-Approve, POS-Refunds",Store Operations,Shift Lead
+kai.whitaker@kqm-lab.example,No role fit,,"APP-ERP-Read, APP-Email, APP-Timeclock, ERP-GL-Post, ERP-PO-Approve, ERP-Vendor-Create, POS-Refunds, SafeCount-Operator",Procurement,Procurement Manager
+kai.yilmaz@kqm-lab.example,Extra access beyond role,CR-01,"ERP-GL-Post, ERP-Receivables-Edit, POS-Refunds, TankMonitor-Operator",Store Operations,Shift Lead
+kendall.abara93@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+kendall.abara@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+kendall.achebe@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+kendall.lindqvist@kqm-lab.example,Extra access beyond role,CR-01,"HRIS-Employee-Edit, HRIS-Read, POS-Refunds",Human Resources,HR Generalist
+kendall.mensah@kqm-lab.example,Extra access beyond role,CR-01,"Directory-Admin, ERP-Receivables-Edit, POS-Refunds",Store Operations,Shift Lead
+kendall.nguyen@kqm-lab.example,No role fit,,"APP-Email, APP-LearningPortal, APP-Timeclock, Chargeback-Edit, FuelPricing-View, POS-Cashier, POS-Refunds, Server-Admin",Store Operations,Shift Lead
+logan.lindqvist@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+logan.novak@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+logan.schultz@kqm-lab.example,Extra access beyond role,CR-13,"ERP-GL-Post, ERP-PO-Create",Procurement,Buyer
+logan.stone@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+logan.tanaka@kqm-lab.example,Extra access beyond role,CR-06,"APP-ERP-Read, ERP-VendorPayment-Create",Information Technology,Systems Administrator
+marley.byrne68@kqm-lab.example,Extra access beyond role,CR-04,ERP-GL-Post,Information Technology,IAM Analyst
+marley.duarte39@kqm-lab.example,Extra access beyond role,CR-02,"HRIS-Employee-Edit, HRIS-Read",Human Resources,HR Generalist
+marley.duarte@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+marley.kaur@kqm-lab.example,No role fit,,"APP-Email, APP-LearningPortal, APP-Timeclock, Directory-Admin, ITSM-Agent, POS-Cashier, POS-Refunds, Server-Admin",Information Technology,Systems Administrator
+marley.novak@kqm-lab.example,No role fit,,"APP-Email, APP-LearningPortal, APP-Timeclock, ERP-VendorPayment-Approve, ERP-VendorPayment-Create, POS-Cashier, POS-Refunds",Store Operations,Shift Lead
+marley.stone@kqm-lab.example,No role fit,,"APP-ERP-Read, APP-Email, ERP-VendorPayment-Create",Finance,AP Specialist
+morgan.kowalski@kqm-lab.example,Extra access beyond role,CR-02,"APP-ERP-Read, ERP-PO-Create, ERP-Vendor-Create",Procurement,Buyer
+morgan.lindqvist@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+parker.byrne@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+parker.duarte@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+parker.mensah27@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+parker.reyes@kqm-lab.example,No role fit,,"APP-ERP-Read, APP-Email, Directory-Read, ERP-PO-Create, ERP-Vendor-Create, IGA-Reviewer-Admin, ITSM-Agent",Procurement,Buyer
+parker.romano@kqm-lab.example,No role fit,,"APP-Email, APP-LearningPortal, APP-Timeclock, Chargeback-Approve, PCI-CDE-Jumpbox, POS-Cashier, POS-Refunds, Payments-Gateway-Admin",Payments / PCI,Payments Manager
+parker.stone@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+peyton.abara@kqm-lab.example,No role fit,,"APP-Email, APP-LearningPortal, APP-Timeclock, Chargeback-Edit, Directory-Admin, POS-Cashier, TankMonitor-Admin",Store Operations,Store Associate
+peyton.fischer@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+peyton.tanaka@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+quinn.schultz@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+reese.nguyen@kqm-lab.example,Extra access beyond role,CR-10,"HRIS-Employee-Edit, HRIS-Payroll-Approve",Finance,Accounting Manager
+riley.nguyen@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+riley.tanaka@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+rowan.abara@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+rowan.kowalski@kqm-lab.example,No role fit,,"APP-Email, APP-LearningPortal, APP-Timeclock, FuelPricing-View, POS-Cashier, TankMonitor-Admin",Store Operations,Store Associate
+rowan.romano@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+sam.abara@kqm-lab.example,Extra access beyond role,CR-02,"ERP-VendorPayment-Approve, HRIS-Employee-Edit, HRIS-Read, Server-Admin",Human Resources,HR Generalist
+sam.castillo@kqm-lab.example,Extra access beyond role,CR-02,"APP-ERP-Read, ERP-Receivables-Edit",Finance,AR Specialist
+sam.mensah@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+sam.miller@kqm-lab.example,No role fit,,"APP-ERP-Read, APP-Email, APP-LearningPortal, APP-Timeclock, ERP-PO-Create, ERP-Vendor-Create, POS-Cashier",Procurement,Buyer
+sam.sullivan25@kqm-lab.example,Extra access beyond role,CR-02,"Chargeback-Approve, PCI-CDE-Jumpbox, Payments-Gateway-Admin",Payments / PCI,Payments Manager
+sam.sullivan@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+sawyer.kowalski@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+sawyer.moreau@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+sawyer.patel@kqm-lab.example,Extra access beyond role,CR-02,"Directory-PasswordReset, ITSM-Agent",Information Technology,Service Desk Analyst
+shawn.larsen@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+shawn.miller@kqm-lab.example,Extra access beyond role,CR-01,"ERP-PO-Approve, ERP-PO-Create, POS-Refunds",Store Operations,Shift Lead
+shawn.okafor@kqm-lab.example,No role fit,,"APP-Email, Directory-Read, ERP-GL-Post, ERP-PO-Approve, IGA-Reviewer-Admin, ITSM-Agent, Payments-Gateway-Admin",Information Technology,IAM Analyst
+skyler.reyes@kqm-lab.example,Extra access beyond role,CR-02,"ERP-GL-Post, TankMonitor-Admin",Store Operations,Store Manager
+taylor.fischer@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead
+taylor.lindqvist@kqm-lab.example,Extra access beyond role,CR-01,POS-Refunds,Store Operations,Shift Lead

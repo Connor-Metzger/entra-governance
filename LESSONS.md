@@ -11,8 +11,8 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 ### M2 Part A — Role mining (pre-trial)
 - [x] M2.1 Build the user × entitlement matrix
 - [x] M2.2 Similarity clustering and candidate roles
-- [ ] M2.3a Test role catalog design against T0 access (coverage, SoD, answer key)
-- [ ] M2.3b Write docs/role-catalog.md for role owners
+- [x] M2.3a Test role catalog design against T0 access (coverage, SoD, answer key)
+- [x] M2.3b Write docs/role-catalog.md for role owners
 
 ### M1 — Identity foundation & lifecycle management
 - [ ] M1.1 Activate Governance trial; load HR feed with Graph PowerShell

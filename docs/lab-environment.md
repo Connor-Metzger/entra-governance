@@ -14,8 +14,8 @@
 | Initial domain | keystonefuellab |
 | Backup domain choice (if taken) | kfmgovlab |
 | Contact email for trials and billing | Personal lab Gmail (never shown in screenshots) |
-| Creation route | Decided in M1.1 after checking current Microsoft trial offers |
-| Created on | <!-- FILL in M1.1 --> |
+| Creation route | Microsoft 365 Business Premium free trial (includes Entra ID P1). Free Azure accounts can no longer create workforce tenants (checked 2026-10-20). |
+| Created on | 2026-10-20 |
 
 **Why the name matters:** the initial `.onmicrosoft.com` domain appears in every UPN, screenshot, and export, and it can't easily be changed later. A company-style name keeps the portfolio looking like a real organization and keeps your personal name out of evidence. It must never imitate a real company, including the employer you are applying to.
 
@@ -33,6 +33,9 @@
 | 3–5 synthetic reviewer users | Managers and app owners who act as certifiers | None | n/a | M3 access reviews |
 
 **Known deviation from least privilege:** in production, daily admins would hold narrower roles (for example, Identity Governance Administrator, User Administrator, Lifecycle Workflows Administrator) and activate Global Administrator just-in-time through PIM. In this lab, `iam.admin` keeps Global Administrator during the build to avoid permission dead-ends. Real daily admin rules would include System Administrator, Identity Administrator, or Active Directory Engineer
+
+**Lab deviation (break-glass storage):** passkeys are synced passkeys in my password manager, in separate entries. Production would use hardware FIDO2 keys in separate safes.
+**Lab note:** Security defaults are on and cannot exclude accounts; the EmergencyAccess group is ready for when Conditional Access replaces them.
 
 ---
 
@@ -61,8 +64,8 @@ If a 24/7 retailer experiences a complete administrative lockout at 2:00 AM on a
 
 | Product | Start | End | Reminder set? | Notes |
 |---|---|---|---|---|
-| Prerequisite license (Entra ID P1 or bundle that includes it) | | | | Decided in M1.1 |
-| Microsoft Entra ID Governance trial | | | | Needs tenant with prerequisite; one trial per tenant |
+| Prerequisite license: Microsoft 365 Business Premium trial (25 seats, includes Entra ID P1) | 2026-10-20 | <expiry from Step 3> | Yes | Recurring billing OFF. Real deadline: Governance stops if P1 lapses |
+| Microsoft Entra ID Governance trial | 2026-10-20 | <from Step 5> | Yes | <N> licenses. Recurring billing OFF |
 | ServiceNow PDI | 2026-10-14 | n/a | Weekly login | Release: Australia. Reclaim-eligible after 90 days + 10 days without login |
 
 **Rule:** export all evidence (screenshots, CSV exports, workflow configs) at least one week before any trial end date.
@@ -78,7 +81,7 @@ Before any screenshot or export goes into `evidence/`:
 - [ ] Break-glass account names are OK to show; their credentials and passkey details are not
 - [ ] No IP addresses from sign-in logs
 - [ ] `gitleaks dir . -v` returns no leaks
-
+- [ ] `gitleaks git --pre-commit --staged -v` returns no leaks (never `gitleaks dir .` — it scans .venv)
 ---
 
 ## 6. Framework mapping

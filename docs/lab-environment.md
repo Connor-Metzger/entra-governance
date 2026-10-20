@@ -81,7 +81,6 @@ Before any screenshot or export goes into `evidence/`:
 - [ ] Contact email and profile pictures blurred
 - [ ] Break-glass account names are OK to show; their credentials and passkey details are not
 - [ ] No IP addresses from sign-in logs
-- [ ] `gitleaks dir . -v` returns no leaks
 - [ ] `gitleaks git --pre-commit --staged -v` returns no leaks (never `gitleaks dir .` — it scans .venv)
 ---
 

@@ -14,7 +14,7 @@
 | Initial domain | keystonefuellab |
 | Backup domain choice (if taken) | kfmgovlab |
 | Contact email for trials and billing | Personal lab Gmail (never shown in screenshots) |
-| Creation route | Microsoft 365 Business Premium free trial (includes Entra ID P1). Free Azure accounts can no longer create workforce tenants (checked 2026-10-20). |
+| Creation route | Microsoft 365 Business Premium with Copilot free trial (includes Entra ID P1). Free Azure accounts can no longer create workforce tenants (checked 2026-10-20). |
 | Created on | 2026-10-20 |
 
 **Why the name matters:** the initial `.onmicrosoft.com` domain appears in every UPN, screenshot, and export, and it can't easily be changed later. A company-style name keeps the portfolio looking like a real organization and keeps your personal name out of evidence. It must never imitate a real company, including the employer you are applying to.
@@ -34,8 +34,9 @@
 
 **Known deviation from least privilege:** in production, daily admins would hold narrower roles (for example, Identity Governance Administrator, User Administrator, Lifecycle Workflows Administrator) and activate Global Administrator just-in-time through PIM. In this lab, `iam.admin` keeps Global Administrator during the build to avoid permission dead-ends. Real daily admin rules would include System Administrator, Identity Administrator, or Active Directory Engineer
 
-**Lab deviation (break-glass storage):** passkeys are synced passkeys in my password manager, in separate entries. Production would use hardware FIDO2 keys in separate safes.
-**Lab note:** Security defaults are on and cannot exclude accounts; the EmergencyAccess group is ready for when Conditional Access replaces them.
+**Lab deviation (break-glass MFA):** bg-emergency01 uses Microsoft Authenticator on my phone; bg-emergency02 uses a passkey. Both are held by me. This breaks two rules in section 3: break-glass must not depend on one person's phone, and must use a different method from daily admins (iam.admin also uses Authenticator). Production fix: two hardware FIDO2 keys stored in separate safes. Accepted for a single-person lab.
+**Lab note (licensing):** the Business Premium trial includes 1 seat (assigned to iam.admin). P1 features turn on tenant-wide, so the lab works, but production would license every in-scope user.
+**Lab note (Conditional Access):** Security defaults are on and cannot exclude accounts. The EmergencyAccess group exists for when Conditional Access replaces them.
 
 ---
 
@@ -64,8 +65,8 @@ If a 24/7 retailer experiences a complete administrative lockout at 2:00 AM on a
 
 | Product | Start | End | Reminder set? | Notes |
 |---|---|---|---|---|
-| Prerequisite license: Microsoft 365 Business Premium trial (25 seats, includes Entra ID P1) | 2026-10-20 | <expiry from Step 3> | Yes | Recurring billing OFF. Real deadline: Governance stops if P1 lapses |
-| Microsoft Entra ID Governance trial | 2026-10-20 | <from Step 5> | Yes | <N> licenses. Recurring billing OFF |
+| Prerequisite license: Microsoft 365 Business Premium with Copilot trial (1 seat, includes Entra ID P1) | 2026-10-20 | 2026-11-19 | Yes | Unit price "Free trial"; set to cancel at expiry. "Extend trial end date" available; hold until after the evidence export. Governance stops if P1 lapses |
+| Microsoft Entra ID Governance trial | 2026-10-20 | 2026-11-19 | Yes | 25 licenses, unit price "Free trial", set to cancel at expiry. Same end date as P1 → single deadline; export evidence by 2026-11-12 |
 | ServiceNow PDI | 2026-10-14 | n/a | Weekly login | Release: Australia. Reclaim-eligible after 90 days + 10 days without login |
 
 **Rule:** export all evidence (screenshots, CSV exports, workflow configs) at least one week before any trial end date.

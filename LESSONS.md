@@ -52,6 +52,10 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 
 | 2026-10-14 | M2.1 | gitleaks reported 30 leaks incl. a private key | `gitleaks dir` scans all files and ignores .gitignore; findings were in .venv (third-party packages + Tornado's public test key) | Triaged: all in ignored folder, none staged → false positives. Switched to scanning only what Git tracks | Yes — triaging scanner findings |
 
+| 2026-10-20 | M1.1 | Break-glass #1 created as bg-emergency@ instead of bg-emergency01@ | Typo during manual creation; naming standard wasn't checked | Renamed UPN in Entra, updated password manager | Yes: why naming standards matter (scripts, alerts and evidence key on the name). Manual creation is error-prone, which is why the 276 users get loaded by script |
+| 2026-10-20 | M1.1 | Break-glass #1 created as bg-emergency@ instead of bg-emergency01@ | Typo during manual creation; naming standard not checked | Renamed UPN in Entra, updated password manager | Yes: naming standards matter because scripts, alerts and evidence key on the name. Manual creation is error-prone, which is why the 276 users get loaded by script |
+| 2026-10-20 | M1.1 | Business Premium trial gave 1 seat, not the 25 that guides describe | Microsoft changed the trial offer ("with Copilot", 1 license) | Moved the seat from owner to iam.admin; P1 still unlocks tenant-wide | Yes: always verify vendor terms on the live screen, not blog posts |
+
 ## Concept notes (from check questions)
 
 - **M0.1:** A leaver with an enabled account is a *true positive* ("terminated user with active access"), not a false positive. Deleting a committed secret does not remove it from Git history: rotate the secret first, then purge history. Seeds make the T0→T1 comparison reproducible.
@@ -61,3 +65,5 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 - **M2.2:** Jaccard = shared ÷ total access. Threshold 0.4 = bend in the coverage curve; looser merges creator/approver jobs and hides outliers. Mined roles copy today's mistakes → SoD-check every role (CR-03 HR had edit+approve). Fix variation with layering (base role + add-on), not more roles. IAM recommends, business role owner decides. Rank risk by attacker impact: Server-Admin on a store manager > POS-Cashier.
 
 - **M2.3a:** Catalog = 6 birthright + 15 business + 5 add-on. Automatic when HR title proves need + low impact (Refunds); Requested when per-person justification is required (PCI CDE, privileged). Today's 100% ≠ need. Roles shrink decisions (1472→242), they don't remove review — auto-assignment is only as good as HR data. Store tools outside Store Ops = mover gap → fix in M1.3 mover workflow. Answer-key score is partly circular → say "synthetic dataset, seeded answer key."
+
+- **M2.3b:** Urgency = impact × exposure, not effort (Server-Admin on a store account = immediate even for 1 person). Findings format: found / why / action (end with fixing the cause) / named decision owner / due + reason / control. Default-to-remove when managers don't answer. Saying "no" isn't enough — offer a safe alternative (time-limited add-on without the conflicting entitlement).

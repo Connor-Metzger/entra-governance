@@ -35,8 +35,12 @@
 **Known deviation from least privilege:** in production, daily admins would hold narrower roles (for example, Identity Governance Administrator, User Administrator, Lifecycle Workflows Administrator) and activate Global Administrator just-in-time through PIM. In this lab, `iam.admin` keeps Global Administrator during the build to avoid permission dead-ends. Real daily admin rules would include System Administrator, Identity Administrator, or Active Directory Engineer
 
 **Lab deviation (break-glass MFA):** bg-emergency01 uses Microsoft Authenticator on my phone; bg-emergency02 uses a passkey. Both are held by me. This breaks two rules in section 3: break-glass must not depend on one person's phone, and must use a different method from daily admins (iam.admin also uses Authenticator). Production fix: two hardware FIDO2 keys stored in separate safes. Accepted for a single-person lab.
+
 **Lab note (licensing):** the Business Premium trial includes 1 seat (assigned to iam.admin). P1 features turn on tenant-wide, so the lab works, but production would license every in-scope user.
+
 **Lab note (Conditional Access):** Security defaults are on and cannot exclude accounts. The EmergencyAccess group exists for when Conditional Access replaces them.
+
+**Lab note (dynamic groups):** each member of a dynamic group needs Entra ID P1. ~276 members vs 1 P1 seat: works technically, not license-compliant. Production: P1 for every in-scope user.
 
 ---
 

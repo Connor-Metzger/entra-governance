@@ -16,7 +16,7 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 
 ### M1 — Identity foundation & lifecycle management
 - [x] M1.1 Activate Governance trial; load HR feed with Graph PowerShell (2026-10-21 — 276 users loaded + 220 manager links, rerun = 276 updated / 0 created; 56 manager data-quality issues logged for HR)
-- [ ] M1.2 Dynamic groups (attribute-based birthright)
+- [x] M1.2 Dynamic groups (attribute-based birthright) (2026-10-21 — 6 birthright groups generated from the role catalog, all match HR (276/158/17/36/17/34); portal-built Store-007 location group (7); mover test E00004 Store Ops→Fuel Ops moved BR-02→BR-03 with no manual step, then reverted)
 - [ ] M1.3 Lifecycle Workflows: joiner, mover, leaver
 - [ ] M1.4 Snapshot T0 + integration analysis memo (StoreOps Portal)
 
@@ -57,6 +57,8 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 
 | 2026-10-21 | M1.1 | Get-InstalledModule found no Microsoft.Graph modules | Terminal was Windows PowerShell 5.1 with the built-in PowerShellGet 1.0.0.1, which fails to install from PSGallery; modules are per PowerShell version | Installed PowerShell 7, set it as VS Code's default terminal, reinstalled modules | Yes: read the file path in an error. It told me which PowerShell was running before I touched the code |
 
+| 2026-10-21 | M1.2 | -Verify reported "All groups match HR" after checking 0 groups | HR file path passed without -HrFile bound positionally to -CatalogFile; script treated "nothing checked" as a pass | Script now requires named parameters and fails on 0 roles/0 employees; deleted the empty evidence file | Yes: a control that passes on empty input is worse than none. Always check the count of what was checked, not just the result |
+
 ## Concept notes (from check questions)
 
 - **M0.1:** A leaver with an enabled account is a *true positive* ("terminated user with active access"), not a false positive. Deleting a committed secret does not remove it from Git history: rotate the secret first, then purge history. Seeds make the T0→T1 comparison reproducible.
@@ -72,3 +74,5 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 - **M1.1:** Tenant ≠ subscription ≠ license. Governance depends on P1: if the prerequisite lapses, governance stops even with trial days left, so track the earliest end date in the chain. Break-glass is for identity emergencies (MFA outage, bad CA policy, sole admin gone), not business emergencies. It's safe because of its controls: two accounts, sealed credentials, an alert on any sign-in, tested every 90 days.
 
 - **M1.1 (dates):** Graph stores employeeHireDate in UTC; the portal shows local time, so a 2019-06-13 hire displays as 6/12/2019 8:00 PM Eastern. Same moment. Lifecycle Workflows evaluate in UTC, so check this in M1.3.
+
+- **M1.1 (HR load):** Match on employeeId, not UPN. A name change on UPN matching creates a duplicate + orphan. IAM never guesses or fixes HR data in Entra (the next load overwrites it); log it and send it to HR as one data-quality report. 56/276 (20%) have no valid manager, so their manager-based reviews would go nowhere. 29 Store Managers report to Shift Leads (synthetic data, treated as an HR DQ finding → M4 metric).

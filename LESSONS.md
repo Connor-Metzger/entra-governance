@@ -15,7 +15,7 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 - [x] M2.3b Write docs/role-catalog.md for role owners
 
 ### M1 — Identity foundation & lifecycle management
-- [ ] M1.1 Activate Governance trial; load HR feed with Graph PowerShell
+- [x] M1.1 Activate Governance trial; load HR feed with Graph PowerShell (2026-10-21 — 276 users loaded + 220 manager links, rerun = 276 updated / 0 created; 56 manager data-quality issues logged for HR)
 - [ ] M1.2 Dynamic groups (attribute-based birthright)
 - [ ] M1.3 Lifecycle Workflows: joiner, mover, leaver
 - [ ] M1.4 Snapshot T0 + integration analysis memo (StoreOps Portal)
@@ -55,6 +55,8 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 | 2026-10-20 | M1.1 | Break-glass #1 created as bg-emergency@ instead of bg-emergency01@ | Typo during manual creation; naming standard not checked | Renamed UPN in Entra, updated password manager | Yes: naming standards matter because scripts, alerts and evidence key on the name. Manual creation is error-prone, which is why the 276 users get loaded by script |
 | 2026-10-20 | M1.1 | Business Premium trial gave 1 seat, not the 25 that guides describe | Microsoft changed the trial offer ("with Copilot", 1 license) | Moved the seat from owner to iam.admin; P1 still unlocks tenant-wide | Yes: always verify vendor terms on the live screen, not blog posts |
 
+| 2026-10-21 | M1.1 | Get-InstalledModule found no Microsoft.Graph modules | Terminal was Windows PowerShell 5.1 with the built-in PowerShellGet 1.0.0.1, which fails to install from PSGallery; modules are per PowerShell version | Installed PowerShell 7, set it as VS Code's default terminal, reinstalled modules | Yes: read the file path in an error. It told me which PowerShell was running before I touched the code |
+
 ## Concept notes (from check questions)
 
 - **M0.1:** A leaver with an enabled account is a *true positive* ("terminated user with active access"), not a false positive. Deleting a committed secret does not remove it from Git history: rotate the secret first, then purge history. Seeds make the T0→T1 comparison reproducible.
@@ -68,3 +70,5 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 - **M2.3b:** Urgency = impact × exposure, not effort (Server-Admin on a store account = immediate even for 1 person). Findings format: found / why / action (end with fixing the cause) / named decision owner / due + reason / control. Default-to-remove when managers don't answer. Saying "no" isn't enough — offer a safe alternative (time-limited add-on without the conflicting entitlement).
 
 - **M1.1:** Tenant ≠ subscription ≠ license. Governance depends on P1: if the prerequisite lapses, governance stops even with trial days left, so track the earliest end date in the chain. Break-glass is for identity emergencies (MFA outage, bad CA policy, sole admin gone), not business emergencies. It's safe because of its controls: two accounts, sealed credentials, an alert on any sign-in, tested every 90 days.
+
+- **M1.1 (dates):** Graph stores employeeHireDate in UTC; the portal shows local time, so a 2019-06-13 hire displays as 6/12/2019 8:00 PM Eastern. Same moment. Lifecycle Workflows evaluate in UTC, so check this in M1.3.

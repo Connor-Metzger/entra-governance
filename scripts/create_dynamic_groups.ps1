@@ -19,7 +19,7 @@
     .\scripts\create_dynamic_groups.ps1
     .\scripts\create_dynamic_groups.ps1 -Verify -EvidenceDir evidence/M1.2
 #>
-[CmdletBinding()]
+[CmdletBinding(PositionalBinding = $false)]
 param(
     [string]$CatalogFile = "data/role_catalog_design.csv",
     [string]$HrFile      = "data/t0/hr_feed.csv",
@@ -59,6 +59,8 @@ $defs = foreach ($r in $catalog) {
 }
 
 Write-Host ("Birthright roles in catalog: {0}" -f @($defs).Count)
+if (@($defs).Count -eq 0) { throw "No birthright roles found in '$CatalogFile'. Wrong file? (Use -HrFile <path> for an HR file.)" }
+if ($hrActive.Count -eq 0) { throw "No active employees found in '$HrFile'." }
 foreach ($d in $defs) { Write-Host ("  {0,-34} expect {1,3}  rule: {2}" -f $d.DisplayName, $d.Expected, $d.Rule) }
 
 if ($DryRun) { Write-Host "DRY RUN - nothing changed."; return }

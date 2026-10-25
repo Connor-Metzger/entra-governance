@@ -59,6 +59,8 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 
 | 2026-10-21 | M1.2 | -Verify reported "All groups match HR" after checking 0 groups | HR file path passed without -HrFile bound positionally to -CatalogFile; script treated "nothing checked" as a pass | Script now requires named parameters and fails on 0 roles/0 employees; deleted the empty evidence file | Yes: a control that passes on empty input is worse than none. Always check the count of what was checked, not just the result |
 
+| 2026-10-25 | M1.3 | load_users.ps1 sent accountEnabled=$true on every update (276/276), so the HR sync would have re-enabled any leaver the workflow disabled | Fix: set accountEnabled only on create; workflows own enable/disable | Found in code review before it ran against a leaver |
+
 ## Concept notes (from check questions)
 
 - **M0.1:** A leaver with an enabled account is a *true positive* ("terminated user with active access"), not a false positive. Deleting a committed secret does not remove it from Git history: rotate the secret first, then purge history. Seeds make the T0→T1 comparison reproducible.

@@ -66,6 +66,8 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 
 | 2026-10-27 |  M1.3 | after offboarding, Logan was still in "Keystone Fuel & Market" (org-wide M365 group / Team created with the trial) | L1 had the "Remove user from all Teams" task deleted on the assumption we don't use Teams | Re-added it and reran for Logan | Lesson: "we don't use X" isn't the same as "nobody is in X"; check what the tenant created by default |
 
+| 2026-10-27 | M1.4 | Snapshot script failed with "Argument types do not match" in testing | `@()` around a .NET List of hashtables (Graph pages) throws; return a plain array | Test against the shapes the API really returns, not tidy sample data |
+
 ## Concept notes (from check questions)
 
 - **M0.1:** A leaver with an enabled account is a *true positive* ("terminated user with active access"), not a false positive. Deleting a committed secret does not remove it from Git history: rotate the secret first, then purge history. Seeds make the T0→T1 comparison reproducible.

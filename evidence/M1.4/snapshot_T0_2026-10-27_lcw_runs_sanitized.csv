@@ -1,0 +1,6 @@
+"workflow","employee_id","upn","execution_type","scheduled_utc","started_utc","completed_utc","status","tasks_total","tasks_failed","failed_tasks","failure_reason"
+"JML-J1 Pre-hire TAP to manager","E00302","riley.okafor@keystonefuellab.onmicrosoft.com","scheduled","2026-10-25T20:37:45Z","2026-10-25T20:37:50Z","2026-10-25T20:39:01Z","completedWithErrors","1","1","Generate TAP and Send Email","manager attribute is missing or invalid"
+"JML-J1 Pre-hire TAP to manager","E00301","avery.lindqvist@keystonefuellab.onmicrosoft.com","scheduled","2026-10-25T20:37:45Z","2026-10-25T20:37:50Z","2026-10-25T20:38:02Z","completed","1","0","",""
+"JML-M1 Department change","E00004","rowan.kowalski@keystonefuellab.onmicrosoft.com","scheduled","2026-10-27T13:37:45Z","2026-10-27T13:37:50Z","2026-10-27T13:38:05Z","completed","2","0","",""
+"JML-L1 Last day offboard","E00010","logan.nguyen@keystonefuellab.onmicrosoft.com","scheduled","2026-10-27T14:37:45Z","2026-10-27T14:37:50Z","2026-10-27T14:38:17Z","completed","4","0","",""
+"JML-L1 Last day offboard","E00010","logan.nguyen@keystonefuellab.onmicrosoft.com","onDemand","2026-10-27T15:10:04Z","2026-10-27T15:10:15Z","2026-10-27T15:11:01Z","completed","5","0","",""

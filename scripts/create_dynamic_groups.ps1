@@ -13,11 +13,15 @@
     Safe to rerun: existing groups (matched by display name) get their rule updated if it changed.
 
     -Verify compares live member counts with the counts HR says they should have.
+    "Should have" = HR status Active AND hire date/time has passed AND leave date/time
+    has not passed. Dates use the same local times as load_users.ps1 (hire 03:00,
+    leave 23:00 Eastern), so a pre-hire or a leaver past their last day isn't counted.
 
 .EXAMPLE
     .\scripts\create_dynamic_groups.ps1 -DryRun
     .\scripts\create_dynamic_groups.ps1
     .\scripts\create_dynamic_groups.ps1 -Verify -EvidenceDir evidence/M1.2
+    .\scripts\create_dynamic_groups.ps1 -HrFile exports\hr_m13_s2.csv -DryRun -AsOfUtc 2026-10-31T09:00:00Z
 #>
 [CmdletBinding(PositionalBinding = $false)]
 param(
@@ -25,15 +29,44 @@ param(
     [string]$HrFile      = "data/t0/hr_feed.csv",
     [switch]$DryRun,
     [switch]$Verify,
-    [string]$EvidenceDir = ""
+    [string]$EvidenceDir = "",
+    [string]$TimeZoneId     = "Eastern Standard Time",   # same as load_users.ps1
+    [string]$HireTimeLocal  = "03:00",
+    [string]$LeaveTimeLocal = "23:00",
+    [string]$AsOfUtc        = ""                        # default: now. e.g. 2026-10-31T09:00:00Z to preview a date
 )
 $ErrorActionPreference = "Stop"
+$tz = [TimeZoneInfo]::FindSystemTimeZoneById($TimeZoneId)
+if ($AsOfUtc) {
+    $nowUtc = [DateTime]::Parse($AsOfUtc, [Globalization.CultureInfo]::InvariantCulture,
+        [Globalization.DateTimeStyles]::AdjustToUniversal -bor [Globalization.DateTimeStyles]::AssumeUniversal)
+} else { $nowUtc = [DateTime]::UtcNow }
+
+function ConvertTo-UtcFromLocal([string]$Date, [string]$Time) {
+    # Same conversion as load_users.ps1: local store date + time -> UTC (DST-aware)
+    $local = [DateTime]::ParseExact("$Date $Time", "yyyy-MM-dd HH:mm",
+        [Globalization.CultureInfo]::InvariantCulture)
+    return [TimeZoneInfo]::ConvertTimeToUtc($local, $tz)
+}
 
 $guard = '(user.employeeId -ne null) -and (user.accountEnabled -eq true)'
 
 # ---------- 1. Build group definitions from the catalog ----------
 $catalog = Import-Csv -Path $CatalogFile -Encoding UTF8 | Where-Object { $_.layer -eq "Birthright" }
-$hrActive = @(Import-Csv -Path $HrFile -Encoding UTF8 | Where-Object { $_.status -eq "Active" })
+$hrRows = @(Import-Csv -Path $HrFile -Encoding UTF8 | Where-Object { $_.status -eq "Active" })
+
+# Who should be in a birthright group right now: started, and not past their last day
+$notStarted = @(); $pastLeave = @(); $hrActive = @()
+foreach ($row in $hrRows) {
+    $hireUtc = ConvertTo-UtcFromLocal $row.hire_date $HireTimeLocal
+    $leaveUtc = $null
+    if (-not [string]::IsNullOrWhiteSpace($row.termination_date)) {
+        $leaveUtc = ConvertTo-UtcFromLocal $row.termination_date $LeaveTimeLocal
+    }
+    if ($hireUtc -gt $nowUtc)                 { $notStarted += $row }
+    elseif ($leaveUtc -and $leaveUtc -le $nowUtc) { $pastLeave += $row }
+    else                                      { $hrActive += $row }
+}
 
 $defs = foreach ($r in $catalog) {
     $values = @($r.assign_values -split ";" | ForEach-Object { $_.Trim() } | Where-Object { $_ })
@@ -59,8 +92,12 @@ $defs = foreach ($r in $catalog) {
 }
 
 Write-Host ("Birthright roles in catalog: {0}" -f @($defs).Count)
+Write-Host ("HR Active rows: {0} | Not started yet: {1} | Past leave date: {2} | Expected in groups: {3}  (as of {4})" -f `
+    $hrRows.Count, $notStarted.Count, $pastLeave.Count, $hrActive.Count, $nowUtc.ToString("yyyy-MM-ddTHH:mm:ssZ"))
+foreach ($r in $notStarted) { Write-Host ("  excluded {0} {1} {2}: hire date {3} not reached" -f $r.employee_id, $r.first_name, $r.last_name, $r.hire_date) }
+foreach ($r in $pastLeave)  { Write-Host ("  excluded {0} {1} {2}: last day {3} has passed" -f $r.employee_id, $r.first_name, $r.last_name, $r.termination_date) }
 if (@($defs).Count -eq 0) { throw "No birthright roles found in '$CatalogFile'. Wrong file? (Use -HrFile <path> for an HR file.)" }
-if ($hrActive.Count -eq 0) { throw "No active employees found in '$HrFile'." }
+if ($hrActive.Count -eq 0) { throw "No employees in force found in '$HrFile' (check the file and -AsOfUtc)." }
 foreach ($d in $defs) { Write-Host ("  {0,-34} expect {1,3}  rule: {2}" -f $d.DisplayName, $d.Expected, $d.Rule) }
 
 if ($DryRun) { Write-Host "DRY RUN - nothing changed."; return }

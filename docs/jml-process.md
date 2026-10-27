@@ -115,7 +115,7 @@ All HR changes were simulated by editing a copy of the HR feed and running `load
 | # | Item | Owner |
 |---|---|---|
 | 7.1 | 33 active records with no manager (32 from t0 + Riley) and 24 with a terminated manager. Joiner TAP and mover notification depend on them | HR |
-| 7.2 | `create_dynamic_groups.ps1 -Verify` counts every Active HR row; it should exclude future hires and leavers past their leave date | IAM (M1.4) |
+| 7.2 | ~~`create_dynamic_groups.ps1 -Verify` counts every Active HR row~~ **Resolved M1.4 (2026-10-27):** expected = Active AND hire time passed AND leave time not passed; excluded rows are printed | IAM (M1.4) |
 | 7.3 | Overnight shifts: a 23:00 leave time cuts off a 22:00–06:00 last shift. Agree with HR that the termination date is the day the last shift **ends** | HR + IAM |
 | 7.4 | Access package removal for movers is 15 days. PCI packages (Cash Office, POS admin) should be removed with no grace period. Set this in M2.5 | IAM + Director of Store Operations |
 

@@ -47,8 +47,8 @@
 - **M1.3 – TAP lifetime 23 hours, multi-use.** The portal caps the workflow task below the policy's 1-day maximum. Starts at the hire time (03:00 ET), so it covers every day-one shift. Production: confirm against the real shift schedule and help-desk coverage.
 - **M1.3 – Workflow evidence comes from run history, not inboxes.** Manager and welcome emails can't be received, so the Welcome Email task was removed from J2 and success is proven with Workflow history and user properties.
 - **M1.3 – Joiners tested with simulated HR rows.** E00301 Avery Lindqvist and E00302 Riley Okafor (no manager, on purpose) were added to a copy of the HR feed (`exports/hr_m13_joiner.csv`). `data/t0` is unchanged.
-
-- **M1.3 – mover notification sent per run history; CC copy not received.
+- **M1.3 – Leaver test entered the day after the last shift** (Logan Nguyen, E00010) so it falls inside the 3-day catch-up window and processes on the next run. Static group "KEY-Store-033 Keyholders (static)" created only to demonstrate removal.
+- **M1.3 – Mover CC copy not received.** Run history shows the notify-manager task completed for Rowan; the CC to iam.admin never arrived, so evidence is run history (same as the joiner TAP email).
 ---
 
 ## 3. Break-glass (emergency access) design

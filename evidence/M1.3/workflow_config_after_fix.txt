@@ -1,0 +1,26 @@
+
+Name         : JML-J1 Pre-hire TAP to manager
+Trigger      : {"timeBasedAttribute":"employeeHireDate","offsetInDays":-7,"@odata.type":"#microsoft.graph.identityGovernance.timeBasedAttributeTrigger"}
+Scope        : (companyName eq 'Keystone Fuel & Market')
+UsersInScope : 
+
+Name         : JML-J2 Day one enable
+Trigger      : {"timeBasedAttribute":"employeeHireDate","offsetInDays":0,"@odata.type":"#microsoft.graph.identityGovernance.timeBasedAttributeTrigger"}
+Scope        : (companyName eq 'Keystone Fuel & Market')
+UsersInScope : 
+
+Name         : JML-M1 Department change
+Trigger      : {"@odata.type":"#microsoft.graph.identityGovernance.attributeChangeTrigger","triggerAttributes":[{"name":"department"}]}
+Scope        : (companyName eq 'Keystone Fuel & Market')
+UsersInScope : 
+
+Name         : JML-L1 Last day offboard
+Trigger      : {"timeBasedAttribute":"employeeLeaveDateTime","offsetInDays":0,"@odata.type":"#microsoft.graph.identityGovernance.timeBasedAttributeTrigger"}
+Scope        : (companyName eq 'Keystone Fuel & Market')
+UsersInScope : 
+
+Name         : JML-L2 Plus 7 days delete
+Trigger      : {"timeBasedAttribute":"employeeLeaveDateTime","offsetInDays":7,"@odata.type":"#microsoft.graph.identityGovernance.timeBasedAttributeTrigger"}
+Scope        : (companyName eq 'Keystone Fuel & Market')
+UsersInScope : 
+

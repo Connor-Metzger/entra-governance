@@ -1,0 +1,7 @@
+"role_id","group","expected_from_hr","actual_members","match"
+"BR-01","BR-01 All Employees Baseline","276","275","False"
+"BR-02","BR-02 Store Operations Baseline","158","156","False"
+"BR-03","BR-03 Fuel Operations Baseline","17","18","False"
+"BR-04","BR-04 Corporate ERP Read","36","36","True"
+"BR-05","BR-05 HR Baseline","17","17","True"
+"BR-06","BR-06 IT Baseline","34","34","True"

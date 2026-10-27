@@ -48,6 +48,7 @@
 - **M1.3 – Workflow evidence comes from run history, not inboxes.** Manager and welcome emails can't be received, so the Welcome Email task was removed from J2 and success is proven with Workflow history and user properties.
 - **M1.3 – Joiners tested with simulated HR rows.** E00301 Avery Lindqvist and E00302 Riley Okafor (no manager, on purpose) were added to a copy of the HR feed (`exports/hr_m13_joiner.csv`). `data/t0` is unchanged.
 
+- **M1.3 – mover notification sent per run history; CC copy not received.
 ---
 
 ## 3. Break-glass (emergency access) design

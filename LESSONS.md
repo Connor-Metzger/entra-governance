@@ -17,7 +17,7 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 ### M1 — Identity foundation & lifecycle management
 - [x] M1.1 Activate Governance trial; load HR feed with Graph PowerShell (2026-10-21 — 276 users loaded + 220 manager links, rerun = 276 updated / 0 created; 56 manager data-quality issues logged for HR)
 - [x] M1.2 Dynamic groups (attribute-based birthright) (2026-10-21 — 6 birthright groups generated from the role catalog, all match HR (276/158/17/36/17/34); portal-built Store-007 location group (7); mover test E00004 Store Ops→Fuel Ops moved BR-02→BR-03 with no manual step, then reverted)
-- [ ] M1.3 Lifecycle Workflows: joiner, mover, leaver
+- [x] M1.3 Lifecycle Workflows: joiner, mover, leaver
 - [ ] M1.4 Snapshot T0 + integration analysis memo (StoreOps Portal)
 
 ### M2 Part B — Access packages
@@ -53,6 +53,7 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 | 2026-10-14 | M2.1 | gitleaks reported 30 leaks incl. a private key | `gitleaks dir` scans all files and ignores .gitignore; findings were in .venv (third-party packages + Tornado's public test key) | Triaged: all in ignored folder, none staged → false positives. Switched to scanning only what Git tracks | Yes — triaging scanner findings |
 
 | 2026-10-20 | M1.1 | Break-glass #1 created as bg-emergency@ instead of bg-emergency01@ | Typo during manual creation; naming standard not checked | Renamed UPN in Entra, updated password manager | Yes: naming standards matter because scripts, alerts and evidence key on the name. Manual creation is error-prone, which is why the 276 users get loaded by script |
+
 | 2026-10-20 | M1.1 | Business Premium trial gave 1 seat, not the 25 that guides describe | Microsoft changed the trial offer ("with Copilot", 1 license) | Moved the seat from owner to iam.admin; P1 still unlocks tenant-wide | Yes: always verify vendor terms on the live screen, not blog posts |
 
 | 2026-10-21 | M1.1 | Get-InstalledModule found no Microsoft.Graph modules | Terminal was Windows PowerShell 5.1 with the built-in PowerShellGet 1.0.0.1, which fails to install from PSGallery; modules are per PowerShell version | Installed PowerShell 7, set it as VS Code's default terminal, reinstalled modules | Yes: read the file path in an error. It told me which PowerShell was running before I touched the code |
@@ -60,6 +61,10 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 | 2026-10-21 | M1.2 | -Verify reported "All groups match HR" after checking 0 groups | HR file path passed without -HrFile bound positionally to -CatalogFile; script treated "nothing checked" as a pass | Script now requires named parameters and fails on 0 roles/0 employees; deleted the empty evidence file | Yes: a control that passes on empty input is worse than none. Always check the count of what was checked, not just the result |
 
 | 2026-10-25 | M1.3 | load_users.ps1 sent accountEnabled=$true on every update (276/276), so the HR sync would have re-enabled any leaver the workflow disabled | Fix: set accountEnabled only on create; workflows own enable/disable | Found in code review before it ran against a leaver |
+
+| 2026-10-27 | M1.3 | leaver workflows L1/L2 never processed Logan | Portal looked fine; reading the config back via Graph showed both still had the template's default scope (department eq 'Marketing') | Fixed scope to companyName | Lesson: verify workflow config as data after creating it, don't trust the wizard | 
+
+| 2026-10-27 |  M1.3 | after offboarding, Logan was still in "Keystone Fuel & Market" (org-wide M365 group / Team created with the trial) | L1 had the "Remove user from all Teams" task deleted on the assumption we don't use Teams | Re-added it and reran for Logan | Lesson: "we don't use X" isn't the same as "nobody is in X"; check what the tenant created by default |
 
 ## Concept notes (from check questions)
 

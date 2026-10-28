@@ -49,6 +49,8 @@
 - **M1.3 – Joiners tested with simulated HR rows.** E00301 Avery Lindqvist and E00302 Riley Okafor (no manager, on purpose) were added to a copy of the HR feed (`exports/hr_m13_joiner.csv`). `data/t0` is unchanged.
 - **M1.3 – Leaver test entered the day after the last shift** (Logan Nguyen, E00010) so it falls inside the 3-day catch-up window and processes on the next run. Static group "KEY-Store-033 Keyholders (static)" created only to demonstrate removal.
 - **M1.3 – Mover CC copy not received.** Run history shows the notify-manager task completed for Rowan; the CC to iam.admin never arrived, so evidence is run history (same as the joiner TAP email).
+
+- **M1.4 – StoreOps Portal is a registration only.** No real app sits behind it, so there are no sign-ins or SCIM runs; evidence is the Graph read-back (`evidence/M1.4/storeops_app_config.txt`). Group-based app assignment needs Entra ID P1 for every assigned user; the lab has 1 P1 seat.
 ---
 
 ## 3. Break-glass (emergency access) design

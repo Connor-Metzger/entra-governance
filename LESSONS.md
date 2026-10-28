@@ -18,7 +18,7 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 - [x] M1.1 Activate Governance trial; load HR feed with Graph PowerShell (2026-10-21 — 276 users loaded + 220 manager links, rerun = 276 updated / 0 created; 56 manager data-quality issues logged for HR)
 - [x] M1.2 Dynamic groups (attribute-based birthright) (2026-10-21 — 6 birthright groups generated from the role catalog, all match HR (276/158/17/36/17/34); portal-built Store-007 location group (7); mover test E00004 Store Ops→Fuel Ops moved BR-02→BR-03 with no manual step, then reverted)
 - [x] M1.3 Lifecycle Workflows: joiner, mover, leaver (2026-10-27 — 5 workflows; pre-hire TAP (Riley failed: no manager), mover Rowan 2/2, leaver Logan 4/4 on schedule; resync doesn't re-enable; J2 capture 10-31, L2 capture 11-02)
-- [ ] M1.4 Snapshot T0 + integration analysis memo (StoreOps Portal)
+- [x] M1.4 Snapshot T0 + integration analysis memo (StoreOps Portal)
 
 ### M2 Part B — Access packages
 - [ ] M2.4 Catalog, birthright auto-assignment packages
@@ -68,6 +68,8 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 
 | 2026-10-27 | M1.4 | Snapshot script failed with "Argument types do not match" in testing | `@()` around a .NET List of hashtables (Graph pages) throws; return a plain array | Test against the shapes the API really returns, not tidy sample data |
 
+| 2026-10-27 | M1.4 | Riley's failed TAP run shows status `completedWithErrors`, not `failed` | Graph marks a run completed if it reached the end; failed tasks are counted separately | Measure failures by failed-task count, not run status |
+
 ## Concept notes (from check questions)
 
 - **M0.1:** A leaver with an enabled account is a *true positive* ("terminated user with active access"), not a false positive. Deleting a committed secret does not remove it from Git history: rotate the secret first, then purge history. Seeds make the T0→T1 comparison reproducible.
@@ -89,3 +91,5 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 - **M1.2:** Dynamic group = ABAC rule assigning an RBAC role. The guard (employeeId ≠ null, enabled) keeps the 4 admin/break-glass accounts out and drops leavers. Mover test moved birthright only: job-title access (POS-Cashier) and direct grants (item 6.3, 24/107) don't move → M1.3 + M2. PCI is never birthright (PCI DSS req 7: approved by need). employeeType isn't rule-supported → copy to extensionAttribute1 from HR (28 contractors). A check that passes on 0 items isn't a check.
 
 - **M1.3:** HR sync writes data, workflows take actions: load_users.ps1 now sets accountEnabled only on create (old version sent it on 276/276 updates → would re-enable every leaver; resync test left Logan disabled). Pre-hires created disabled + BR guard = no birthright before day one; TAP issued 7 days early but valid only from 03:00 hire time (23 h, multi-use, to manager). Riley's TAP failed "Manager attribute is missing or invalid" → HR fixes it in HR, IAM reports (33 no-manager records). Mover Rowan detected on schedule; birthright moves by rule, requested access removed after 15 days (0 for PCI: Cash Office, POS admin). Leaver Logan: disable → guard drops BR groups (remove-all-groups can't touch dynamic); delete at +7 days to catch HR errors. 23:00 leave time cuts off overnight last shifts → HR dates last day by shift end. Never re-enable a leaver (pay stub → HR/payroll sends it). L1/L2 kept template scope "Marketing" (0 users) and left Logan in the org-wide Team → verify config as data and check the result, not just the run.
+
+- **M1.4:** Expected and actual must count the same population (in force = Active + started + not past leave time). T0 snapshot = users + BR groups + workflow runs in one schema so T1 compares field by field; count failures by failed tasks, not run status. App onboarding: app roles mirror the catalog, assignment required = Yes, groups only (no direct users, no nesting), business owner ≠ Entra owner, and PCI scope decides review cadence (7.2.4 = every 6 months). Title rules must also check department (Rowan: Fuel Operations, still "Store Associate").

@@ -1,0 +1,20 @@
+StoreOps Portal configuration read back from Graph, 2026-10-28 21:55 UTC
+Assignment required: True
+Listed in Enterprise applications: True
+Notes: Business owner: Director of Store Operations. Technical owner: IAM Team. Data: store schedules, timeclock, cash and card settlement (PCI for Cash Office). Assignment required. Associate = BR-02 group; Shift Lead / Store Manager = access packages by title; Cash Office / Admin = requested access packages only. See docs/integration-analysis-storeops.md.
+
+Role               Value                  Enabled  Assigned to                        Effective users
+Associate          StoreOps.Associate     True     BR-02 Store Operations Baseline    156
+Shift Lead         StoreOps.ShiftLead     True     (none)                             0
+Store Manager      StoreOps.StoreManager  True     (none)                             0
+Cash Office (PCI)  StoreOps.CashOffice    True     (none)                             0
+Admin              StoreOps.Admin         True     (none)                             0
+
+[PASS] Assignment required = Yes
+[PASS] Associate role exists and assigned to BR-02 Store Operations Baseline
+[PASS] Shift Lead role exists and assigned to (none)
+[PASS] Store Manager role exists and assigned to (none)
+[PASS] Cash Office (PCI) role exists and assigned to (none)
+[PASS] Admin role exists and assigned to (none)
+[PASS] No direct user assignments
+All 7 checks passed.

@@ -1,0 +1,84 @@
+Access packages read back from Graph, 2026-10-29 22:03 UTC. HR file: hr_m24.csv, in force: 275
+Catalog: Keystone Store & Fuel Operations (state: published)
+
+BUS-01 Store Frontline
+  Rule:      (user.department -eq "Store Operations") -and (user.jobTitle -in ["Store Associate","Shift Lead"]) -and (user.employeeId -ne null) -and (user.accountEnabled -eq true)
+  Remove when out of scope: True   Grace: none
+  Resources: ENT-POS-Cashier
+  HR says 104, delivered 104, in progress 0, failed 0
+
+BUS-02 Store Manager  [PCI]
+  Rule:      (user.department -eq "Store Operations") -and (user.jobTitle -eq "Store Manager") -and (user.employeeId -ne null) -and (user.accountEnabled -eq true)
+  Remove when out of scope: True   Grace: none
+  Resources: ENT-SafeCount-Operator, ENT-Inventory-Approver, ENT-POS-Manager, StoreOps Portal : Store Manager, ENT-Scheduling-Admin
+  HR says 52, delivered 52, in progress 0, failed 0
+
+ADD-01 POS Refunds
+  Rule:      (user.department -eq "Store Operations") -and (user.jobTitle -eq "Shift Lead") -and (user.employeeId -ne null) -and (user.accountEnabled -eq true)
+  Remove when out of scope: True   Grace: none
+  Resources: StoreOps Portal : Shift Lead, ENT-POS-Refunds
+  HR says 60, delivered 60, in progress 0, failed 0; missing: E00013; unexpected: E00006
+
+BUS-03 Fuel Technician
+  Rule:      (user.department -eq "Fuel Operations") -and (user.jobTitle -eq "Fuel Technician") -and (user.employeeId -ne null) -and (user.accountEnabled -eq true)
+  Remove when out of scope: True   Grace: none
+  Resources: ENT-TankMonitor-Operator, ENT-FuelPricing-View
+  HR says 6, delivered 6, in progress 0, failed 0
+
+BUS-04 Fuel Operations Manager  [Privileged]
+  Rule:      (user.department -eq "Fuel Operations") -and (user.jobTitle -eq "Fuel Operations Manager") -and (user.employeeId -ne null) -and (user.accountEnabled -eq true)
+  Remove when out of scope: True   Grace: none
+  Resources: ENT-FuelPricing-Edit, ENT-TankMonitor-Admin
+  HR says 11, delivered 11, in progress 0, failed 0
+
+Resource                                  HR says    Entra  Match
+ENT-POS-Cashier                               104      104  True
+ENT-POS-Manager                                52       52  True
+ENT-Inventory-Approver                         52       52  True
+ENT-Scheduling-Admin                           52       52  True
+ENT-SafeCount-Operator                         52       52  True
+ENT-POS-Refunds                                60       60  False  missing: E00013  unexpected: E00006
+ENT-FuelPricing-View                            6        6  True
+ENT-TankMonitor-Operator                        6        6  True
+ENT-FuelPricing-Edit                           11       11  True
+ENT-TankMonitor-Admin                          11       11  True
+StoreOps Portal : StoreOps.StoreManager        52       52  True
+StoreOps Portal : StoreOps.ShiftLead           60       60  False
+
+Matching title, other department (must hold no package): 1
+  E00004 Store Associate, Fuel Operations: holds none
+
+[PASS] BUS-01 Store Frontline: exactly 1 policy, automatic, rule = design
+[PASS] BUS-01 Store Frontline: auto-remove on, no grace period
+[PASS] BUS-01 Store Frontline: 1 resource role(s)
+[PASS] BUS-01 Store Frontline: assignments match HR (104)
+[PASS] BUS-02 Store Manager: exactly 1 policy, automatic, rule = design
+[PASS] BUS-02 Store Manager: auto-remove on, no grace period
+[PASS] BUS-02 Store Manager: 5 resource role(s)
+[PASS] BUS-02 Store Manager: assignments match HR (52)
+[PASS] ADD-01 POS Refunds: exactly 1 policy, automatic, rule = design
+[PASS] ADD-01 POS Refunds: auto-remove on, no grace period
+[PASS] ADD-01 POS Refunds: 2 resource role(s)
+[FAIL] ADD-01 POS Refunds: assignments match HR (60)
+[PASS] BUS-03 Fuel Technician: exactly 1 policy, automatic, rule = design
+[PASS] BUS-03 Fuel Technician: auto-remove on, no grace period
+[PASS] BUS-03 Fuel Technician: 2 resource role(s)
+[PASS] BUS-03 Fuel Technician: assignments match HR (6)
+[PASS] BUS-04 Fuel Operations Manager: exactly 1 policy, automatic, rule = design
+[PASS] BUS-04 Fuel Operations Manager: auto-remove on, no grace period
+[PASS] BUS-04 Fuel Operations Manager: 2 resource role(s)
+[PASS] BUS-04 Fuel Operations Manager: assignments match HR (11)
+[PASS] Group ENT-POS-Cashier holds exactly HR's 104
+[PASS] Group ENT-POS-Manager holds exactly HR's 52
+[PASS] Group ENT-Inventory-Approver holds exactly HR's 52
+[PASS] Group ENT-Scheduling-Admin holds exactly HR's 52
+[PASS] Group ENT-SafeCount-Operator holds exactly HR's 52
+[FAIL] Group ENT-POS-Refunds holds exactly HR's 60
+[PASS] Group ENT-FuelPricing-View holds exactly HR's 6
+[PASS] Group ENT-TankMonitor-Operator holds exactly HR's 6
+[PASS] Group ENT-FuelPricing-Edit holds exactly HR's 11
+[PASS] Group ENT-TankMonitor-Admin holds exactly HR's 11
+[PASS] App role StoreOps.StoreManager holds exactly HR's 52, no groups
+[FAIL] App role StoreOps.ShiftLead holds exactly HR's 60, no groups
+[PASS] Wrong-department title matches hold no package (1 checked)
+3 of 33 check(s) FAILED. New or changed policies take several minutes (sometimes longer) to process: check again before investigating.

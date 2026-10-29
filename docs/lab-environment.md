@@ -43,14 +43,29 @@
 **Lab note (dynamic groups):** each member of a dynamic group needs Entra ID P1. ~276 members vs 1 P1 seat: works technically, not license-compliant. Production: P1 for every in-scope user.
 
 - **M1.3 – TAP email CC'd to iam.admin.** Synthetic users have a `mail` attribute (set by `load_users.ps1`) but no mailbox, so the manager copy of the pre-hire TAP email is undeliverable. The J1 task CCs iam.admin so the email can be observed; the TAP is redacted in evidence. Production: the TAP goes to the manager only, never to a shared or admin mailbox.
+
 - **M1.3 – TAP policy targets All users (excluding EmergencyAccess).** Simplest scope for a 1-admin lab. Production: target a dedicated "TAP eligible" group of staff accounts so admin and service accounts can never be issued a TAP.
+
 - **M1.3 – TAP lifetime 23 hours, multi-use.** The portal caps the workflow task below the policy's 1-day maximum. Starts at the hire time (03:00 ET), so it covers every day-one shift. Production: confirm against the real shift schedule and help-desk coverage.
+
 - **M1.3 – Workflow evidence comes from run history, not inboxes.** Manager and welcome emails can't be received, so the Welcome Email task was removed from J2 and success is proven with Workflow history and user properties.
+
 - **M1.3 – Joiners tested with simulated HR rows.** E00301 Avery Lindqvist and E00302 Riley Okafor (no manager, on purpose) were added to a copy of the HR feed (`exports/hr_m13_joiner.csv`). `data/t0` is unchanged.
+
 - **M1.3 – Leaver test entered the day after the last shift** (Logan Nguyen, E00010) so it falls inside the 3-day catch-up window and processes on the next run. Static group "KEY-Store-033 Keyholders (static)" created only to demonstrate removal.
+
 - **M1.3 – Mover CC copy not received.** Run history shows the notify-manager task completed for Rowan; the CC to iam.admin never arrived, so evidence is run history (same as the joiner TAP email).
 
 - **M1.4 – StoreOps Portal is a registration only.** No real app sits behind it, so there are no sign-ins or SCIM runs; evidence is the Graph read-back (`evidence/M1.4/storeops_app_config.txt`). Group-based app assignment needs Entra ID P1 for every assigned user; the lab has 1 P1 seat.
+
+- **M2.4 – Entitlements are stand-in groups.** POS, inventory, safe-count and fuel systems don't exist, so each entitlement is a security group `ENT-<entitlement>` whose membership only the access packages manage. Production: the package would hold the real app roles or a provisioning connector.
+
+- **M2.4 – Governance licensing.** 173 people (233 assignments: the 60 Shift Leads hold BUS-01 and ADD-01) are in scope of the automatic policies, but the trial has 25 Entra ID Governance licenses. Entra didn't block this during the trial. Production: every user in scope of a governance feature needs a license.
+
+- **M2.4 – Stand-in entitlement groups.** The POS, inventory, scheduling, safe and fuel systems don't exist, so 10 security groups named `ENT-<entitlement>` stand in for "has this entitlement". Access packages are their only source of members. Production: the package grants the real app role, or a group the app provisions from (SCIM), not a stand-in group.
+
+- **M2.4 – 25 Governance licenses, 173 people in package scope.** The automatic packages serve 173 people (233 assignments: the 60 Shift Leads hold BUS-01 and ADD-01). Entra didn't block this during the trial. Production: every user in scope of a governance feature needs an Entra ID Governance license.
+
 ---
 
 ## 3. Break-glass (emergency access) design

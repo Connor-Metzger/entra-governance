@@ -1,0 +1,13 @@
+Access read back from Graph, 2026-10-29 21:40 UTC (before)
+
+E00013 Alex Larsen | Store Operations | Store Associate | Store-004 | enabled True
+  Birthright groups:  BR-01 All Employees Baseline, BR-02 Store Operations Baseline
+  Access packages:    BUS-01 Store Frontline [delivered]
+  Entitlement groups: ENT-POS-Cashier
+  StoreOps Portal roles: StoreOps.Associate + StoreOps.Associate via BR-02 group
+
+E00006 Cameron Tanaka | Store Operations | Shift Lead | Store-025 | enabled True
+  Birthright groups:  BR-01 All Employees Baseline, BR-02 Store Operations Baseline
+  Access packages:    ADD-01 POS Refunds [delivered], BUS-01 Store Frontline [delivered]
+  Entitlement groups: ENT-POS-Cashier, ENT-POS-Refunds
+  StoreOps Portal roles: StoreOps.Associate, StoreOps.ShiftLead + StoreOps.Associate via BR-02 group

@@ -1,4 +1,4 @@
-StoreOps Portal configuration read back from Graph, 2026-10-29 01:17 UTC
+StoreOps Portal configuration read back from Graph, 2026-10-29 22:16 UTC
 Assignment required: True
 Listed in Enterprise applications: True
 Notes: Business owner: Director of Store Operations. Technical owner: IAM Team. Data: store schedules, timeclock, cash and card settlement (PCI for Cash Office). Assignment required. Associate = BR-02 group; Shift Lead / Store Manager = access packages by title; Cash Office / Admin = requested access packages only. See docs/integration-analysis-storeops.md.

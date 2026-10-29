@@ -47,10 +47,10 @@ $roles = @(
         GrantedBy = "Group BR-02 (birthright, automatic from HR department)"; Assign = $AssociateGroup }
     [pscustomobject]@{ Value = "StoreOps.ShiftLead";    Name = "Shift Lead"
         Desc = "Shift handover and refund approval queue for the shift lead's store."
-        GrantedBy = "Access package, automatic by job title (BUS-01 + ADD-01), M2.4"; Assign = "" }
+        GrantedBy = "Access package ADD-01 POS Refunds, automatic by department + job title, M2.4"; Assign = "(access package)" }
     [pscustomobject]@{ Value = "StoreOps.StoreManager"; Name = "Store Manager"
         Desc = "Scheduling admin, inventory approval and safe counts for the manager's store."
-        GrantedBy = "Access package, automatic by job title (BUS-02, PCI-flagged), M2.4"; Assign = "" }
+        GrantedBy = "Access package BUS-02 Store Manager, automatic by department + job title (PCI-flagged), M2.4"; Assign = "(access package)" }
     [pscustomobject]@{ Value = "StoreOps.CashOffice";   Name = "Cash Office (PCI)"
         Desc = "Card settlement and deposit reconciliation reports. PCI scope."
         GrantedBy = "REQUESTED access package: manager + PCI owner approval, quarterly review, M2.5"; Assign = "" }
@@ -82,6 +82,12 @@ function Get-First([string]$Uri) {
     return $null
 }
 function F([string]$f) { return [uri]::EscapeDataString($f) }
+function Get-AssignedTo([string]$SpId) {
+    # Pages through all assignments (Graph returns 100 per page; access packages add one per user)
+    $out = @(); $uri = "$graph/servicePrincipals/$SpId/appRoleAssignedTo?`$top=999"
+    while ($uri) { $resp = Invoke-Graph GET $uri; $out += @($resp.value | Where-Object { $_ }); $uri = $resp.'@odata.nextLink' }
+    return $out
+}
 
 # ---------- Read current state ----------
 $app = Get-First "$graph/applications?`$filter=$(F "displayName eq '$DisplayName'")&`$select=id,appId,displayName,appRoles,notes"
@@ -93,7 +99,7 @@ if (-not $group) { throw "Group '$AssociateGroup' not found. Run create_dynamic_
 # ---------- Verify mode: read back and check as data ----------
 if ($Verify) {
     if (-not $app -or -not $sp) { throw "'$DisplayName' is not registered yet. Run without -Verify first." }
-    $assigned = @((Invoke-Graph GET "$graph/servicePrincipals/$($sp.id)/appRoleAssignedTo").value)
+    $assigned = @(Get-AssignedTo $sp.id)
     $lines = New-Object System.Collections.Generic.List[string]
     $lines.Add("StoreOps Portal configuration read back from Graph, $((Get-Date).ToUniversalTime().ToString('yyyy-MM-dd HH:mm')) UTC")
     $lines.Add("Assignment required: $($sp.appRoleAssignmentRequired)")
@@ -109,13 +115,23 @@ if ($Verify) {
         foreach ($a in $mine) {
             if ($a.principalType -eq "Group") { $users += @(Get-MgGroupMember -GroupId $a.principalId -All).Count } else { $users += 1 }
         }
-        $to = if ($mine.Count) { ($mine | ForEach-Object { $_.principalDisplayName }) -join ", " } else { "(none)" }
+        $grp = @($mine | Where-Object { $_.principalType -ne "User" })
+        $usr = @($mine | Where-Object { $_.principalType -eq "User" })
+        $parts = @($grp | ForEach-Object { $_.principalDisplayName })
+        if ($usr.Count) { $parts += "$($usr.Count) user(s)" }
+        $to = if ($parts.Count) { $parts -join ", " } else { "(none)" }
         $lines.Add(("{0,-18} {1,-22} {2,-8} {3,-34} {4}" -f $r.Name, $r.Value, [bool]($def -and $def.isEnabled), $to, $users))
-        $want = if ($r.Assign) { $r.Assign } else { "(none)" }
-        $checks.Add([pscustomobject]@{ Check = "$($r.Name) role exists and assigned to $want"; Pass = [bool]$def -and ($to -eq $want) })
+        if ($r.Assign -eq "(access package)") {
+            # Granted per user by the access package (M2.4): no group may hold this role
+            $checks.Add([pscustomobject]@{ Check = "$($r.Name) role exists, held by users via access package only (no groups)"; Pass = [bool]$def -and $grp.Count -eq 0 })
+        } else {
+            $want = if ($r.Assign) { $r.Assign } else { "(none)" }
+            $checks.Add([pscustomobject]@{ Check = "$($r.Name) role exists and assigned to $want"; Pass = [bool]$def -and ($to -eq $want) })
+        }
     }
     $checks.Insert(0, [pscustomobject]@{ Check = "Assignment required = Yes"; Pass = [bool]$sp.appRoleAssignmentRequired })
-    $checks.Add([pscustomobject]@{ Check = "No direct user assignments"; Pass = -not ($assigned | Where-Object { $_.principalType -ne "Group" }) })
+    $pkgRoleIds = @($roles | Where-Object { $_.Assign -eq "(access package)" } | ForEach-Object { $v = $_.Value; (@($sp.appRoles) | Where-Object { $_.value -eq $v }).id })
+    $checks.Add([pscustomobject]@{ Check = "No direct user assignments outside access-package roles"; Pass = -not ($assigned | Where-Object { $_.principalType -ne "Group" -and $pkgRoleIds -notcontains $_.appRoleId }) })
     $lines.Add("")
     foreach ($c in $checks) { $lines.Add(("[{0}] {1}" -f $(if ($c.Pass) { "PASS" } else { "FAIL" }), $c.Check)) }
     $failed = @($checks | Where-Object { -not $_.Pass }).Count
@@ -182,7 +198,7 @@ if (-not $sp) {
 
 # ---------- 3. Assign Associate to the birthright group ----------
 $associateId = ($roleBody | Where-Object { $_.value -eq "StoreOps.Associate" }).id
-$assigned = @((Invoke-Graph GET "$graph/servicePrincipals/$($sp.id)/appRoleAssignedTo").value)
+$assigned = @(Get-AssignedTo $sp.id)
 if ($assigned | Where-Object { $_.principalId -eq $group.Id -and $_.appRoleId -eq $associateId }) {
     Write-Host "Unchanged '$AssociateGroup' -> Associate"
 } else {

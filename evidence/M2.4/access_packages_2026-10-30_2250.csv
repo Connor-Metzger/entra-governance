@@ -1,0 +1,6 @@
+"package","flags","policies","automatic","rule_matches_design","auto_remove","grace","resources","expected_from_hr","delivered","in_progress","delivery_failed","missing","unexpected","match"
+"BUS-01 Store Frontline","","1","1","True","True","none","1","104","104","0","0","","","True"
+"BUS-02 Store Manager","PCI","1","1","True","True","none","5","52","52","0","0","","","True"
+"ADD-01 POS Refunds","","1","1","True","True","none","2","60","60","0","0","","","True"
+"BUS-03 Fuel Technician","","1","1","True","True","none","2","6","6","0","0","","","True"
+"BUS-04 Fuel Operations Manager","Privileged","1","1","True","True","none","2","11","11","0","0","","","True"

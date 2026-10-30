@@ -70,13 +70,9 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 
 | 2026-10-27 | M1.4 | Riley's failed TAP run shows status `completedWithErrors`, not `failed` | Graph marks a run completed if it reached the end; failed tasks are counted separately | Measure failures by failed-task count, not run status |
 
-| 2026-10-28 | M2.4 | StoreOps -Verify would have reported 47 of 60 Shift Leads after access packages added 112 user assignments | Graph returns appRoleAssignedTo 100 per page; the M1.4 script read only the first page, and passed on 10-28 only because there was 1 assignment | Added paging (Get-AssignedTo) and $top=999; found by testing against a mock before the live run | Yes: a check that worked on 1 item can silently truncate at 100. Test with realistic volumes |
-
 | 2026-10-28 | M2.4 | First live -Verify crashed: "Index operation failed" | A package with 0 assignments returned $null, and piping $null into ForEach-Object still runs the block once | Drop nulls before ForEach-Object (Where-Object { $_ }); rerun passed 33/33 | Yes: test the empty case. A brand-new package has zero assignments for its first minutes |
 
 | 2026-10-28 | M2.4 | StoreOps -Verify would have counted only 47 of 60 Shift Leads (caught in mock testing) | Graph returns app role assignments in pages; the script read only the first page | Follow @odata.nextLink until there are no more pages; retested with 100+ assignments | Yes: "no error" isn't "everything returned". An under-count from paging looks exactly like a real access finding |
-
-| 2026-10-28 | M2.4 | First live -Verify crashed: "Index operation failed" | A package with 0 assignments returned $null, and piping $null into ForEach-Object still runs the block once | Drop nulls before ForEach-Object (Where-Object { $_ }); rerun passed 33/33 | Yes: test the empty case. A brand-new package has zero assignments for its first minutes |
 
 ## Concept notes (from check questions)
 

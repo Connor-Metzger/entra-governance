@@ -73,9 +73,9 @@ foreach ($e in $EmployeeId) {
     $allAr = Get-All "$graph/users/$($u.id)/appRoleAssignments"
     $ar = @($allAr | Where-Object { $sp.Count -eq 1 -and $_.resourceId -eq $sp[0].id })
     $roles = @($ar | ForEach-Object { if ($roleName[$_.appRoleId]) { $roleName[$_.appRoleId] } else { "(default access)" } } | Sort-Object -Unique)
-    # appRoleAssignments on a user lists direct assignments only; Associate comes through the BR-02 group
-    $viaGroup = if ($br -like "BR-02*") { " + StoreOps.Associate via BR-02 group" } else { "" }
-    $lines.Add("  $AppName roles: $(if ($roles.Count) { $roles -join ', ' } else { 'none direct' })$viaGroup")
+    # Live tenant (2026-10-29): appRoleAssignments on a user also lists roles inherited from groups,
+    # so Associate (assigned to the BR-02 group) appears here without a separate lookup
+    $lines.Add("  $AppName roles: $(if ($roles.Count) { $roles -join ', ' } else { 'none' })")
 }
 
 $lines | ForEach-Object { Write-Host $_ }

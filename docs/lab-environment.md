@@ -58,10 +58,6 @@
 
 - **M1.4 – StoreOps Portal is a registration only.** No real app sits behind it, so there are no sign-ins or SCIM runs; evidence is the Graph read-back (`evidence/M1.4/storeops_app_config.txt`). Group-based app assignment needs Entra ID P1 for every assigned user; the lab has 1 P1 seat.
 
-- **M2.4 – Entitlements are stand-in groups.** POS, inventory, safe-count and fuel systems don't exist, so each entitlement is a security group `ENT-<entitlement>` whose membership only the access packages manage. Production: the package would hold the real app roles or a provisioning connector.
-
-- **M2.4 – Governance licensing.** 173 people (233 assignments: the 60 Shift Leads hold BUS-01 and ADD-01) are in scope of the automatic policies, but the trial has 25 Entra ID Governance licenses. Entra didn't block this during the trial. Production: every user in scope of a governance feature needs a license.
-
 - **M2.4 – Stand-in entitlement groups.** The POS, inventory, scheduling, safe and fuel systems don't exist, so 10 security groups named `ENT-<entitlement>` stand in for "has this entitlement". Access packages are their only source of members. Production: the package grants the real app role, or a group the app provisions from (SCIM), not a stand-in group.
 
 - **M2.4 – 25 Governance licenses, 173 people in package scope.** The automatic packages serve 173 people (233 assignments: the 60 Shift Leads hold BUS-01 and ADD-01). Entra didn't block this during the trial. Production: every user in scope of a governance feature needs an Entra ID Governance license.

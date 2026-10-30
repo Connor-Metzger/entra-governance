@@ -21,7 +21,7 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 - [x] M1.4 Snapshot T0 + integration analysis memo (StoreOps Portal)
 
 ### M2 Part B — Access packages
-- [ ] M2.4 Catalog, birthright auto-assignment packages
+- [x] M2.4 Catalog, title-based auto-assignment packages (2026-10-30 — 5 packages, 173 people / 233 assignments, 33/33; promotion E00013 + demotion E00006 moved ADD-01 with no ticket, removal within 32 min)
 - [ ] M2.5 Requested packages, approvals, expiry, incompatible packages
 
 ### M3 — Certifications
@@ -97,3 +97,5 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 - **M1.3:** HR sync writes data, workflows take actions: load_users.ps1 now sets accountEnabled only on create (old version sent it on 276/276 updates → would re-enable every leaver; resync test left Logan disabled). Pre-hires created disabled + BR guard = no birthright before day one; TAP issued 7 days early but valid only from 03:00 hire time (23 h, multi-use, to manager). Riley's TAP failed "Manager attribute is missing or invalid" → HR fixes it in HR, IAM reports (33 no-manager records). Mover Rowan detected on schedule; birthright moves by rule, requested access removed after 15 days (0 for PCI: Cash Office, POS admin). Leaver Logan: disable → guard drops BR groups (remove-all-groups can't touch dynamic); delete at +7 days to catch HR errors. 23:00 leave time cuts off overnight last shifts → HR dates last day by shift end. Never re-enable a leaver (pay stub → HR/payroll sends it). L1/L2 kept template scope "Marketing" (0 users) and left Logan in the org-wide Team → verify config as data and check the result, not just the run.
 
 - **M1.4:** Expected and actual must count the same population (in force = Active + started + not past leave time). T0 snapshot = users + BR groups + workflow runs in one schema so T1 compares field by field; count failures by failed tasks, not run status. App onboarding: app roles mirror the catalog, assignment required = Yes, groups only (no direct users, no nesting), business owner ≠ Entra owner, and PCI scope decides review cadence (7.2.4 = every 6 months). Title rules must also check department (Rowan: Fuel Operations, still "Store Associate").
+
+- **M2.4:** One mechanism per layer: birthright = dynamic groups on department; business/add-on = access packages with one automatic policy on department + title + in-force guard (no memberOf), auto-remove, no grace; requested = approval packages (M2.5). A title-only change (Alex promoted, Cameron demoted) moved only ADD-01 + StoreOps.ShiftLead: BR groups and the M1 mover (department trigger) didn't see it. No grace because refunds are the insider-fraud path and the new Shift Lead gets them from the same policy. Removal took up to 32 min (Cameron still held refunds at 19) → for PCI, remove at the time of change. Totals read 60 = 60 while the wrong person held refunds → verify by employee ID, not counts.

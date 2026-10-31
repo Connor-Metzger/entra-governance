@@ -65,7 +65,7 @@ All HR changes were simulated by editing a copy of the HR feed and running `load
 | Birthright before day one | BR-01/BR-02 unchanged at 276/158: pre-hires excluded by the guard |
 | J1, Avery | **Completed.** TAP created, valid from 10/31 03:00, 23 h; email sent to manager (CC copy redacted in evidence) |
 | J1, Riley | **Failed:** "Manager attribute is missing or invalid" |
-| J2 (day one) | *Pending: runs 2026-10-31 ~03:00–04:00 ET. Expected: both enabled; BR-01 277, BR-02 158* |
+| J2 (day one) | **Completed** for both at 3:12 ET on 2026-10-31 (Riley too: enabling needs no manager). BR-01 277, BR-02 158 all match; BUS-01 106 (POS-Cashier on day one, no ticket). Riley still can't sign in without a TAP: the J1 failure is the real day-one gap |
 
 **Finding:** a missing manager in HR means a new hire arrives with **no way to sign in on day one**. HR has 32 more records with no manager and 24 whose manager has been terminated (M1.1). Each one is a future failed onboarding. **Owner: HR (data owner). IAM detects and reports it.**
 

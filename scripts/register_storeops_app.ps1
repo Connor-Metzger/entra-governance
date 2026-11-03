@@ -53,10 +53,10 @@ $roles = @(
         GrantedBy = "Access package BUS-02 Store Manager, automatic by department + job title (PCI-flagged), M2.4"; Assign = "(access package)" }
     [pscustomobject]@{ Value = "StoreOps.CashOffice";   Name = "Cash Office (PCI)"
         Desc = "Card settlement and deposit reconciliation reports. PCI scope."
-        GrantedBy = "REQUESTED access package: manager + PCI owner approval, quarterly review, M2.5"; Assign = "" }
+        GrantedBy = "REQUESTED access package ADD-06: manager + PCI owner approval, 90-day expiry, M2.5"; Assign = "(access package)" }
     [pscustomobject]@{ Value = "StoreOps.Admin";        Name = "Admin"
         Desc = "Application configuration. Privileged."
-        GrantedBy = "REQUESTED access package: IT Director approval, quarterly review, M2.5"; Assign = "" }
+        GrantedBy = "REQUESTED access package ADD-07: IT Director approval, 30-day expiry, M2.5"; Assign = "(access package)" }
 )
 $notes = "Business owner: $BusinessOwner. Technical owner: IAM Team. Data: store schedules, " +
          "timeclock, cash and card settlement (PCI for Cash Office). Assignment required. " +

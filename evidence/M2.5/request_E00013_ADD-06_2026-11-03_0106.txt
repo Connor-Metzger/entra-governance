@@ -1,0 +1,5 @@
+Admin direct assignment, 2026-11-03 01:06 UTC
+Person:        E00013 Alex Larsen | Shift Lead | Store-004 | enabled True
+Package:       ADD-06 StoreOps Cash Office
+Justification: Alex Larsen covers the Store-004 cash office for one week while the store manager is away
+Result:        REJECTED by Entra when submitted. [InvalidRequest] {\

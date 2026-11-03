@@ -90,7 +90,7 @@ All HR changes were simulated by editing a copy of the HR feed and running `load
 | Groups | Static "KEY-Store-033 Keyholders" removed by the task. BR-01/BR-02 dropped automatically by the guard. Org-wide M365 group removed after the Teams task was added (section 5). **Final: zero groups** |
 | Sync can't undo it | HR load rerun (278 users updated); Logan **stayed disabled**: `evidence/M1.3/logan_after_resync.txt` |
 | Group counts | BR-01 275 (Logan), BR-02 156 (Rowan out, Logan out), BR-03 18 (Rowan in); others unchanged. Each difference from t0 explained |
-| L2 (+7 days) | *Pending: runs night of 2026-11-01. Expected: deleted, visible under Deleted users* |
+| L2 (+7 days) | **Completed** at HH:MM ET on 2026-11-02 (leave time + 7 days = 22:00 ET; clocks changed Nov 1). Account deleted, in Deleted users (restorable for 30 days if HR made an error) |
 
 ## 5. Things that broke (and what they taught)
 
@@ -128,6 +128,7 @@ All HR changes were simulated by editing a copy of the HR feed and running `load
 | 04-avery-tap-pending.png / 05-tap-email-redacted.png | TAP valid from hire time; manager email (code redacted) |
 | 06-mover-history.png | Rowan, scheduled mover run, 2 of 2 tasks |
 | 08-leaver-history.png | Logan, scheduled leaver run, 4 of 4 tasks |
+| 09-l2-history.png / 10-logan-deleted-users.png / logan_after_l2.txt | Leaver +7 days: account deleted, restorable for 30 days |
 | logan_after_resync.txt | Sync rerun does not re-enable a leaver |
 | workflow_config_after_fix.txt | All five workflows' triggers and scopes, read back through Graph |
 | group_counts_*.csv | Birthright group counts against HR before and after the tests |

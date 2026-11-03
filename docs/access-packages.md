@@ -1,6 +1,6 @@
 # Title-Based Access Packages — Keystone Fuel & Market
 
-*Module M2.4 · Built in a lab tenant (Microsoft Entra ID Governance trial) · Last updated 2026-10-30*
+*Modules M2.4–M2.5 · Built in a lab tenant (Microsoft Entra ID Governance trial) · Last updated 2026-11-03*
 
 ## 1. Summary
 
@@ -92,8 +92,10 @@ What it shows:
 |---|---|---|
 | 8.1 | E00278 Jamie Novak (Store Manager, Store-029) reports to Cameron Tanaka, now a Store Associate at Store-025. Manager links drive TAP delivery, mover notices and access review routing (M1.1 found 29 Store Managers reporting to Shift Leads; JML open item 7.1 covers missing managers) | HR |
 | 8.2 | A title-only change notifies nobody: the M1 mover workflow triggers on department. Decide whether to add a jobTitle-change trigger that notifies the manager | IAM + Director of Store Operations |
-| 8.3 | Re-evaluation latency (up to 32 min observed). Accept for ADD-01; for PCI requested packages, remove at the time of change (M2.5) | IAM |
+| 8.3 | ~~Re-evaluation latency (up to 32 min observed)~~ **Resolved M2.5 (2026-11-03):** accepted for ADD-01; PCI and admin requested packages are removed by JML-M2 at the next workflow run after a department change (§10.4) | IAM |
 | 8.4 | Licensing: 173 people in scope vs 25 trial Governance licenses (lab deviation) | IT |
+| 8.5 | ADD-06 lists ADD-01 as incompatible, but not the reverse. Not tested: what happens if a Cash Office holder is promoted to Shift Lead (is the ADD-01 automatic assignment blocked?). Decide whether to make it two-way and test it | IAM + Director of Store Operations |
+| 8.6 | JML-M1 "remove all access package assignments" (15-day) may also remove packages the mover gained in the new job (Finley's BUS-03, due ~2026-11-18). The automatic policy should re-add it; check after day 15 | IAM |
 
 ## 9. Evidence (`evidence/M2.4/`)
 
@@ -109,3 +111,82 @@ What it shows:
 | storeops_app_config.txt | StoreOps Portal: Shift Lead 60 users, 7/7 |
 
 Lab deviations (ENT stand-in groups, licensing): `docs/lab-environment.md`.
+
+## 10. Requested packages: Cash Office (PCI) and Admin (M2.5, 2026-11-02/03)
+
+Nobody gets these two because of their HR data. A person asks, gives a reason, an approver says yes, and the access ends on its own. "Has the title" is not "needs card data".
+
+Scripts: `scripts/create_requested_packages.ps1` (packages, -Verify 12 checks), `scripts/request_package.ps1` (admin direct assignment), `scripts/create_pci_mover_workflow.ps1` (JML-M2, -Verify 8 checks).
+
+### 10.1 Design
+
+| Package | Who may ask | Approval | Justification | Expires | Incompatible with | Grants | Owner |
+|---|---|---|---|---|---|---|---|
+| ADD-06 StoreOps Cash Office [PCI] | BR-02 Store Operations | 1. requestor's manager (no manager in HR → fallback approver) 2. PCI owner | Requestor and approvers | 90 days | ADD-01 POS Refunds | StoreOps.CashOffice | Director of Store Operations |
+| ADD-07 StoreOps Admin [Privileged] | BR-06 IT | IT Director | Requestor and approver | 30 days | (none) | StoreOps.Admin | IT Director |
+
+- **90 days for Cash Office** is shorter than the 6-month review in PCI DSS 7.2.4, so access can't outlive two reviews. Keeping it means asking again with a fresh reason.
+- **SoD (separation of duties):** whoever issues refunds must not reconcile the cash. Cash Office is incompatible with ADD-01 POS Refunds, the same rule as POS-Refunds ↔ SafeCount-Operator in the role catalog.
+
+### 10.2 SoD test (2026-11-03 01:05–01:20 UTC)
+
+| Person | Request | Result |
+|---|---|---|
+| E00001 Morgan Haddad, Store Manager, Store-007 | ADD-06, admin direct assignment with justification | Delivered, expires 2027-02-01 01:05Z |
+| E00013 Alex Larsen, Shift Lead (holds ADD-01 POS Refunds) | ADD-06, same | **Rejected:** `InvalidRequestSODCheck`, conflicting package ADD-01 POS Refunds. Blocked even for an admin |
+
+### 10.3 Two clocks for movers
+
+Both mover workflows trigger on a department change (`attributeChangeTrigger`, scope `companyName eq 'Keystone Fuel & Market'`).
+
+| Workflow | Tasks | Clock | Why |
+|---|---|---|---|
+| JML-M1 Department change | Notify manager; remove all access package assignments | 15-day handover | Ordinary access: let the mover finish work in the old team |
+| JML-M2 PCI access removal on move | Remove ADD-06 Cash Office; remove ADD-07 Admin (continue on error) | Next scheduled run (hourly in the lab) | No handover need for card data or admin. Only Store Ops may ask for Cash Office and only IT for Admin, so changing department means leaving the team that justified it |
+
+### 10.4 Test: Finley Moreau (E00034), Store Operations → Fuel Operations (2026-11-03)
+
+HR change file `exports/hr_m25.csv` = `hr_m24.csv` + E00034 department Store Operations → **Fuel Operations**, title Store Associate → **Fuel Technician** (`Compare-Object`: exactly 1 person changed).
+
+| Time (ET) | Event | Evidence |
+|---|---|---|
+| 11:04 | JML-M2 created; verify **8/8**, Cash Office held by Morgan only | `pci_mover_workflow_2026-11-03_1104.txt` |
+| 11:04 | Finley given ADD-06 with justification; delivered, expires 2027-02-01 | `request_E00034_ADD-06_2026-11-03_1605.txt` |
+| 11:05 | Before: BR-02, BUS-01 (POS-Cashier), ADD-06, StoreOps.Associate + **StoreOps.CashOffice** | `person_access_before_move_2026-11-03_1605.txt` |
+| ~11:06 | HR load of `hr_m25.csv` | (load report not committed) |
+| 11:08 | Verify **7/8**: Finley holds Cash Office as a Fuel Technician (`<-- OUTSIDE`). This is the exposure window | `pci_mover_workflow_2026-11-03_1108.txt` |
+| 11:37 | JML-M2 **scheduled** run for Finley: 2 of 2 tasks completed (11:37:52–11:38:04) | `05-m2-history.png` |
+| 11:41 | Verify **8/8**: Cash Office held by Morgan only | `pci_mover_workflow_2026-11-03_1141.txt` |
+| 11:42 | After: BR-03, no StoreOps roles, ADD-06 **expired**, BUS-01 **expired**; BUS-03 not yet delivered (30/33) | `person_access_after_move_2026-11-03_1642.txt`, `access_packages_config_2026-11-03_1643.txt` |
+| 12:00 | BUS-03 Fuel Technician delivered; packages **33/33**; groups BR-02 157, BR-03 19, all match | `person_access_after_move_2026-11-03_1700.txt`, `access_packages_config_2026-11-03_1700.txt`, `group_counts_2026-11-03_1200.csv` |
+
+What it shows:
+- **Card-data access ended about 32 minutes after HR recorded the move**, at the next hourly run, not after 15 days. The workflow schedule is the limit: in the lab, runs land at :37 past the hour, so the worst case is about one hour.
+- **One HR change, five controls, no ticket.** M2 removed Cash Office, M1 notified the manager, BUS-01 removed POS-Cashier, BR-02 → BR-03 moved birthright, and BUS-03 granted the new job's access.
+- **Removal came before the grant** (BUS-01 off by 11:42, BUS-03 on between 11:43 and 12:00). Missing access for a few minutes is a productivity gap. Extra card access is a security gap.
+- **"Remove access package" completes when the user doesn't hold the package.** The ADD-07 task completed for Finley, who never held Admin, and an extra on-demand run at 11:39 completed both tasks after Cash Office was already gone. One workflow can cover both packages without a false error on every mover.
+- **The new workflow didn't pick up older moves.** Rowan (moved 10-27) has no M2 run; M2 acts on changes after it was created.
+- **Verify checks the outcome, not just the config.** The config was 6/6 at 11:08, while a Fuel Technician still held Cash Office.
+
+### 10.5 Control mapping
+
+| Framework | Control | How this module meets it |
+|---|---|---|
+| PCI DSS v4.0 | 7.2.1–7.2.2: access by job function, least privilege, approved by authorized personnel | Requested per person, manager + PCI owner approval, justification recorded |
+| PCI DSS v4.0 | 7.2.4: review access at least every 6 months | 90-day expiry forces a fresh request inside one review period |
+| NIST SP 800-53 | AC-5 Separation of duties; AC-6 Least privilege; PS-5 Personnel transfer | ADD-06 ↔ ADD-01 incompatibility; JML-M2 at the department change |
+| CIS Controls v8 | 6.1 Establish an access granting process; 6.2 Establish an access revoking process | Request + approval + expiry; automatic revocation on move |
+
+### 10.6 Evidence (`evidence/M2.5/`)
+
+| File | Shows |
+|---|---|
+| 01a/01b-add06-policy.png, 02-add06-incompatible.png, 03-add06-assignments.png | ADD-06 policy, incompatibility, assignments |
+| requested_packages_config_2026-11-03_0107.txt | Both packages read back: 12/12 |
+| request_E00001_* / request_E00013_* / request_E00034_* | Delivered (Morgan, Finley) and SoD-rejected (Alex) |
+| pci_mover_workflow_*.txt | JML-M2 config and outcome: 8/8 → 7/8 (Finley outside) → 8/8 with runs |
+| 05-m2-history.png / 06-m1-history-finley.png | Both mover workflows ran for Finley on the same department change |
+| person_access_before_move_* / person_access_after_move_* | Finley, every layer, before and after |
+| access_packages_*_1643 / _1700, group_counts_*.csv | Side checks: 30/33 → 33/33; BR-02 157, BR-03 19 |
+
+Lab deviations (one approver for all roles, admin direct assignment): `docs/lab-environment.md`.

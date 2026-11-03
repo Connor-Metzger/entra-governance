@@ -62,6 +62,12 @@
 
 - **M2.4 – 25 Governance licenses, 173 people in package scope.** The automatic packages serve 173 people (233 assignments: the 60 Shift Leads hold BUS-01 and ADD-01). Entra didn't block this during the trial. Production: every user in scope of a governance feature needs an Entra ID Governance license.
 
+- **M2.5 – One approver for every role.** iam.admin is the PCI owner, the IT Director and the fallback approver when HR has no manager. Production: separate named people, and the PCI owner is not an IAM admin who can also assign access.
+
+- **M2.5 – Admin direct assignment skips approval.** Morgan and Finley got Cash Office through an admin direct assignment with a justification; synthetic users can't sign in, so manager approval is shown as configuration only. Production: people request at myaccess.microsoft.com; direct assignment is limited to assignment managers and logged.
+
+- **M2.5 – Extra on-demand run.** JML-M2's scheduled run (11:37 ET) removed Finley's Cash Office; an on-demand run was also started at 11:39. Evidence uses the scheduled run.
+
 ---
 
 ## 3. Break-glass (emergency access) design

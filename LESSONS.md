@@ -22,7 +22,7 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 
 ### M2 Part B — Access packages
 - [x] M2.4 Catalog, title-based auto-assignment packages (2026-10-30 — 5 packages, 173 people / 233 assignments, 33/33; promotion E00013 + demotion E00006 moved ADD-01 with no ticket, removal within 32 min)
-- [ ] M2.5 Requested packages, approvals, expiry, incompatible packages
+- [x] M2.5 Requested packages, approvals, expiry, incompatible packages (2026-11-03 — ADD-06 Cash Office PCI 2-stage/90 d/SoD vs ADD-01, ADD-07 Admin 30 d; SoD block tested; JML-M2 removes PCI at the department change: Finley ~32 min, 8/8)
 
 ### M3 — Certifications
 - [ ] M3.1 PCI access package review (recommendations, auto-apply)
@@ -74,6 +74,12 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 
 | 2026-10-28 | M2.4 | StoreOps -Verify would have counted only 47 of 60 Shift Leads (caught in mock testing) | Graph returns app role assignments in pages; the script read only the first page | Follow @odata.nextLink until there are no more pages; retested with 100+ assignments | Yes: "no error" isn't "everything returned". An under-count from paging looks exactly like a real access finding |
 
+| 2026-11-02 | M2.5 | `git diff --stat` showed 8+/24- instead of the expected 2+/2- after replacing register_storeops_app.ps1 | The old 10-28 download was moved into scripts\, not the new "(1)" copy the browser saved | Moved the "(1)" file; diff was 2+/2- | Yes: compare the diff size with what you expected before committing; it catches the wrong file |
+
+| 2026-11-02 | M2.5 | SoD rejection reason cut off at `{\"` | Graph nests an escaped JSON error inside the error message; the parser stopped at the first quote | Parse the inner JSON; evidence shows InvalidRequestSODCheck + ADD-01 POS Refunds | Minor: read the whole error body, not the first line |
+
+| 2026-11-03 | M2.5 | create_access_packages -Verify 30/33 right after Finley's move | BUS-03 hadn't granted E00034 yet; BUS-01 had already removed his old access | Reran 18 min later: 33/33 | Yes: removal and grant land at different times; know which gap is a security issue |
+
 ## Concept notes (from check questions)
 
 - **M0.1:** A leaver with an enabled account is a *true positive* ("terminated user with active access"), not a false positive. Deleting a committed secret does not remove it from Git history: rotate the secret first, then purge history. Seeds make the T0→T1 comparison reproducible.
@@ -99,3 +105,5 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 - **M1.4:** Expected and actual must count the same population (in force = Active + started + not past leave time). T0 snapshot = users + BR groups + workflow runs in one schema so T1 compares field by field; count failures by failed tasks, not run status. App onboarding: app roles mirror the catalog, assignment required = Yes, groups only (no direct users, no nesting), business owner ≠ Entra owner, and PCI scope decides review cadence (7.2.4 = every 6 months). Title rules must also check department (Rowan: Fuel Operations, still "Store Associate").
 
 - **M2.4:** One mechanism per layer: birthright = dynamic groups on department; business/add-on = access packages with one automatic policy on department + title + in-force guard (no memberOf), auto-remove, no grace; requested = approval packages (M2.5). A title-only change (Alex promoted, Cameron demoted) moved only ADD-01 + StoreOps.ShiftLead: BR groups and the M1 mover (department trigger) didn't see it. No grace because refunds are the insider-fraud path and the new Shift Lead gets them from the same policy. Removal took up to 32 min (Cameron still held refunds at 19) → for PCI, remove at the time of change. Totals read 60 = 60 while the wrong person held refunds → verify by employee ID, not counts.
+
+- **M2.5:** Requested access is per person, approved and expiring: ADD-06 Cash Office [PCI] (Store Ops may ask; manager + PCI owner approve; justification; 90 d; incompatible with ADD-01 POS Refunds) and ADD-07 Admin [Privileged] (IT may ask; IT Director; 30 d). SoD is enforced at assignment: Alex (Shift Lead with refunds) was rejected with InvalidRequestSODCheck, even as an admin assignment. Movers get two clocks on one trigger: M1 = notify + 15-day handover; M2 = PCI/admin removed at the next hourly run. Finley (E00034) moved Store Ops → Fuel Ops: 7/8 with Finley outside until the 11:37 run, then 8/8 (~32 min); BUS-01 off by 11:42, BUS-03 on by 12:00. "Remove package" completes when the user doesn't hold it, so one workflow covers both packages. Verify the outcome (who holds PCI outside the allowed department), not just the config.

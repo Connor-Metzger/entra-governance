@@ -44,6 +44,7 @@ flowchart LR
 | JML-J1 Pre-hire TAP to manager | Onboard pre-hire employee | employeeHireDate, 7 days before | Generate TAP (23 h, multi-use, valid from hire time) and email it to the manager |
 | JML-J2 Day one enable | Onboard new hire employee | employeeHireDate, on the day | Enable user account |
 | JML-M1 Department change | Employee job profile change | Attribute change: department | Notify manager of move; remove all access package assignments (15-day scheduled removal) |
+| JML-M2 PCI access removal on move | Custom (mover, M2.5) | Attribute change: department | Remove ADD-06 Cash Office; remove ADD-07 Admin (no delay, continue on error) |
 | JML-L1 Last day offboard | Offboard an employee | employeeLeaveDateTime, on the day | Disable account; revoke refresh tokens; remove access package assignments; remove from all groups; remove from all Teams |
 | JML-L2 Plus 7 days delete | Post-offboarding of an employee | employeeLeaveDateTime, 7 days after | Remove all licenses; delete user (soft delete, restorable for 30 days) |
 
@@ -117,7 +118,7 @@ All HR changes were simulated by editing a copy of the HR feed and running `load
 | 7.1 | 33 active records with no manager (32 from t0 + Riley) and 24 with a terminated manager. Joiner TAP and mover notification depend on them | HR |
 | 7.2 | ~~`create_dynamic_groups.ps1 -Verify` counts every Active HR row~~ **Resolved M1.4 (2026-10-27):** expected = Active AND hire time passed AND leave time not passed; excluded rows are printed | IAM (M1.4) |
 | 7.3 | Overnight shifts: a 23:00 leave time cuts off a 22:00–06:00 last shift. Agree with HR that the termination date is the day the last shift **ends** | HR + IAM |
-| 7.4 | Access package removal for movers is 15 days. PCI packages (Cash Office, POS admin) should be removed with no grace period. Set this in M2.5 | IAM + Director of Store Operations |
+| 7.4 | ~~Access package removal for movers is 15 days~~ **Resolved M2.5 (2026-11-03):** JML-M2 removes Cash Office (PCI) and Admin at the next run after a department change; M1 keeps the 15-day handover for everything else. Tested on E00034 Finley Moreau: removed 11:38 ET, about 32 min after the HR load (docs/access-packages.md §10.4) | IAM + Director of Store Operations |
 
 ## 8. Evidence (`evidence/M1.3/`)
 

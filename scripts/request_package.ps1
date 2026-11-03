@@ -60,9 +60,13 @@ try {
 } catch {
     # Graph rejects some requests outright (for example SoD) instead of creating a request
     $msg = if ($_.ErrorDetails.Message) { $_.ErrorDetails.Message } else { $_.Exception.Message }
-    $code = if ($msg -match '"code"\s*:\s*"([^"]+)"') { $Matches[1] } else { "" }
-    $text = if ($msg -match '"message"\s*:\s*"([^"]+)"') { $Matches[1] } else { $msg }
-    Say ("Result:        REJECTED by Entra when submitted. {0}{1}" -f $(if ($code) { "[$code] " } else { "" }), $text)
+    # Graph can nest the real error as escaped JSON inside "message": unescape, then take every code/message
+    $flat = $msg; for ($i = 0; $i -lt 3; $i++) { $flat = $flat -replace '\\"', '"' -replace '\\\\', '\' }
+    $codes = @([regex]::Matches($flat, '"code"\s*:\s*"([^"]+)"') | ForEach-Object { $_.Groups[1].Value } | Select-Object -Unique)
+    $texts = @([regex]::Matches($flat, '"message"\s*:\s*"([^"{]+)"') | ForEach-Object { $_.Groups[1].Value } | Select-Object -Unique)
+    $text = if ($texts.Count) { $texts -join " | " } else { $msg }
+    $text = $text -replace '[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}', '<id>'   # no object IDs in evidence
+    Say ("Result:        REJECTED by Entra when submitted. {0}{1}" -f $(if ($codes.Count) { "[$($codes -join ', ')] " } else { "" }), $text)
     $state = "rejected"
 }
 if ($req) {

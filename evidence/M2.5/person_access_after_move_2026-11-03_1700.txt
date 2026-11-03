@@ -1,0 +1,7 @@
+Access read back from Graph, 2026-11-03 17:00 UTC (after_move)
+
+E00034 Finley Moreau | Fuel Operations | Fuel Technician | Store-030 | enabled True
+  Birthright groups:  BR-01 All Employees Baseline, BR-03 Fuel Operations Baseline
+  Access packages:    ADD-06 StoreOps Cash Office [expired], BUS-01 Store Frontline [expired], BUS-03 Fuel Technician [delivered]
+  Entitlement groups: ENT-FuelPricing-View, ENT-TankMonitor-Operator
+  StoreOps Portal roles: none

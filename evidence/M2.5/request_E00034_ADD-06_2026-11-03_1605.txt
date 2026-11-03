@@ -1,0 +1,6 @@
+Admin direct assignment, 2026-11-03 16:04 UTC
+Person:        E00034 Finley Moreau | Store Associate | Store-030 | enabled True
+Package:       ADD-06 StoreOps Cash Office
+Justification: Covers deposit reconciliation at Store-030 while the cash office lead is on leave
+Request:       state delivered, status Fulfilled
+Assignment:    delivered, expires 2027-02-01 16:05Z

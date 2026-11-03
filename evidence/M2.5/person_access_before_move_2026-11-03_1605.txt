@@ -1,0 +1,7 @@
+Access read back from Graph, 2026-11-03 16:05 UTC (before_move)
+
+E00034 Finley Moreau | Store Operations | Store Associate | Store-030 | enabled True
+  Birthright groups:  BR-01 All Employees Baseline, BR-02 Store Operations Baseline
+  Access packages:    ADD-06 StoreOps Cash Office [delivered], BUS-01 Store Frontline [delivered]
+  Entitlement groups: ENT-POS-Cashier
+  StoreOps Portal roles: StoreOps.Associate, StoreOps.CashOffice

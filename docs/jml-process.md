@@ -90,7 +90,7 @@ All HR changes were simulated by editing a copy of the HR feed and running `load
 | Groups | Static "KEY-Store-033 Keyholders" removed by the task. BR-01/BR-02 dropped automatically by the guard. Org-wide M365 group removed after the Teams task was added (section 5). **Final: zero groups** |
 | Sync can't undo it | HR load rerun (278 users updated); Logan **stayed disabled**: `evidence/M1.3/logan_after_resync.txt` |
 | Group counts | BR-01 275 (Logan), BR-02 156 (Rowan out, Logan out), BR-03 18 (Rowan in); others unchanged. Each difference from t0 explained |
-| L2 (+7 days) | **Completed** at HH:MM ET on 2026-11-02 (leave time + 7 days = 22:00 ET; clocks changed Nov 1). Account deleted, in Deleted users (restorable for 30 days if HR made an error) |
+| L2 (+7 days) | **Completed** at 10:37 ET on 2026-11-02 (leave time + 7 days = 22:00 ET; clocks changed Nov 1). Account deleted, in Deleted users (restorable for 30 days if HR made an error) |
 
 ## 5. Things that broke (and what they taught)
 

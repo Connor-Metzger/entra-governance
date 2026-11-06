@@ -1,0 +1,6 @@
+Admin direct assignment, 2026-11-06 23:28 UTC
+Person:        E00062 Jordan Lindqvist | Store Manager | Store-020 | enabled True
+Package:       ADD-06 StoreOps Cash Office
+Justification: Store Manager at Store-020, reconciles the daily deposit
+Request:       state delivered, status Fulfilled
+Assignment:    delivered, expires 2027-02-04 23:30Z

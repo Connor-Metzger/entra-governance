@@ -1,0 +1,6 @@
+Admin direct assignment, 2026-11-06 23:34 UTC
+Person:        E00049 Logan Tanaka | Systems Administrator | Corporate | enabled True
+Package:       ADD-07 StoreOps Admin
+Justification: Systems Administrator on the StoreOps release team
+Request:       state delivered, status Fulfilled
+Assignment:    delivered, expires 2026-12-06 23:35Z

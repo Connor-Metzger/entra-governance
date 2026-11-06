@@ -1,0 +1,6 @@
+Admin direct assignment, 2026-11-06 23:35 UTC
+Person:        E00011 Marley Achebe | Systems Administrator | Corporate | enabled True
+Package:       ADD-07 StoreOps Admin
+Justification: Systems Administrator, owns StoreOps Portal configuration
+Request:       state submitted, status Accepted
+Still processing after 120 s. Check Requests on the package in the portal, or rerun -Verify in a few minutes.

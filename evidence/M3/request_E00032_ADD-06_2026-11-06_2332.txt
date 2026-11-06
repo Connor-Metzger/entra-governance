@@ -1,0 +1,6 @@
+Admin direct assignment, 2026-11-06 23:30 UTC
+Person:        E00032 Jamie Ivanova | Store Associate | Store-005 | enabled True
+Package:       ADD-06 StoreOps Cash Office
+Justification: Store-005 has no Store Manager; acting cash office for deposits
+Request:       state submitted, status Accepted
+Still processing after 120 s. Check Requests on the package in the portal, or rerun -Verify in a few minutes.

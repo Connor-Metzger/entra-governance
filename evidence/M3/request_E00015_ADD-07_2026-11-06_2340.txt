@@ -1,0 +1,6 @@
+Admin direct assignment, 2026-11-06 23:38 UTC
+Person:        E00015 Kai Kowalski | Service Desk Analyst | Corporate | enabled True
+Package:       ADD-07 StoreOps Admin
+Justification: Service desk: reset StoreOps kiosk settings during the Store-012 rollout (ended 2026-11-05)
+Request:       state delivered, status Fulfilled
+Assignment:    delivered, expires 2026-12-06 23:40Z

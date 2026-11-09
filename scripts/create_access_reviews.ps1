@@ -88,7 +88,9 @@ $org = $org[0]
 $startDate = (Get-Date).ToUniversalTime().ToString("yyyy-MM-dd")
 function OneTime([int]$days) {
     return [ordered]@{ pattern = $null; range = [ordered]@{ type = "numbered"; numberOfOccurrences = 0; recurrenceTimeZone = $null
-        startDate = $startDate; endDate = ([datetime]$startDate).AddDays($days).ToString("yyyy-MM-dd") } }
+        # Entra ends a one-time review at 08:00 UTC on endDate (seen live: started 11-06 23:41 UTC, ended 11-09 08:00 UTC,
+        # 2.3 days instead of 3). One extra day guarantees at least $days full days.
+        startDate = $startDate; endDate = ([datetime]$startDate).AddDays($days + 1).ToString("yyyy-MM-dd") } }
 }
 function PkgScope($p) {
     return [ordered]@{ "@odata.type" = "#microsoft.graph.accessReviewQueryScope"; queryType = "MicrosoftGraph"
@@ -262,30 +264,43 @@ foreach ($d in $design) {
     $lines.Add("  Definition status: $($def.status)")
     foreach ($c in (Test-Definition $d $def)) { $checks.Add($c) }
 
+    # Entra fixes the scope when the review STARTS: compute expected as of the instance start
+    $inst = Get-GraphAll "$ar/$($d.Id)/instances"   # assign first: @(Get-GraphAll ...) would nest the array
+    $inst = @($inst)
+    $started = ($inst.Count -gt 0 -and @("InProgress", "Completing", "Completed", "Applying", "Applied", "AutoReviewing", "AutoReviewed") -contains $inst[0].status)
+    $asOf = if ($started) { ToUtc $inst[0].startDateTime } else { (Get-Date).ToUniversalTime() }
+    $unsure = @()
+
     # Expected people in scope
     if ($d.Package) {
         $asg = Get-GraphAll "$em/assignments?`$filter=$(F "accessPackage/id eq '$($d.Package.Id)' and state eq 'delivered'")&`$expand=target"
         $expected = @($asg | ForEach-Object { $_.target.objectId })
     } else {
-        $since = (Get-Date).ToUniversalTime().AddDays(-$InactiveDays)
+        $since = $asOf.AddDays(-$InactiveDays)
         try {
             $memIds = Get-GraphAll "$graph/groups/$($org.id)/transitiveMembers/microsoft.graph.user?`$select=id&`$top=999"
             $memIds = @($memIds | ForEach-Object { $_.id })
             $allUsers = Get-GraphAll "$graph/users?`$select=id,createdDateTime,signInActivity"   # signInActivity is read from /users
             $mem = @($allUsers | Where-Object { $memIds -contains $_.id })
-            $expected = @($mem | Where-Object {
-                $last = @($_.signInActivity.lastSignInDateTime, $_.signInActivity.lastNonInteractiveSignInDateTime) | Where-Object { $_ } |
+            $expected = New-Object System.Collections.Generic.List[string]
+            $unsureL  = New-Object System.Collections.Generic.List[string]
+            foreach ($m in $mem) {
+                if ((ToUtc $m.createdDateTime) -gt $since) { continue }   # too new on the start date
+                $last = @($m.signInActivity.lastSignInDateTime, $m.signInActivity.lastNonInteractiveSignInDateTime) | Where-Object { $_ } |
                     ForEach-Object { ToUtc $_ } | Sort-Object -Descending | Select-Object -First 1
-                (ToUtc $_.createdDateTime) -le $since -and (-not $last -or $last -le $since) } | ForEach-Object { $_.id })
+                if (-not $last -or $last -le $since) { $expected.Add($m.id) }
+                elseif ($last -gt $asOf) { $unsureL.Add($m.id) }          # signed in after the start: can't tell what Entra saw
+            }
+            $expected = $expected.ToArray(); $unsure = $unsureL.ToArray()
             $young = @($mem | Where-Object { (ToUtc $_.createdDateTime) -gt $since })
-            $lines.Add(("  Group members: {0} | created in the last {1} days (never in scope): {2} | expected inactive: {3}" -f $mem.Count, $InactiveDays, $young.Count, $expected.Count))
+            $lines.Add(("  Group members: {0} | as of review start {1} | created in the {2} days before (never in scope): {3} | expected inactive: {4} | signed in after the start (not compared): {5}" -f
+                $mem.Count, $asOf.ToString("yyyy-MM-dd HH:mm 'UTC'"), $InactiveDays, $young.Count, $expected.Count, $unsure.Count))
+            foreach ($x in $unsure) { $lines.Add("    signed in after start: $(Label $x)") }
             foreach ($y in $young) { $lines.Add("    too new: $(Label $y.id)") }
         } catch { $expected = $null; $lines.Add("  Expected list unavailable (needs AuditLog.Read.All): $($_.Exception.Message)") }
     }
 
-    $inst = Get-GraphAll "$ar/$($d.Id)/instances"   # assign first: @(Get-GraphAll ...) would nest the array
-    $inst = @($inst)
-    if ($inst.Count -eq 0 -or @("InProgress", "Completing", "Completed", "Applying", "Applied", "AutoReviewing", "AutoReviewed") -notcontains $inst[0].status) {
+    if (-not $started) {
         $wait++
         $lines.Add("  Instance: $(if ($inst.Count) { $inst[0].status } else { 'not created yet' }). WAIT: decisions appear once the review starts (up to a few hours).")
         continue
@@ -310,8 +325,9 @@ foreach ($d in $design) {
     $inScope = @($dec | ForEach-Object { $_.principal.id } | Sort-Object -Unique)
     if ($null -ne $expected) {
         $missing = @($expected | Where-Object { $inScope -notcontains $_ })
-        $extra   = @($inScope  | Where-Object { $expected -notcontains $_ })
-        $lines.Add(("  In scope: {0} | expected: {1}{2}{3}" -f $inScope.Count, $expected.Count,
+        $extra   = @($inScope  | Where-Object { $expected -notcontains $_ -and $unsure -notcontains $_ })
+        $notCompared = @($inScope | Where-Object { $unsure -contains $_ }).Count
+        $lines.Add(("  In scope: {0} | expected: {1}{2}{3}{4}" -f $inScope.Count, $expected.Count, $(if ($notCompared) { " (+$notCompared signed in after the start, not compared)" } else { "" }),
             $(if ($missing.Count) { " | missing: " + (($missing | ForEach-Object { Label $_ }) -join ", ") } else { "" }),
             $(if ($extra.Count) { " | unexpected: " + (($extra | ForEach-Object { Label $_ }) -join ", ") } else { "" })))
         $checks.Add([pscustomobject]@{ Check = "$($d.Key): people in scope = expected ($($expected.Count))"; Pass = ($missing.Count -eq 0 -and $extra.Count -eq 0 -and $expected.Count -gt 0) })

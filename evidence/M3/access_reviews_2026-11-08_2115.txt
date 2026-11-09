@@ -1,0 +1,59 @@
+Access review campaign 2026-11, read back from Graph 2026-11-09 02:14 UTC
+Reviewer / fallback / PCI owner / IT Director (lab): iam.admin@keystonefuellab.onmicrosoft.com
+
+R1 M3 R1 PCI: ADD-06 Cash Office (2026-11)
+  ADD-06 Cash Office holders | reviewer: PCI owner | 3 days | no response: Deny | auto-apply on
+  Definition status: InProgress
+  Instance: InProgress | start 2026-11-06 23:41 UTC | end 2026-11-09 08:00 UTC
+  In scope: 5 | expected: 5
+  Decisions: NotReviewed 5 | recommendations: Deny 5
+    E00032 Jamie Ivanova | Store Associate | Store-005 | recommended Deny | NotReviewed by -
+    E00001 Morgan Haddad | Store Manager | Store-007 | recommended Deny | NotReviewed by -
+    E00043 Hayden Castillo | Store Manager | Store-034 | recommended Deny | NotReviewed by -
+    E00070 Avery Castillo | Store Associate | Store-033 | recommended Deny | NotReviewed by -
+    E00062 Jordan Lindqvist | Store Manager | Store-020 | recommended Deny | NotReviewed by -
+
+R2 M3 R2 Privileged: ADD-07 StoreOps Admin, 2 stages (2026-11)
+  ADD-07 Admin holders | stage 1 (2 d): manager, fallback IAM Admin (Lab) | stage 2 (1 d): IT Director | no response: Deny | auto-apply on
+  Definition status: InProgress
+  Instance: InProgress | start 2026-11-06 23:41 UTC | end 2026-11-09 08:00 UTC
+  Stage 1: Completed | 11-06 23:47 -> 11-08 23:47 UTC | 3 decision item(s)
+  Stage 2: InProgress | 11-08 23:48 -> 11-09 23:48 UTC | 3 decision item(s)
+  In scope: 3 | expected: 3
+  Decisions: NotReviewed 3 | recommendations: NoInfoAvailable 3
+    [stage 1] E00049 Logan Tanaka | Systems Administrator | Corporate | recommended NoInfoAvailable | NotReviewed by -
+    [stage 1] E00015 Kai Kowalski | Service Desk Analyst | Corporate | recommended NoInfoAvailable | NotReviewed by -
+    [stage 1] E00011 Marley Achebe | Systems Administrator | Corporate | recommended NoInfoAvailable | NotReviewed by -
+    [stage 2] E00015 Kai Kowalski | Service Desk Analyst | Corporate | recommended NoInfoAvailable | NotReviewed by -
+    [stage 2] E00011 Marley Achebe | Systems Administrator | Corporate | recommended NoInfoAvailable | NotReviewed by -
+    [stage 2] E00049 Logan Tanaka | Systems Administrator | Corporate | recommended NoInfoAvailable | NotReviewed by -
+
+R3 M3 R3 Inactive 14 d: Keystone Fuel & Market (2026-11)
+  Keystone Fuel & Market members with no sign-in for 14 days | managers, fallback IAM Admin (Lab) | 3 days | no default | auto-apply OFF
+  Definition status: InProgress
+  Group members: 281 | created in the last 14 days (never in scope): 0 | expected inactive: 279
+  Instance: InProgress | start 2026-11-06 23:41 UTC | end 2026-11-09 08:00 UTC
+  In scope: 277 | expected: 279 | missing: E00301 Avery Lindqvist, E00302 Riley Okafor
+  Decisions: NotReviewed 277 | recommendations: Approve 2, Deny 275
+  Accounts with no HR ID in scope (admin, break-glass): 2
+    Emergency Access 02 | recommended Approve | NotReviewed
+    Emergency Access 01 | recommended Approve | NotReviewed
+
+Checks:
+  [PASS] R1: one-time, justification required, mail + reminders on
+  [PASS] R1: scope = ADD-06 assignments
+  [PASS] R1: reviewer = PCI owner only
+  [PASS] R1: 3 days, no response = Deny, auto-apply on, recommendations on
+  [PASS] R1: people in scope = expected (5)
+  [PASS] R2: one-time, justification required, mail + reminders on
+  [PASS] R2: scope = ADD-07 assignments
+  [PASS] R2: stage 1 = manager (fallback reviewer), 2 days, Approve + Not reviewed move on
+  [PASS] R2: stage 2 = IT Director after stage 1, 1 day
+  [PASS] R2: no response = Deny, auto-apply on, stage 2 sees stage 1
+  [PASS] R2: people in scope = expected (3)
+  [PASS] R3: one-time, justification required, mail + reminders on
+  [PASS] R3: scope = inactive 14 d members of Keystone Fuel & Market
+  [PASS] R3: reviewers = managers, fallback reviewer
+  [PASS] R3: 3 days, no default decision, auto-apply OFF
+  [FAIL] R3: people in scope = expected (279)
+Result: 15 / 16 passed

@@ -1,0 +1,40 @@
+Requested access packages read back from Graph, 2026-11-10 00:51 UTC. Catalog: Keystone Store & Fuel Operations
+Lab approver (PCI owner, IT Director, no-manager fallback): iam.admin@keystonefuellab.onmicrosoft.com
+
+ADD-06 StoreOps Cash Office  [PCI]
+  Resources:    Cash Office (PCI)
+  Policies:     1
+  Policy:       scope=specificDirectoryUsers targets=group:<id> auto=False approval=True reqJustify=True stages=[manager/fallback:approver/justify:True][approver/fallback:-/justify:True] expiry=afterDuration:P90D selfAdd=True onBehalf=False customSchedule=False
+  Incompatible: ADD-01 POS Refunds
+  Delivered:    5 (other states: expired)
+    E00070 Avery Castillo: expires 2027-02-04 23:35Z
+    E00032 Jamie Ivanova: expires 2027-02-04 23:35Z
+    E00043 Hayden Castillo: expires 2027-02-04 23:30Z
+    E00062 Jordan Lindqvist: expires 2027-02-04 23:30Z
+    E00001 Morgan Haddad: expires 2027-02-01 01:05Z
+  StoreOps Portal StoreOps.CashOffice held by: E00001, E00032, E00043, E00062, E00070
+
+ADD-07 StoreOps Admin  [Privileged]
+  Resources:    Admin
+  Policies:     1
+  Policy:       scope=specificDirectoryUsers targets=group:<id> auto=False approval=True reqJustify=True stages=[approver/fallback:-/justify:True] expiry=afterDuration:P30D selfAdd=True onBehalf=False customSchedule=False
+  Incompatible: (none)
+  Delivered:    3
+    E00015 Kai Kowalski: expires 2026-12-06 23:40Z
+    E00011 Marley Achebe: expires 2026-12-06 23:40Z
+    E00049 Logan Tanaka: expires 2026-12-06 23:35Z
+  StoreOps Portal StoreOps.Admin held by: E00011, E00015, E00049
+
+[PASS] ADD-06 StoreOps Cash Office: exactly 1 policy, requested (not automatic)
+[PASS] ADD-06 StoreOps Cash Office: policy = design (who may ask, 2 approval stage(s), justification, P90D expiry)
+[PASS] ADD-06 StoreOps Cash Office: grants only StoreOps.CashOffice
+[PASS] ADD-06 StoreOps Cash Office: incompatible = ADD-01 POS Refunds
+[PASS] ADD-06 StoreOps Cash Office: every delivered assignment expires within P90D (5 checked)
+[PASS] ADD-06 StoreOps Cash Office: StoreOps.CashOffice holders = package holders (5), no groups
+[PASS] ADD-07 StoreOps Admin: exactly 1 policy, requested (not automatic)
+[PASS] ADD-07 StoreOps Admin: policy = design (who may ask, 1 approval stage(s), justification, P30D expiry)
+[PASS] ADD-07 StoreOps Admin: grants only StoreOps.Admin
+[PASS] ADD-07 StoreOps Admin: incompatible = (none)
+[PASS] ADD-07 StoreOps Admin: every delivered assignment expires within P30D (3 checked)
+[PASS] ADD-07 StoreOps Admin: StoreOps.Admin holders = package holders (3), no groups
+All 12 checks passed.

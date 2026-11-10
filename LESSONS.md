@@ -25,9 +25,9 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 - [x] M2.5 Requested packages, approvals, expiry, incompatible packages (2026-11-03 — ADD-06 Cash Office PCI 2-stage/90 d/SoD vs ADD-01, ADD-07 Admin 30 d; SoD block tested; JML-M2 removes PCI at the department change: Finley ~32 min, 8/8)
 
 ### M3 — Certifications
-- [ ] M3.1 PCI access package review (recommendations, auto-apply)
-- [ ] M3.2 Multi-stage privileged role review + inactive-users-only review
-- [ ] M3.3 Certifier support desk + certification report
+- [x] M3.1 PCI access package review (recommendations, auto-apply) (2026-11-09 — 5 decided, 1 denied; auto-apply failed, removed by hand)
+- [x] M3.2 Multi-stage privileged role review + inactive-users-only review (2026-11-09 — stage 1 timed out, stage 2 decided 3; R3 277 in scope)
+- [x] M3.3 Certifier support desk + certification report (2026-11-09 — 8 questions, 6 answered, 2 escalated; report with 7 findings)
 
 ### M4 — Trend reporting
 - [ ] M4.1 Snapshot T1 export
@@ -80,6 +80,16 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 
 | 2026-11-03 | M2.5 | create_access_packages -Verify 30/33 right after Finley's move | BUS-03 hadn't granted E00034 yet; BUS-01 had already removed his old access | Reran 18 min later: 33/33 | Yes: removal and grant land at different times; know which gap is a security issue |
 
+| 2026-11-06 | M3 | create_access_reviews -Verify 6/13 on correctly configured reviews | Graph stores queries rewritten (/v1.0 prefix; accessPackageAssignments renamed to assignments?$filter=(accessPackage/id eq ...)) | Compare package, policy and reviewer IDs instead of text | Yes: verify config as data, but compare meaning |
+
+| 2026-11-08 | M3 | Reviews closed 03:00 ET Monday, not Monday evening | One-time reviews end at 08:00 UTC on the end date (2.3 days, not 3) | Script adds a day of buffer; decisions made just in time | Yes: read the real end time from the instance |
+
+| 2026-11-08 | M3 | R3 -Verify 15/16: Avery Lindqvist and Riley Okafor "missing" | Entra fixes scope at the review start; the check used "now" | Expected is computed as of the review start | Yes: expected and actual must use the same point in time |
+
+| 2026-11-08 | M3 | R2 stage 1 closed with 0 of 3 decided | Manager stage: wrong manager (Logan), no manager (Marley, Kai), fallback reviewer missed the window | Stage 2 caught all three | Yes: the second stage exists for this |
+
+| 2026-11-09 | M3 | Reviews "Applied", audit log all Success, but Avery and Kai kept their access | Every apply result AppliedWithUnknownFailure; no removal request ever raised | Removed both by hand ~17 h after close, verified | Yes: "Applied" is not "removed"; check the person |
+
 ## Concept notes (from check questions)
 
 - **M0.1:** A leaver with an enabled account is a *true positive* ("terminated user with active access"), not a false positive. Deleting a committed secret does not remove it from Git history: rotate the secret first, then purge history. Seeds make the T0→T1 comparison reproducible.
@@ -107,3 +117,5 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 - **M2.4:** One mechanism per layer: birthright = dynamic groups on department; business/add-on = access packages with one automatic policy on department + title + in-force guard (no memberOf), auto-remove, no grace; requested = approval packages (M2.5). A title-only change (Alex promoted, Cameron demoted) moved only ADD-01 + StoreOps.ShiftLead: BR groups and the M1 mover (department trigger) didn't see it. No grace because refunds are the insider-fraud path and the new Shift Lead gets them from the same policy. Removal took up to 32 min (Cameron still held refunds at 19) → for PCI, remove at the time of change. Totals read 60 = 60 while the wrong person held refunds → verify by employee ID, not counts.
 
 - **M2.5:** Requested access is per person, approved and expiring: ADD-06 Cash Office [PCI] (Store Ops may ask; manager + PCI owner approve; justification; 90 d; incompatible with ADD-01 POS Refunds) and ADD-07 Admin [Privileged] (IT may ask; IT Director; 30 d). SoD is enforced at assignment: Alex (Shift Lead with refunds) was rejected with InvalidRequestSODCheck, even as an admin assignment. Movers get two clocks on one trigger: M1 = notify + 15-day handover; M2 = PCI/admin removed at the next hourly run. Finley (E00034) moved Store Ops → Fuel Ops: 7/8 with Finley outside until the 11:37 run, then 8/8 (~32 min); BUS-01 off by 11:42, BUS-03 on by 12:00. "Remove package" completes when the user doesn't hold it, so one workflow covers both packages. Verify the outcome (who holds PCI outside the allowed department), not just the config.
+
+- **M3:** Certify access the way it was granted: rule-based access by attesting the rule and HR data, requested PCI/admin access person by person, dormant accounts in their own never-auto-applied review. R1 Cash Office (PCI owner, silence = Deny), R2 Admin (manager then IT Director), R3 inactive 14 d (277 in scope, 275 a lab artifact). 8 people decided with reasons, 2 denied (Avery: cover ended; Kai: rollout ended). Recommendations said Deny for everyone because store staff don't sign in to Entra, so decide on the job. Entra said "Applied" but removed nobody; my person-by-person check caught it and I removed both by hand ~17 h after close. Escalate when the fix belongs to someone else (HR data, engineering); answer it when it's a policy you can explain.

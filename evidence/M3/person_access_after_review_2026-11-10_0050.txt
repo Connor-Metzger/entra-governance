@@ -1,0 +1,7 @@
+Access read back from Graph, 2026-11-10 00:50 UTC (after_review)
+
+E00015 Kai Kowalski | Information Technology | Service Desk Analyst | Corporate | enabled True
+  Birthright groups:  BR-01 All Employees Baseline, BR-06 IT Baseline
+  Access packages:    ADD-07 StoreOps Admin [delivered]
+  Entitlement groups: none
+  StoreOps Portal roles: StoreOps.Admin

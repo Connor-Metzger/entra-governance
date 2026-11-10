@@ -68,6 +68,12 @@
 
 - **M2.5 – Extra on-demand run.** JML-M2's scheduled run (11:37 ET) removed Finley's Cash Office; an on-demand run was also started at 11:39. Evidence uses the scheduled run.
 
+- **M3 – Seeded review content.** Cash Office (4) and StoreOps Admin (3) holders were added by admin direct assignment with justifications so the reviews had people in them. iam.admin was the PCI owner, IT Director and every fallback reviewer; synthetic managers can't sign in.
+
+- **M3 – Reviews created via the access reviews API.** Package reviews were created with /identityGovernance/accessReviews/definitions, not in the package policy. Their decisions were recorded but not applied; both denials were removed by hand (report F1).
+
+- **M3 – Short review windows.** 3 days (2 + 1 for R2) instead of 14, to finish before the trial export.
+
 ---
 
 ## 3. Break-glass (emergency access) design

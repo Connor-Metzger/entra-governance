@@ -194,6 +194,11 @@ $runs = foreach ($wf in $workflows) {
     }
 }
 $runs = @($runs | Sort-Object started_utc, workflow)
+if ($runs.Count -eq 0 -and @($workflows).Count -gt 0) {
+    # Seen live 2026-11-11 (T1): last run 8 days earlier, Graph returned nothing.
+    Write-Warning ("No workflow runs returned. Graph only returns userProcessingResults for a workflow with activity in the past 7 days. " +
+        "For older runs, download Workflow history (up to 30 days) per workflow in the admin center.")
+}
 
 # ---------- 4. Write files ----------
 $date = Get-Date -Format "yyyy-MM-dd"

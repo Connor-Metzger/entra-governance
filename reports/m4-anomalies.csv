@@ -1,0 +1,10 @@
+id,rule,count,examples,lab_artifact,note
+A1,Job title outside its home department,1,E00004 Rowan Kowalski,False,title rules must check department too
+A2,Cash Office (ADD-06) held by a non-Store Manager,1,E00032 Jamie Ivanova,False,approved in R1 as an exception
+A3,Store with no Store Manager,9,"Store-005, Store-006, Store-011, Store-016, Store-019",False,nobody to approve or review store access
+A4,Store with 3 or more Store Managers,2,"Store-031, Store-035",False,16 stores have 2; max 4
+A5,No manager in Entra,57,E00011 Marley Achebe; E00012 Skyler Larsen; E00015 Kai Kowalski; E00021 Parker Schultz; E00024 Kai Castillo,False,"breaks manager-based controls: J1 TAP, R2 stage 1, R3, ADD-06 stage 1"
+A6,Store Manager reports to a Shift Lead or Store Associate,27,E00001 Morgan Haddad; E00014 Hayden Schultz; E00020 Quinn Duarte; E00029 Casey Nguyen; E00038 Peyton Novak,False,HR reporting lines inverted; M1.1 counted 29 in the T0 HR file
+A7,No sign-in recorded (dormant),277,E00001 Morgan Haddad; E00002 Kai Achebe; E00003 Peyton Kaur; E00004 Rowan Kowalski; E00005 Rowan Miller,True,synthetic users never sign in
+A8,Workflow run with a failed task,2,E00302 Riley Okafor; E00034 Finley Moreau,False,no alerting on failed runs
+A9,Access not explained by a package,0,,False,

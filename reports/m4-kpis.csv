@@ -1,0 +1,27 @@
+area,kpi,t0,t1,unit,note
+Population,HR accounts,278,277,accounts,
+Population,enabled,275,277,accounts,
+Population,leave date set,1,0,accounts,
+Population,"enabled, in a BR group",275,277,accounts,
+Population,"enabled, no BR group",0,0,accounts,
+Population,no manager in Entra,57,57,accounts,
+Roles,title entitlement grants,486,409,grants,legacy = data/t0 export; T1 = ENT- groups
+Roles,grants outside the role rule,78,0,grants,
+Roles,grants outside the role rule %,16.0,0.0,%,
+Roles,grants made by request or by hand,224,0,grants,T1: every grant comes from an automatic or requested package
+Roles,people with an access package,0,177,people,T0 had no packages (built 2026-10-28)
+Roles,access package assignments,0,241,assignments,
+Drift,access not explained by a package,,0,items,T0 had no packages to compare against
+JML,workflow runs,5,11,runs,T1 = all runs to date (portal history)
+JML,runs with a failed task,1,2,runs,
+JML,longest a failed run went unnoticed,,9,days,no alert on failed runs
+JML,Joiner enabled (J2) minutes after trigger,,37,minutes,"E00301, target same day"
+JML,Leaver disabled (L1) minutes after trigger,,698,minutes,"E00010, target same day (PCI 8.2.5)"
+JML,Leaver deleted (L2) minutes after trigger,,37,minutes,"E00010, target within 1 day"
+JML,Mover PCI removed (M2) minutes after trigger,,32,minutes,"E00034, target next hourly run"
+JML,M1 package-removal runs that removed something,,0 of 2,runs,Finley: 'Custom assignment schedule is prevented by policy'
+Reviews,R1+R2 decisions made,,8,decisions,8 people in scope
+Reviews,R1+R2 denies,,2,denies,
+Reviews,denies removed by the review itself,,0 of 2,denies,AppliedWithUnknownFailure / New
+Reviews,denies removed at T1 (any route),,2 of 2,denies,manual remediation ~17 h after close
+Reviews,R3 inactive review completion %,,0.7,%,"275 of 277 not reviewed: lab artifact, auto-apply off"

@@ -47,7 +47,7 @@ Catalog: **Keystone Store & Fuel Operations** · Script: `scripts/create_access_
 
 Access is based on the job someone currently has. If a Shift Lead is demoted, they should lose access to refunds immediately, even if they are still working on the sales floor and using a register. This is important because employees could misuse refund access by sending money back to their own cards or making refunds they shouldn't be making. There is no reason to allow extra time for this access because the person taking over as Shift Lead will have the same refund permissions.
 
-Requested packages are handled differently. Employees who move to a new position are allowed to keep their access for 15 days to give them time to finish their current work and pass their responsibilities on to someone else (M1.3). The exception is PCI packages, which must be removed immediately on the employee's last day in that role (day 0) because of the requirements in open item 7.4 (M2.5).
+Requested packages were designed differently: movers would keep them for 15 days to hand over their work (JML-M1), except PCI and admin packages, which JML-M2 removes at the next hourly run (M2.5). In testing, M1's 15-day removal failed (trend report G4), so in practice automatic packages leave with the HR change and Cash Office and Admin leave through JML-M2.
 
 ## 5. Test: promotion and demotion (2026-10-29)
 
@@ -95,7 +95,7 @@ What it shows:
 | 8.3 | ~~Re-evaluation latency (up to 32 min observed)~~ **Resolved M2.5 (2026-11-03):** accepted for ADD-01; PCI and admin requested packages are removed by JML-M2 at the next workflow run after a department change (§10.4) | IAM |
 | 8.4 | Licensing: 173 people in scope vs 25 trial Governance licenses (lab deviation) | IT |
 | 8.5 | ADD-06 lists ADD-01 as incompatible, but not the reverse. Not tested: what happens if a Cash Office holder is promoted to Shift Lead (is the ADD-01 automatic assignment blocked?). Decide whether to make it two-way and test it | IAM + Director of Store Operations |
-| 8.6 | JML-M1 "remove all access package assignments" (15-day) may also remove packages the mover gained in the new job (Finley's BUS-03, due ~2026-11-18). The automatic policy should re-add it; check after day 15 | IAM |
+| 8.6 | ~~JML-M1 15-day removal may also remove the mover's new packages~~ **Superseded (M4.3, 2026-11-12):** the M1 task failed for Finley ("Custom assignment schedule is prevented by policy"), so nothing was scheduled. See trend report G4 | IAM |
 
 ## 9. Evidence (`evidence/M2.4/`)
 
@@ -141,7 +141,7 @@ Both mover workflows trigger on a department change (`attributeChangeTrigger`, s
 
 | Workflow | Tasks | Clock | Why |
 |---|---|---|---|
-| JML-M1 Department change | Notify manager; remove all access package assignments | 15-day handover | Ordinary access: let the mover finish work in the old team |
+| JML-M1 Department change | Notify manager; remove all access package assignments | 15-day handover (**failed in test: trend report G4**) | Ordinary access: let the mover finish work in the old team |
 | JML-M2 PCI access removal on move | Remove ADD-06 Cash Office; remove ADD-07 Admin (continue on error) | Next scheduled run (hourly in the lab) | No handover need for card data or admin. Only Store Ops may ask for Cash Office and only IT for Admin, so changing department means leaving the team that justified it |
 
 ### 10.4 Test: Finley Moreau (E00034), Store Operations → Fuel Operations (2026-11-03)

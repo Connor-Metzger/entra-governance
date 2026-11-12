@@ -9,7 +9,7 @@ HR is the authoritative source. A nightly HR load (`scripts/load_users.ps1`) **w
 | Stage | Before (project 1: detect after the fact) | After (this module: prevent) |
 |---|---|---|
 | Joiner | Account active from creation; credentials handled manually | Created **disabled**; TAP issued 7 days early but valid only from 03:00 on day one; enabled automatically on day one |
-| Mover | 24 of 107 movers kept old access (role catalog item 6.3) | Birthright moves with the department attribute; manager notified; requested access removed after a 15-day handover |
+| Mover | 24 of 107 movers kept old access (role catalog item 6.3) | Birthright moves with the department attribute; manager notified; requested access removed by JML-M2 at the next hourly run (the 15-day M1 removal failed in test: trend report G4) |
 | Leaver | 8 leavers still active at review time | Disabled, sessions revoked and access removed **on the last day**; deleted 7 days later |
 
 ## 2. Process flow
@@ -19,7 +19,7 @@ flowchart LR
     HR["HR feed<br/>(authoritative)"] -->|load_users.ps1| ENTRA["Entra ID user<br/>department, manager,<br/>employeeHireDate,<br/>employeeLeaveDateTime"]
     ENTRA --> J1["J1 Pre-hire<br/>hire - 7 days<br/>TAP to manager"]
     ENTRA --> J2["J2 Day one<br/>hire date 03:00 ET<br/>enable account"]
-    ENTRA --> M1["M1 Mover<br/>department changes<br/>notify manager,<br/>remove packages +15 d"]
+    ENTRA --> M1["M1 Mover<br/>department changes<br/>notify manager,<br/>remove packages +15 d<br/>(failed: trend report G4)"]
     ENTRA --> L1["L1 Last day<br/>leave date 23:00 ET<br/>disable, revoke,<br/>remove access"]
     L1 --> L2["L2 +7 days<br/>remove licenses,<br/>delete (soft)"]
     J2 -->|accountEnabled = true| BR["BR dynamic groups<br/>birthright access"]
@@ -43,7 +43,7 @@ flowchart LR
 |---|---|---|---|
 | JML-J1 Pre-hire TAP to manager | Onboard pre-hire employee | employeeHireDate, 7 days before | Generate TAP (23 h, multi-use, valid from hire time) and email it to the manager |
 | JML-J2 Day one enable | Onboard new hire employee | employeeHireDate, on the day | Enable user account |
-| JML-M1 Department change | Employee job profile change | Attribute change: department | Notify manager of move; remove all access package assignments (15-day scheduled removal) |
+| JML-M1 Department change | Employee job profile change | Attribute change: department | Notify manager of move; remove all access package assignments (15-day scheduled removal). **Failed 2026-11-03 (Finley): "Custom assignment schedule is prevented by policy"; see trend report G4** |
 | JML-M2 PCI access removal on move | Custom (mover, M2.5) | Attribute change: department | Remove ADD-06 Cash Office; remove ADD-07 Admin (no delay, continue on error) |
 | JML-L1 Last day offboard | Offboard an employee | employeeLeaveDateTime, on the day | Disable account; revoke refresh tokens; remove access package assignments; remove from all groups; remove from all Teams |
 | JML-L2 Plus 7 days delete | Post-offboarding of an employee | employeeLeaveDateTime, 7 days after | Remove all licenses; delete user (soft delete, restorable for 30 days) |
@@ -118,7 +118,7 @@ All HR changes were simulated by editing a copy of the HR feed and running `load
 | 7.1 | 33 active records with no manager (32 from t0 + Riley) and 24 with a terminated manager. Joiner TAP and mover notification depend on them | HR |
 | 7.2 | ~~`create_dynamic_groups.ps1 -Verify` counts every Active HR row~~ **Resolved M1.4 (2026-10-27):** expected = Active AND hire time passed AND leave time not passed; excluded rows are printed | IAM (M1.4) |
 | 7.3 | Overnight shifts: a 23:00 leave time cuts off a 22:00–06:00 last shift. Agree with HR that the termination date is the day the last shift **ends** | HR + IAM |
-| 7.4 | ~~Access package removal for movers is 15 days~~ **Resolved M2.5 (2026-11-03):** JML-M2 removes Cash Office (PCI) and Admin at the next run after a department change; M1 keeps the 15-day handover for everything else. Tested on E00034 Finley Moreau: removed 11:38 ET, about 32 min after the HR load (docs/access-packages.md §10.4) | IAM + Director of Store Operations |
+| 7.4 | ~~Access package removal for movers is 15 days~~ **Resolved M2.5 (2026-11-03):** JML-M2 removes Cash Office (PCI) and Admin at the next run after a department change; M1's 15-day removal for everything else failed in test (trend report G4). Tested on E00034 Finley Moreau: removed 11:38 ET, about 32 min after the HR load (docs/access-packages.md §10.4) | IAM + Director of Store Operations |
 
 ## 8. Evidence (`evidence/M1.3/`)
 

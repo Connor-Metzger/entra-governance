@@ -32,7 +32,7 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 ### M4 — Trend reporting
 - [x] M4.1 Snapshot T1 export (2026-11-11 — 277 HR users, 241 package assignments; 11 runs from portal history; final read-back 2026-11-12)
 - [x] M4.2 KPI and anomaly notebook (2026-11-12 — 26 KPIs, 9 anomaly rules; legacy 78 of 486 title grants outside the role rule → 0 at T1; drift 0, negative test 2/2; 2 of 11 runs had a failed task, Finley's unnoticed 9 days; review denies removed by the review 0 of 2)
-- [ ] M4.3 Governance trend report + escalation table
+- [x] M4.3 Governance trend report + escalation table (2026-11-12 — 8 findings G1–G8, 3 High: review apply 0 of 2, leaver 11.6 h from late HR entry, no alert on failed runs (9 days); M1 15-day claim corrected in jml-process + access-packages)
 
 ### M5 — Policy, SOPs, ServiceNow, on-call
 - [ ] M5.1 IAM Access Control Policy + request workflow
@@ -93,6 +93,8 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 | 2026-11-11 | M4.1 | T1 snapshot found 0 workflow runs (T0 found 5) | Graph returns userProcessingResults only for workflows with activity in the past 7 days; last run was 8 days earlier | Script now warns; 11 runs downloaded from Workflow history (30 days) and converted with convert_lcw_history.ps1 (ET to UTC, IDs to employee IDs) | Yes: know your evidence source's retention before you need it |
 
 | 2026-11-12 | M4.1 | Finley's JML-M1 run (2026-11-03) completed with errors, unnoticed for 9 days: "Remove all access package assignments" failed, "Custom assignment schedule is prevented by policy" | M1's removal had never removed anything (Rowan held no packages); nobody watches workflow results | Finley's access was removed by BUS-01's policy and JML-M2 instead; documented for M4 | Yes: alert on failed runs, and test a removal control on someone who actually holds access |
+
+| 2026-11-12 | M4.3 | jml-process.md and access-packages.md said JML-M1 removes packages after 15 days; it never had | M1's task failed on its only real test (Finley) and nobody read the task result; found by comparing docs to run history | Re-test every documented claim against evidence before publishing |
 
 ## Concept notes (from check questions)
 

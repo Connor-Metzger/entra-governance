@@ -35,7 +35,7 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 - [x] M4.3 Governance trend report + escalation table (2026-11-12 — 8 findings G1–G8, 3 High: review apply 0 of 2, leaver 11.6 h from late HR entry, no alert on failed runs (9 days); M1 15-day claim corrected in jml-process + access-packages)
 
 ### M5 — Policy, SOPs, ServiceNow, on-call
-- [ ] M5.1 IAM Access Control Policy + request workflow
+- [x] M5.1 IAM Access Control Policy + request workflow (2026-11-12 — policy with Implemented/Partial/Gap status on every rule, gap register linked to G1–G6; decisions: terminations entered by end of last shift, exceptions ≤ 30 days, privileged reviews quarterly; Mermaid request flow with 6 tested branches)
 - [ ] M5.2 SOPs + end-user guide
 - [ ] M5.3 ServiceNow catalog item + 6 incidents
 - [ ] M5.4 Triage runbook + escalation matrix

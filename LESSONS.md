@@ -30,7 +30,7 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 - [x] M3.3 Certifier support desk + certification report (2026-11-09 — 8 questions, 6 answered, 2 escalated; report with 7 findings)
 
 ### M4 — Trend reporting
-- [ ] M4.1 Snapshot T1 export
+- [x] M4.1 Snapshot T1 export (2026-11-11 — 277 HR users, 241 package assignments; 11 runs from portal history; final read-back 2026-11-12)
 - [ ] M4.2 KPI and anomaly notebook
 - [ ] M4.3 Governance trend report + escalation table
 
@@ -89,6 +89,10 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 | 2026-11-08 | M3 | R2 stage 1 closed with 0 of 3 decided | Manager stage: wrong manager (Logan), no manager (Marley, Kai), fallback reviewer missed the window | Stage 2 caught all three | Yes: the second stage exists for this |
 
 | 2026-11-09 | M3 | Reviews "Applied", audit log all Success, but Avery and Kai kept their access | Every apply result AppliedWithUnknownFailure; no removal request ever raised | Removed both by hand ~17 h after close, verified | Yes: "Applied" is not "removed"; check the person |
+
+| 2026-11-11 | M4.1 | T1 snapshot found 0 workflow runs (T0 found 5) | Graph returns userProcessingResults only for workflows with activity in the past 7 days; last run was 8 days earlier | Script now warns; 11 runs downloaded from Workflow history (30 days) and converted with convert_lcw_history.ps1 (ET to UTC, IDs to employee IDs) | Yes: know your evidence source's retention before you need it |
+
+| 2026-11-12 | M4.1 | Finley's JML-M1 run (2026-11-03) completed with errors, unnoticed for 9 days: "Remove all access package assignments" failed, "Custom assignment schedule is prevented by policy" | M1's removal had never removed anything (Rowan held no packages); nobody watches workflow results | Finley's access was removed by BUS-01's policy and JML-M2 instead; documented for M4 | Yes: alert on failed runs, and test a removal control on someone who actually holds access |
 
 ## Concept notes (from check questions)
 

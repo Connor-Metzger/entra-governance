@@ -1,0 +1,63 @@
+Access review campaign 2026-11, read back from Graph 2026-11-12 21:53 UTC
+Reviewer / fallback / PCI owner / IT Director (lab): iam.admin@keystonefuellab.onmicrosoft.com
+
+R1 M3 R1 PCI: ADD-06 Cash Office (2026-11)
+  ADD-06 Cash Office holders | reviewer: PCI owner | 3 days | no response: Deny | auto-apply on
+  Definition status: Applied
+  Instance: Applied | start 2026-11-06 23:41 UTC | end 2026-11-09 08:00 UTC
+  In scope: 5 | expected: 4 | unexpected: E00070 Avery Castillo
+  Decisions: Approve 4, Deny 1 | recommendations: Deny 5
+    E00032 Jamie Ivanova | Store Associate | Store-005 | recommended Deny | Approve by IAM Admin (Lab) | "Store-005 has no Store Manager; acting cash office" | applied: AppliedWithUnknownFailure
+    E00001 Morgan Haddad | Store Manager | Store-007 | recommended Deny | Approve by IAM Admin (Lab) | "Store Manager, reconciles Store-007 deposits" | applied: AppliedWithUnknownFailure
+    E00043 Hayden Castillo | Store Manager | Store-034 | recommended Deny | Approve by IAM Admin (Lab) | "Store Manager at Store-034, reconciles the daily deposit" | applied: AppliedWithUnknownFailure
+    E00070 Avery Castillo | Store Associate | Store-033 | recommended Deny | Deny by IAM Admin (Lab) | "Cover ended 2026-11-06" | applied: AppliedWithUnknownFailure
+    E00062 Jordan Lindqvist | Store Manager | Store-020 | recommended Deny | Approve by IAM Admin (Lab) | "Store Manager at Store-020, reconciles the daily deposit" | applied: AppliedWithUnknownFailure
+
+R2 M3 R2 Privileged: ADD-07 StoreOps Admin, 2 stages (2026-11)
+  ADD-07 Admin holders | stage 1 (2 d): manager, fallback IAM Admin (Lab) | stage 2 (1 d): IT Director | no response: Deny | auto-apply on
+  Definition status: Applied
+  Instance: Applied | start 2026-11-06 23:41 UTC | end 2026-11-09 08:00 UTC
+  Stage 1: Completed | 11-06 23:47 -> 11-08 23:47 UTC | 3 decision item(s)
+  Stage 2: Completed | 11-08 23:48 -> 11-09 23:48 UTC | 3 decision item(s)
+  In scope: 3 | expected: 2 | unexpected: E00015 Kai Kowalski
+  Decisions: Approve 2, Deny 1 | recommendations: NoInfoAvailable 3
+    [stage 1] E00049 Logan Tanaka | Systems Administrator | Corporate | recommended NoInfoAvailable | NotReviewed by -
+    [stage 1] E00015 Kai Kowalski | Service Desk Analyst | Corporate | recommended NoInfoAvailable | NotReviewed by -
+    [stage 1] E00011 Marley Achebe | Systems Administrator | Corporate | recommended NoInfoAvailable | NotReviewed by -
+    [stage 2] E00015 Kai Kowalski | Service Desk Analyst | Corporate | recommended NoInfoAvailable | Deny by IAM Admin (Lab) | "Service Desk; Kiosk rollout ended 2026-11-05"
+    [stage 2] E00011 Marley Achebe | Systems Administrator | Corporate | recommended NoInfoAvailable | Approve by IAM Admin (Lab) | "Owns StoreOps Portal Configuration"
+    [stage 2] E00049 Logan Tanaka | Systems Administrator | Corporate | recommended NoInfoAvailable | Approve by IAM Admin (Lab) | "Systems Administrator on the StoreOps release team"
+
+R3 M3 R3 Inactive 14 d: Keystone Fuel & Market (2026-11)
+  Keystone Fuel & Market members with no sign-in for 14 days | managers, fallback IAM Admin (Lab) | 3 days | no default | auto-apply OFF
+  Definition status: Completed
+  Group members: 281 | as of review start 2026-11-06 23:41 UTC | created in the 14 days before (never in scope): 2 | expected inactive: 277 | signed in after the start (not compared): 2
+    signed in after start: (no HR ID) IAM Admin (Lab)
+    signed in after start: (no HR ID) Project IAM
+    too new: E00301 Avery Lindqvist
+    too new: E00302 Riley Okafor
+  Instance: Completed | start 2026-11-06 23:41 UTC | end 2026-11-09 08:00 UTC
+  In scope: 277 | expected: 277
+  Decisions: Approve 2, NotReviewed 275 | recommendations: Approve 2, Deny 275
+  Accounts with no HR ID in scope (admin, break-glass): 2
+    Emergency Access 02 | recommended Approve | Approve
+    Emergency Access 01 | recommended Approve | Approve
+
+Checks:
+  [PASS] R1: one-time, justification required, mail + reminders on
+  [PASS] R1: scope = ADD-06 assignments
+  [PASS] R1: reviewer = PCI owner only
+  [PASS] R1: 3 days, no response = Deny, auto-apply on, recommendations on
+  [FAIL] R1: people in scope = expected (4)
+  [PASS] R2: one-time, justification required, mail + reminders on
+  [PASS] R2: scope = ADD-07 assignments
+  [PASS] R2: stage 1 = manager (fallback reviewer), 2 days, Approve + Not reviewed move on
+  [PASS] R2: stage 2 = IT Director after stage 1, 1 day
+  [PASS] R2: no response = Deny, auto-apply on, stage 2 sees stage 1
+  [FAIL] R2: people in scope = expected (2)
+  [PASS] R3: one-time, justification required, mail + reminders on
+  [PASS] R3: scope = inactive 14 d members of Keystone Fuel & Market
+  [PASS] R3: reviewers = managers, fallback reviewer
+  [PASS] R3: 3 days, no default decision, auto-apply OFF
+  [PASS] R3: people in scope = expected (277)
+Result: 14 / 16 passed

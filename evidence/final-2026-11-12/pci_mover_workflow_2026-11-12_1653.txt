@@ -1,0 +1,29 @@
+PCI mover workflow verification, 2026-11-12 21:53 UTC
+
+Workflow: JML-M2 PCI access removal on move | category mover | enabled True | scheduling True
+  Trigger: attribute change on department
+  Scope:   (companyName eq 'Keystone Fuel & Market')
+  Task 1: Remove ADD-06 StoreOps Cash Office -> ADD-06 StoreOps Cash Office | enabled True | continue on error True
+  Task 2: Remove ADD-07 StoreOps Admin -> ADD-07 StoreOps Admin | enabled True | continue on error True
+
+ADD-06 StoreOps Cash Office [PCI]: 4 holder(s), allowed department 'Store Operations', outside it: 0
+  E00001 Morgan Haddad | Store Manager | Store Operations | Store-007 | expires 02/01/2027 01:05:05
+  E00032 Jamie Ivanova | Store Associate | Store Operations | Store-005 | expires 02/04/2027 23:35:05
+  E00043 Hayden Castillo | Store Manager | Store Operations | Store-034 | expires 02/04/2027 23:30:03
+  E00062 Jordan Lindqvist | Store Manager | Store Operations | Store-020 | expires 02/04/2027 23:30:03
+ADD-07 StoreOps Admin [Privileged]: 2 holder(s), allowed department 'Information Technology', outside it: 0
+  E00011 Marley Achebe | Systems Administrator | Information Technology | Corporate | expires 12/06/2026 23:40:04
+  E00049 Logan Tanaka | Systems Administrator | Information Technology | Corporate | expires 12/06/2026 23:35:05
+
+Runs of this workflow: 0
+
+Checks:
+  [PASS] Category mover, enabled, scheduling on
+  [PASS] Trigger = attribute change on department only
+  [PASS] Scope rule = (companyName eq 'Keystone Fuel & Market')
+  [PASS] Exactly 2 tasks
+  [PASS] Task removes ADD-06 StoreOps Cash Office, enabled, continue on error
+  [PASS] Task removes ADD-07 StoreOps Admin, enabled, continue on error
+  [PASS] ADD-06 StoreOps Cash Office: no holder outside Store Operations (4 checked)
+  [PASS] ADD-07 StoreOps Admin: no holder outside Information Technology (2 checked)
+Result: 8 / 8 passed

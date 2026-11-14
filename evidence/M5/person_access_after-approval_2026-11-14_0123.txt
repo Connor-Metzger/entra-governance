@@ -1,0 +1,7 @@
+Access read back from Graph, 2026-11-14 01:23 UTC (after-approval)
+
+T90001 Test Requester 01 (lab) | Store Operations | Lab Test Requester |  | enabled True
+  Birthright groups:  BR-01 All Employees Baseline, BR-02 Store Operations Baseline
+  Access packages:    ADD-06 StoreOps Cash Office [delivered]
+  Entitlement groups: none
+  StoreOps Portal roles: StoreOps.Associate, StoreOps.CashOffice

@@ -47,7 +47,7 @@ flowchart TD
 | Department change | E00034 Finley Moreau, Store Ops → Fuel Ops | Cash Office removed 32 min after the HR change | `evidence/M2.5/pci_mover_workflow_*_1141.txt` |
 | Leaver | E00010 Logan Nguyen | All access removed by L1 on the last-day run | `evidence/M1.3/08-leaver-history.png` |
 
-**Lab deviation:** test assignments were made by an administrator (`scripts/request_package.ps1`), which skips the approval stages. The SoD check still ran. A live approval click-through needs a test user who can sign in.
+**Lab deviation:** test assignments were made by an administrator (`scripts/request_package.ps1`), which skips the approval stages. The SoD check still ran. A live approval click-through needs a test user who can sign in. On 2026-11-13 a temporary test user requested ADD-06 through My Access and it went through the live fallback (stage 1) and PCI owner (stage 2) approvals: `evidence/M5/03`–`08`.
 
 ## 3. Rules that apply at each step
 

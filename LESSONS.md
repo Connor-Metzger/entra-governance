@@ -37,7 +37,7 @@ Pacing: check in before each lesson, extra-detailed steps. Resume from the first
 ### M5 — Policy, SOPs, ServiceNow, on-call
 - [x] M5.1 IAM Access Control Policy + request workflow (2026-11-12 — policy with Implemented/Partial/Gap status on every rule, gap register linked to G1–G6; decisions: terminations entered by end of last shift, exceptions ≤ 30 days, privileged reviews quarterly; Mermaid request flow with 6 tested branches)
 - [x] M5.2 SOPs + end-user guide (2026-11-13 — leaver SOP with Path B immediate disable, app-onboarding SOP from StoreOps, My Access guide with live screenshots; first live two-stage approval with a temporary test user, deleted same day)
-- [ ] M5.3 ServiceNow catalog item + 6 incidents
+- [x] M5.3 ServiceNow catalog item + 6 incidents (2026-11-16 — PDI: Cash Office (PCI) catalog item with SoD + end-date variables; 6 incidents worked with impact×urgency priority (3×P1, 2×P2, 1×P3), timed work notes and escalation: lockout/TAP, impossible travel → SecOps, failed leaver → manual disable + problem, certifier stage closed (real R2), new store → HR not hand-made accounts, break-glass sign-in)
 - [ ] M5.4 Triage runbook + escalation matrix
 
 ### M6 — Privileged access (optional stretch)

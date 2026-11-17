@@ -1,0 +1,7 @@
+"number","opened_at","short_description","caller_id","priority","state","assignment_group","resolved_at","close_code"
+"INC6","2026-11-16 15:30:58","KFM: Break-glass account sign-in alert (bg-emergency01","System Administrator","1 - Critical","In Progress","Security Operations","",""
+"INC5","2026-11-16 15:30:12","KFM: New Store-041 opens Mon 05:00, 12 associates have no accounts","Jordan Lindqvist","3 - Moderate","In Progress","IAM Operations","",""
+"INC4","2026-11-16 15:29:37","KFM: Reviewer can't find StoreOps Admin review for Logan Tanaka","Dakota Moreau","3 - Moderate","In Progress","IAM Operations","",""
+"INC3","2026-11-16 15:28:58","KFM: Leaver still enabled, JML-L1 task failed (morning check)","System Administrator","1 - Critical","In Progress","IAM Operations","",""
+"INC2","2026-11-16 15:28:17","KFM: Impossible travel sign-in, store associate with POS access (E00176","Emerson Okafor","1 - Critical","In Progress","Security Operations","",""
+"INC1","2026-11-16 15:25:32","	KFM: Store Manager locked out overnight, cash office deposit blocked (Store-034)","Hayden Castillo","2 - High","In Progress","IAM Operations","",""

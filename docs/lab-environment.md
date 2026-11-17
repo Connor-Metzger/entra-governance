@@ -75,6 +75,8 @@
 - **M3 – Short review windows.** 3 days (2 + 1 for R2) instead of 14, to finish before the trial export.
 
 - **M5.2 – temporary test requester.** `test.requester01` (Store Operations, employee ID T90001, no company name, no manager) was created by hand on 2026-11-13 to capture the end-user guide and the first live two-stage approval. This bends "HR is authoritative" (policy §2) and is the only hand-made employee account; it was removed from ADD-06 and permanently deleted the same day (`evidence/M5/09-test-user-deleted.png`). Requested 20:17 ET; stage 1 (fallback) approved about 20:21, stage 2 (PCI owner) approved 20:22; delivered by 20:23 ET (about 6 minutes end to end). Same approver in both stages: **asked twice** (stage 2 appeared as a new pending approval), so one approval can't skip a stage, but in production the fallback approver and the PCI owner must be different people.
+
+- **M5.3 – new ServiceNow PDI (2026-11-16).** The 2026-10-14 instance was reclaimed after inactivity; a new Australia-release PDI was requested and used for M5.3. Sign-in is through the ServiceNow developer account (no separate admin password was issued). Instances are reclaimed if unused, so all M5.3 evidence is exported to `evidence/M5/servicenow/`.
 ---
 
 ## 3. Break-glass (emergency access) design
